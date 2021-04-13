@@ -1,10 +1,178 @@
-/*RESET*/
-
+/*reset*/
 * {
     margin: 0;
     padding: 0
 }
 
+/*paleta colores*/
+$terracota: #b13a1f;
+$oscuro: #d76249;
+$rosa: #f5d6c3;
+$naranja: #f8bb55;
+$amarillo: #fefce6;
+
+/*header*/
+
+header {background-color: $amarillo;
+        position: sticky;
+        width: 100%;
+}
+
+#encabezado { background-color: $amarillo;
+}
+
+.identidad__logo {
+    width: 90px;
+    top: 20px;
+    margin-left: 20px;
+    padding: 1px;
+    position: absolute;
+}
+
+.identidad__nombre {
+    color: $oscuro;
+    text-decoration: none;
+    font-family: 'Comic Neue', cursive;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 30px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-height: 1;
+    text-align: justify;
+    padding-top: 26px;
+    margin-left: 125px;
+    
+}
+
+.identidad__profesion {
+    color: $oscuro;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-height: 1;
+    text-align: justify;
+    padding: 1px;
+    margin-left: 125px;
+   
+}
+
+.identidad__matricula {
+    color: $oscuro;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 16px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-height: 1;
+    text-align: justify;
+    padding: 1px;
+    margin-left: 125px;
+}
+
+.nav {
+    padding: 10px;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    justify-content: center;
+    a {transition: font-size 5s; /*transition*/
+    }
+    a:hover {
+        background-color: $oscuro;
+        color: $amarillo;
+        border-radius: 3px;
+        font-size: 20px;  /*transition*/
+    }
+}
+
+.nav-link {
+    color: $oscuro;
+}
+
+/*footer*/
+
+footer {display: flex; /*flexbox*/
+        flex-direction: row;
+        flex-wrap: nowrap;
+        background-color: $oscuro;
+        width: 100%;
+        height: 20vh;
+}
+
+
+
+.btn {font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    width: 500px;
+    height: 50px;
+    text-align: center;
+    margin: auto 15%;
+    padding: 10px;
+    background-color: $amarillo;
+    color: $terracota;
+    align-content: center;
+    justify-content: center;
+    border: solid 1px $rosa;
+}
+
+.btn:hover {
+    background-color: $naranja;
+    color: $amarillo;
+    border-color: $amarillo;
+}
+
+
+/* aplicando BEM */
+
+.redes {width: 100%;
+    justify-content: space-between;
+    text-decoration-line: none;
+    text-align: center;
+    margin: auto;
+    padding: 5px;
+}
+
+.redes__email {
+    width: 50px;
+    border-radius: 30px;
+}
+
+.redes__watsapp {
+    width: 50px;
+    border-radius: 30px;
+}
+
+.redes__facebook {
+    width: 50px;
+    border-radius: 30px;
+}
+
+.redes__instagram {
+    width: 50px;
+    border-radius: 30px;
+}
+
+.redes__linkedin {
+    width: 50px;
+    border-radius: 30px;
+}
+
+
+
+/* KUME font-family: 'Nothing You Could Do', cursive;
+ LETRA TRABAJADA font-family: 'Comic Neue', cursive;
+ LETRA TEXTO COMUN font-family: 'Poppins', sans-serif; */
 
 /*color clarito #f7f5f2 */
 
@@ -18,13 +186,13 @@
 /*#f8dad0 #fae0c7 #feefdd  #ebf9fa*/
 
 
-/* COLOR PALETA 1: #001c44 #0c5776 #2d99ae  #bcfefe #f8dad0 .. o mas clarito #fef8ec  */
+/* COLOR PALETA 1: #001c44 $oscuro #0c5776 #2d99ae  #bcfefe #f8dad0 .. o mas clarito #fef8ec  */
 
 
 /* COLOR PALETA 2: #005059 , #08808e, #7ac9d0, #c8e8ea, #fe9a84 */
 
 .texto {
-    color: #001c44;
+    color: $oscuro;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -55,7 +223,7 @@
 
 .btnn {
     font-family: 'Poppins', sans-serif;
-    color: #001c44;
+    color: $oscuro;
     text-decoration: none;
     width: 300px;
     height: 50px;
@@ -96,86 +264,6 @@
     background-color: #c8e8ea;
 }
 
-.nav {
-    padding: 10px;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    align-content: center;
-    justify-content: center;
-}
-
-.nav-link {
-    color: #001c44;
-}
-
-
-/* TRANSITION */
-
-.nav a {
-    transition: font-size 5s;
-}
-
-.nav a:hover {
-    background-color: #fe9a84;
-    color: #f8dad0;
-    border-radius: 5px;
-    /*TRANSITION*/
-    font-size: 20px;
-}
-
-.btn {
-    font-family: 'Poppins', sans-serif;
-    width: 400px;
-    height: 50px;
-    text-align: center;
-    margin: auto 15%;
-    padding: 10px;
-    background-color: #c8e8ea;
-    color: #005059;
-    align-content: center;
-    justify-content: center;
-}
-
-.btn:hover {
-    background-color: #fe9a84;
-    color: #f8dad0;
-}
-
-
-/* aplicando BEM */
-
-.redes {
-    text-decoration-line: none;
-    text-align: center;
-    margin: auto;
-    padding: 10px;
-}
-
-.redes__email {
-    width: 30px;
-    border-radius: 30px;
-}
-
-.redes__watsapp {
-    width: 30px;
-    border-radius: 30px;
-}
-
-.redes__facebook {
-    width: 30px;
-    border-radius: 30px;
-}
-
-.redes__instagram {
-    width: 30px;
-    border-radius: 30px;
-}
-
-.redes__linkedin {
-    width: 30px;
-    border-radius: 30px;
-}
 
 .color {
     color: #085163
@@ -196,76 +284,19 @@
 }
 
 
-/* GRADIENT*/
+/* GRADIENT
 
-#grad {
-    background-image: linear-gradient(to right, white, #2d99ae);
-}
+#encabezado {
+    background-image: linear-gradient(to right, $amarillo, $naranja);
+}*/
 
 
 /* aplicando BEM*/
 
-.identidad__logo {
-    width: 40px;
-    top: 25px;
-    margin-left: 5px;
-    padding: 5px;
-    position: relative;
-}
-
-.identidad__nombre {
-    color: #001c44;
-    text-decoration: none;
-    font-family: 'Comic Neue', cursive;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 30px;
-    word-spacing: 1px;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    text-align: justify;
-    padding: 5px;
-    position: absolute;
-    top: 10px;
-    margin-left: 50px;
-}
-
-.identidad__profesion {
-    color: #001c44;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 16px;
-    word-spacing: 1px;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    text-align: justify;
-    padding: 1px;
-    position: relative;
-    margin-left: 60px;
-}
-
-.identidad__matricula {
-    color: #001c44;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 16px;
-    word-spacing: 1px;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    text-align: justify;
-    padding: 1px;
-    position: relative;
-    margin-left: 60px;
-}
-
 
 /*
 h1 {
-    color: #001c44;
+    color: $oscuro;
     text-decoration: none;
     font-family: 'Comic Neue', cursive;
     font-style: italic;
@@ -283,7 +314,7 @@ h1 {
 */
 
 h2 {
-    color: #001c44;
+    color: $oscuro;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-style: italic;
@@ -300,7 +331,7 @@ h2 {
 
 /*
 h3 {
-    color: #001c44;
+    color: $oscuro;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-style: italic;
@@ -317,7 +348,7 @@ h3 {
 */
 
 h4 {
-    color: #001c44;
+    color: $oscuro;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -345,7 +376,7 @@ h4 {
 	left: 35%;}
 	 
 
-.a 	{color: #001c44;
+.a 	{color: $oscuro;
 	text-decoration: none;
 	font-family: 'Poppins', sans-serif;
 	font-style: normal;
@@ -368,7 +399,7 @@ a:hover {text-decoration-line: none;
 		}                
 		
 
-p 	{color: #001c44;
+p 	{color: $oscuro;
 	text-decoration: none;
 	font-family: 'Poppins', sans-serif;
 	font-style: normal;
@@ -393,7 +424,7 @@ p 	{color: #001c44;
 
 
 /*
-ul li 	{color: #001c44;
+ul li 	{color: $oscuro;
 		font-family: 'Poppins', sans-serif;
 		font-size: 16px;
 		text-align: justify;
@@ -405,7 +436,7 @@ ul li 	{color: #001c44;
 		
 
 ul ul li {background-color: white;
-		color: #001c44;
+		color: $oscuro;
 		font-family: 'Poppins', sans-serif;
 		font-size: 16px;
 		text-align: justify;
@@ -510,7 +541,7 @@ ul li:hover ul {display: block;}
 /*justo para aplicar variable texto*/
 
 .contacto__formulario {
-    color: #001c44;
+    color: $oscuro;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -525,20 +556,6 @@ ul li:hover ul {display: block;}
 }
 
 
-/* agregando FLEXBOX en encabezado y pie de pagina*/
-
-header {
-    position: sticky;
-    width: 100%;
-}
-
-footer {
-    display: flex;
-    flex-wrap: nowrap;
-    background-color: #08808e;
-    width: 100%;
-    height: 20vh;
-}
 
 
 /*
@@ -548,13 +565,6 @@ footer {
     flex-wrap: nowrap;
 }
 */
-
-.redes {
-    flex-direction: row;
-    flex-wrap: nowrap;
-    width: 100%;
-    justify-content: space-between;
-}
 
 
 /*agregando FLEXBOX a la sección recetas.html*/
@@ -830,11 +840,67 @@ footer {
         align-content: center;
         justify-content: center;
     }
+    
+    
+    .btn {font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        position: relative;
+        font-family: 'Poppins', sans-serif;
+        width: 250px;
+        height: 40px;
+        text-align: center;
+        margin: auto 10%;
+        padding: 5px;
+        background-color: $amarillo;
+        color: $terracota;
+        align-content: center;
+        justify-content: center;
+        border: solid 1px $rosa;
+    }
+    
+    
+    .redes {width: 100%;
+        justify-content: space-between;
+        text-decoration-line: none;
+        text-align: center;
+        margin: auto;
+        padding: 1px;
+}
+
+    .redes__email {
+        width: 30px;
+        border-radius: 30px;
+    }
+
+    .redes__watsapp {
+        width: 30px;
+        border-radius: 30px;
+    }
+
+    .redes__facebook {
+        width: 30px;
+        border-radius: 30px;
+    }
+
+    .redes__instagram {
+        width: 30px;
+        border-radius: 30px;
+    }
+
+    .redes__linkedin {
+        width: 30px;
+        border-radius: 30px;
+    }
+
+
+/*
+
     a {
         font-size: 15px;
         word-spacing: 1px;
         letter-spacing: 1px;
-        /*interlineado*/
+        
         line-height: 1.5;
         text-align: center;
         padding: 5px;
@@ -851,9 +917,8 @@ footer {
     .botonTurno {
         padding: 5px;
     }
-    .redes {
-        padding: 5px;
-    }
+    */
+    
     /* adaptando el main: GRIDS a la sección index.html  con 5 columnas, con 6 filas y con 13 items*/
     .grid {
         display: grid;
@@ -963,6 +1028,7 @@ footer {
 
 @media screen and (min-width: 481px) and (max-width: 1023px) {
     /*adaptando el navegador*/
+    
     .nav {
         top: 10px;
         position: relative;
@@ -971,11 +1037,60 @@ footer {
         align-content: center;
         justify-content: center;
     }
+    
+    .btn {font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        position: relative;
+        font-family: 'Poppins', sans-serif;
+        width: 250px;
+        height: 40px;
+        text-align: center;
+        margin: auto 10%;
+        padding: 5px;
+        background-color: $amarillo;
+        color: $terracota;
+        align-content: center;
+        justify-content: center;
+        border: solid 1px $rosa;
+    }
+    
+    .redes__email {
+        width: 40px;
+        border-radius: 30px;
+    }
+
+    .redes__watsapp {
+        width: 40px;
+        border-radius: 30px;
+    }
+
+    .redes__facebook {
+        width: 40px;
+        border-radius: 30px;
+    }
+
+    .redes__instagram {
+        width: 40px;
+        border-radius: 30px;
+    }
+
+    .redes__linkedin {
+        width: 40px;
+        border-radius: 30px;
+    }
+
+
+
+
+
+/*
+
     a {
         font-size: 15px;
         word-spacing: 1px;
         letter-spacing: 1px;
-        /*interlineado*/
+        
         line-height: 1.5;
         text-align: center;
         padding: 5px;
@@ -992,9 +1107,8 @@ footer {
     .botonTurno {
         padding: 5px;
     }
-    .redes {
-        padding: 5px;
-    }
+    */
+
     /* adaptando el main: GRIDS a la sección index.html  con 5 columnas, con 6 filas y con 13 items*/
     .grid {
         display: grid;

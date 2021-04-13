@@ -1,18 +1,199 @@
 @charset "UTF-8";
-/*RESET*/
+/*reset*/
 * {
   margin: 0;
   padding: 0;
 }
 
+/*paleta colores*/
+/*header*/
+header {
+  background-color: #fefce6;
+  position: -webkit-sticky;
+  position: sticky;
+  width: 100%;
+}
+
+#encabezado {
+  background-color: #fefce6;
+}
+
+.identidad__logo {
+  width: 90px;
+  top: 20px;
+  margin-left: 20px;
+  padding: 1px;
+  position: absolute;
+}
+
+.identidad__nombre {
+  color: #d76249;
+  text-decoration: none;
+  font-family: 'Comic Neue', cursive;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 30px;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 1;
+  text-align: justify;
+  padding-top: 26px;
+  margin-left: 125px;
+}
+
+.identidad__profesion {
+  color: #d76249;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 1;
+  text-align: justify;
+  padding: 1px;
+  margin-left: 125px;
+}
+
+.identidad__matricula {
+  color: #d76249;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 16px;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 1;
+  text-align: justify;
+  padding: 1px;
+  margin-left: 125px;
+}
+
+.nav {
+  padding: 10px;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.nav a {
+  -webkit-transition: font-size 5s;
+  transition: font-size 5s;
+  /*transition*/
+}
+
+.nav a:hover {
+  background-color: #d76249;
+  color: #fefce6;
+  border-radius: 3px;
+  font-size: 20px;
+  /*transition*/
+}
+
+.nav-link {
+  color: #d76249;
+}
+
+/*footer*/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /*flexbox*/
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  background-color: #d76249;
+  width: 100%;
+  height: 20vh;
+}
+
+.btn {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  position: relative;
+  font-family: 'Poppins', sans-serif;
+  width: 500px;
+  height: 50px;
+  text-align: center;
+  margin: auto 15%;
+  padding: 10px;
+  background-color: #fefce6;
+  color: #b13a1f;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: solid 1px #f5d6c3;
+}
+
+.btn:hover {
+  background-color: #f8bb55;
+  color: #fefce6;
+  border-color: #fefce6;
+}
+
+/* aplicando BEM */
+.redes {
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none;
+  text-align: center;
+  margin: auto;
+  padding: 5px;
+}
+
+.redes__email {
+  width: 50px;
+  border-radius: 30px;
+}
+
+.redes__watsapp {
+  width: 50px;
+  border-radius: 30px;
+}
+
+.redes__facebook {
+  width: 50px;
+  border-radius: 30px;
+}
+
+.redes__instagram {
+  width: 50px;
+  border-radius: 30px;
+}
+
+.redes__linkedin {
+  width: 50px;
+  border-radius: 30px;
+}
+
+/* KUME font-family: 'Nothing You Could Do', cursive;
+ LETRA TRABAJADA font-family: 'Comic Neue', cursive;
+ LETRA TEXTO COMUN font-family: 'Poppins', sans-serif; */
 /*color clarito #f7f5f2 */
 /*color azul oscuro #085163 */
 /*color turquesa:  #1cdfed */
 /*#f8dad0 #fae0c7 #feefdd  #ebf9fa*/
-/* COLOR PALETA 1: #001c44 #0c5776 #2d99ae  #bcfefe #f8dad0 .. o mas clarito #fef8ec  */
+/* COLOR PALETA 1: #001c44 $oscuro #0c5776 #2d99ae  #bcfefe #f8dad0 .. o mas clarito #fef8ec  */
 /* COLOR PALETA 2: #005059 , #08808e, #7ac9d0, #c8e8ea, #fe9a84 */
 .texto {
-  color: #001c44;
+  color: #d76249;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -41,7 +222,7 @@
 
 .btnn {
   font-family: 'Poppins', sans-serif;
-  color: #001c44;
+  color: #d76249;
   text-decoration: none;
   width: 300px;
   height: 50px;
@@ -89,91 +270,6 @@
   background-color: #c8e8ea;
 }
 
-.nav {
-  padding: 10px;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.nav-link {
-  color: #001c44;
-}
-
-/* TRANSITION */
-.nav a {
-  -webkit-transition: font-size 5s;
-  transition: font-size 5s;
-}
-
-.nav a:hover {
-  background-color: #fe9a84;
-  color: #f8dad0;
-  border-radius: 5px;
-  /*TRANSITION*/
-  font-size: 20px;
-}
-
-.btn {
-  font-family: 'Poppins', sans-serif;
-  width: 400px;
-  height: 50px;
-  text-align: center;
-  margin: auto 15%;
-  padding: 10px;
-  background-color: #c8e8ea;
-  color: #005059;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.btn:hover {
-  background-color: #fe9a84;
-  color: #f8dad0;
-}
-
-/* aplicando BEM */
-.redes {
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
-  text-align: center;
-  margin: auto;
-  padding: 10px;
-}
-
-.redes__email {
-  width: 30px;
-  border-radius: 30px;
-}
-
-.redes__watsapp {
-  width: 30px;
-  border-radius: 30px;
-}
-
-.redes__facebook {
-  width: 30px;
-  border-radius: 30px;
-}
-
-.redes__instagram {
-  width: 30px;
-  border-radius: 30px;
-}
-
-.redes__linkedin {
-  width: 30px;
-  border-radius: 30px;
-}
-
 .color {
   color: #085163;
 }
@@ -192,73 +288,15 @@
   color: #fef8ec;
 }
 
-/* GRADIENT*/
-#grad {
-  background-image: -webkit-gradient(linear, left top, right top, from(white), to(#2d99ae));
-  background-image: linear-gradient(to right, white, #2d99ae);
-}
+/* GRADIENT
 
+#encabezado {
+    background-image: linear-gradient(to right, $amarillo, $naranja);
+}*/
 /* aplicando BEM*/
-.identidad__logo {
-  width: 40px;
-  top: 25px;
-  margin-left: 5px;
-  padding: 5px;
-  position: relative;
-}
-
-.identidad__nombre {
-  color: #001c44;
-  text-decoration: none;
-  font-family: 'Comic Neue', cursive;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 30px;
-  word-spacing: 1px;
-  letter-spacing: 1px;
-  line-height: 1.5;
-  text-align: justify;
-  padding: 5px;
-  position: absolute;
-  top: 10px;
-  margin-left: 50px;
-}
-
-.identidad__profesion {
-  color: #001c44;
-  text-decoration: none;
-  font-family: 'Poppins', sans-serif;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 16px;
-  word-spacing: 1px;
-  letter-spacing: 1px;
-  line-height: 1.5;
-  text-align: justify;
-  padding: 1px;
-  position: relative;
-  margin-left: 60px;
-}
-
-.identidad__matricula {
-  color: #001c44;
-  text-decoration: none;
-  font-family: 'Poppins', sans-serif;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 16px;
-  word-spacing: 1px;
-  letter-spacing: 1px;
-  line-height: 1.5;
-  text-align: justify;
-  padding: 1px;
-  position: relative;
-  margin-left: 60px;
-}
-
 /*
 h1 {
-    color: #001c44;
+    color: $oscuro;
     text-decoration: none;
     font-family: 'Comic Neue', cursive;
     font-style: italic;
@@ -275,7 +313,7 @@ h1 {
 }
 */
 h2 {
-  color: #001c44;
+  color: #d76249;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   font-style: italic;
@@ -291,7 +329,7 @@ h2 {
 
 /*
 h3 {
-    color: #001c44;
+    color: $oscuro;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-style: italic;
@@ -307,7 +345,7 @@ h3 {
 }
 */
 h4 {
-  color: #001c44;
+  color: #d76249;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -334,7 +372,7 @@ h4 {
 	left: 35%;}
 	 
 
-.a 	{color: #001c44;
+.a 	{color: $oscuro;
 	text-decoration: none;
 	font-family: 'Poppins', sans-serif;
 	font-style: normal;
@@ -357,7 +395,7 @@ a:hover {text-decoration-line: none;
 		}                
 		
 
-p 	{color: #001c44;
+p 	{color: $oscuro;
 	text-decoration: none;
 	font-family: 'Poppins', sans-serif;
 	font-style: normal;
@@ -374,7 +412,7 @@ p 	{color: #001c44;
 /*margin arriba/abajo y derecha/izquierda es margin: 10px auto; */
 /*para poner tamaño del border es border-width: 3px;*/
 /*
-ul li 	{color: #001c44;
+ul li 	{color: $oscuro;
 		font-family: 'Poppins', sans-serif;
 		font-size: 16px;
 		text-align: justify;
@@ -386,7 +424,7 @@ ul li 	{color: #001c44;
 		
 
 ul ul li {background-color: white;
-		color: #001c44;
+		color: $oscuro;
 		font-family: 'Poppins', sans-serif;
 		font-size: 16px;
 		text-align: justify;
@@ -482,7 +520,7 @@ ul li:hover ul {display: block;}
 
 /*justo para aplicar variable texto*/
 .contacto__formulario {
-  color: #001c44;
+  color: #d76249;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -496,24 +534,6 @@ ul li:hover ul {display: block;}
   text-align: justify;
 }
 
-/* agregando FLEXBOX en encabezado y pie de pagina*/
-header {
-  position: -webkit-sticky;
-  position: sticky;
-  width: 100%;
-}
-
-footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  background-color: #08808e;
-  width: 100%;
-  height: 20vh;
-}
-
 /*
 .botonTurno {
     width: 100%;
@@ -521,19 +541,6 @@ footer {
     flex-wrap: nowrap;
 }
 */
-.redes {
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  width: 100%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
 /*agregando FLEXBOX a la sección recetas.html*/
 /* aplicando BEM */
 .Recetas {
@@ -870,30 +877,81 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  a {
-    font-size: 15px;
-    word-spacing: 1px;
-    letter-spacing: 1px;
-    /*interlineado*/
-    line-height: 1.5;
-    text-align: center;
-    padding: 5px;
-  }
-  ul {
-    list-style: none;
-    font-size: 0;
-  }
-  ul li {
-    display: inline-block;
+  .btn {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
     position: relative;
-    left: 5px;
-  }
-  .botonTurno {
+    font-family: 'Poppins', sans-serif;
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    margin: auto 10%;
     padding: 5px;
+    background-color: #fefce6;
+    color: #b13a1f;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: solid 1px #f5d6c3;
   }
   .redes {
-    padding: 5px;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+    text-align: center;
+    margin: auto;
+    padding: 1px;
   }
+  .redes__email {
+    width: 30px;
+    border-radius: 30px;
+  }
+  .redes__watsapp {
+    width: 30px;
+    border-radius: 30px;
+  }
+  .redes__facebook {
+    width: 30px;
+    border-radius: 30px;
+  }
+  .redes__instagram {
+    width: 30px;
+    border-radius: 30px;
+  }
+  .redes__linkedin {
+    width: 30px;
+    border-radius: 30px;
+  }
+  /*
+
+    a {
+        font-size: 15px;
+        word-spacing: 1px;
+        letter-spacing: 1px;
+        
+        line-height: 1.5;
+        text-align: center;
+        padding: 5px;
+    }
+    ul {
+        list-style: none;
+        font-size: 0;
+    }
+    ul li {
+        display: inline-block;
+        position: relative;
+        left: 5px;
+    }
+    .botonTurno {
+        padding: 5px;
+    }
+    */
   /* adaptando el main: GRIDS a la sección index.html  con 5 columnas, con 6 filas y con 13 items*/
   .grid {
     display: -ms-grid;
@@ -1049,30 +1107,70 @@ footer {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  a {
-    font-size: 15px;
-    word-spacing: 1px;
-    letter-spacing: 1px;
-    /*interlineado*/
-    line-height: 1.5;
-    text-align: center;
-    padding: 5px;
-  }
-  ul {
-    list-style: none;
-    font-size: 0;
-  }
-  ul li {
-    display: inline-block;
+  .btn {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
     position: relative;
-    left: 5px;
-  }
-  .botonTurno {
+    font-family: 'Poppins', sans-serif;
+    width: 250px;
+    height: 40px;
+    text-align: center;
+    margin: auto 10%;
     padding: 5px;
+    background-color: #fefce6;
+    color: #b13a1f;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border: solid 1px #f5d6c3;
   }
-  .redes {
-    padding: 5px;
+  .redes__email {
+    width: 40px;
+    border-radius: 30px;
   }
+  .redes__watsapp {
+    width: 40px;
+    border-radius: 30px;
+  }
+  .redes__facebook {
+    width: 40px;
+    border-radius: 30px;
+  }
+  .redes__instagram {
+    width: 40px;
+    border-radius: 30px;
+  }
+  .redes__linkedin {
+    width: 40px;
+    border-radius: 30px;
+  }
+  /*
+
+    a {
+        font-size: 15px;
+        word-spacing: 1px;
+        letter-spacing: 1px;
+        
+        line-height: 1.5;
+        text-align: center;
+        padding: 5px;
+    }
+    ul {
+        list-style: none;
+        font-size: 0;
+    }
+    ul li {
+        display: inline-block;
+        position: relative;
+        left: 5px;
+    }
+    .botonTurno {
+        padding: 5px;
+    }
+    */
   /* adaptando el main: GRIDS a la sección index.html  con 5 columnas, con 6 filas y con 13 items*/
   .grid {
     display: -ms-grid;
