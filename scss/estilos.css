@@ -158,7 +158,7 @@ footer {
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  background-color: #d76249;
+  background-color: #fefce6;
   width: 100%;
   height: 20vh;
 }
@@ -185,7 +185,7 @@ footer {
 }
 
 .btn:hover {
-  background-color: #f8bb55;
+  background-color: #d76249;
   color: #fefce6;
   border-color: #fefce6;
 }
@@ -204,27 +204,27 @@ footer {
 }
 
 .redes__email {
-  width: 50px;
+  width: 40px;
   border-radius: 30px;
 }
 
 .redes__watsapp {
-  width: 50px;
+  width: 40px;
   border-radius: 30px;
 }
 
 .redes__facebook {
-  width: 50px;
+  width: 40px;
   border-radius: 30px;
 }
 
 .redes__instagram {
-  width: 50px;
+  width: 40px;
   border-radius: 30px;
 }
 
 .redes__linkedin {
-  width: 50px;
+  width: 40px;
   border-radius: 30px;
 }
 
