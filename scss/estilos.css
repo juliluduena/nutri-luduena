@@ -6,6 +6,36 @@
 }
 
 /*paleta colores*/
+/*estilos textos*/
+h2 {
+  color: #d76249;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 18px;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  text-align: justify;
+  padding: 5px;
+  margin: auto;
+}
+
+h4 {
+  color: #d76249;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  text-align: justify;
+  padding: 5px;
+}
+
 /*header*/
 header {
   background-color: #fefce6;
@@ -24,6 +54,21 @@ header {
   margin-left: 20px;
   padding: 1px;
   position: absolute;
+}
+
+.texto {
+  color: #d76249;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  text-align: justify;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  padding: 10px;
+  text-align: justify;
 }
 
 .identidad__nombre {
@@ -183,6 +228,19 @@ footer {
   border-radius: 30px;
 }
 
+/*main*/
+.medio {
+  background-color: #fae0c7;
+}
+
+/* formato con bootstrap */
+#carouselExampleDark {
+  width: 60%;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /* KUME font-family: 'Nothing You Could Do', cursive;
  LETRA TRABAJADA font-family: 'Comic Neue', cursive;
  LETRA TEXTO COMUN font-family: 'Poppins', sans-serif; */
@@ -192,84 +250,56 @@ footer {
 /*#f8dad0 #fae0c7 #feefdd  #ebf9fa*/
 /* COLOR PALETA 1: #001c44 $oscuro #0c5776 #2d99ae  #bcfefe #f8dad0 .. o mas clarito #fef8ec  */
 /* COLOR PALETA 2: #005059 , #08808e, #7ac9d0, #c8e8ea, #fe9a84 */
-.texto {
-  color: #d76249;
-  text-decoration: none;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  text-align: justify;
-  word-spacing: 1px;
-  letter-spacing: 1px;
-  line-height: 1.5;
-  padding: 10px;
-  text-align: justify;
-}
-
-/* FORMATO CON BOOTSTRAP */
-#carouselExampleDark {
-  width: 60%;
-  padding: 10px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
+/* formato con bootstrap */
+/*acordion
 .card-header {
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .btnn {
-  font-family: 'Poppins', sans-serif;
-  color: #d76249;
-  text-decoration: none;
-  width: 300px;
-  height: 50px;
-  text-align: justify;
-  margin: auto;
-  padding: 10px;
-  background-color: #c8e8ea;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  border: none;
-  border-radius: 5px;
+    font-family: 'Poppins', sans-serif;
+    color: $oscuro;
+    text-decoration: none;
+    width: 300px;
+    height: 50px;
+    text-align: justify;
+    margin: auto;
+    padding: 10px;
+    background-color: #c8e8ea;
+    align-content: center;
+    justify-content: center;
+    border: none;
+    border-radius: 5px;
 }
 
 .btnn:hover {
-  background-color: #fe9a84;
-  color: #f8dad0;
+    background-color: #fe9a84;
+    color: #f8dad0;
 }
 
 .card-body {
-  width: 90%;
-  font-family: 'Poppins', sans-serif;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 10px;
-  background-color: #c8e8ea;
+    width: 90%;
+    font-family: 'Poppins', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #c8e8ea;
 }
 
 .nutricion {
-  width: 90%;
-  font-family: 'Poppins', sans-serif;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  padding: 10px;
-  background-color: #c8e8ea;
+    width: 90%;
+    font-family: 'Poppins', sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: #c8e8ea;
 }
-
+*/
 .color {
   color: #085163;
 }
@@ -312,21 +342,6 @@ h1 {
     margin-left: 50px;
 }
 */
-h2 {
-  color: #d76249;
-  text-decoration: none;
-  font-family: 'Poppins', sans-serif;
-  font-style: italic;
-  font-weight: normal;
-  font-size: 18px;
-  word-spacing: 1px;
-  letter-spacing: 1px;
-  line-height: 1.5;
-  text-align: justify;
-  padding: 5px;
-  margin: auto;
-}
-
 /*
 h3 {
     color: $oscuro;
@@ -344,20 +359,6 @@ h3 {
     margin-left: 60px;
 }
 */
-h4 {
-  color: #d76249;
-  text-decoration: none;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 12px;
-  word-spacing: 1px;
-  letter-spacing: 1px;
-  line-height: 1.5;
-  text-align: justify;
-  padding: 5px;
-}
-
 .relevante {
   font-style: italic;
   font-weight: normal;
@@ -587,139 +588,10 @@ ul li:hover ul {display: block;}
   margin: 3px;
 }
 
-/* agregando FLEXBOX a la sección tips.html
-
-.mainTips{
-	display: flex;
-	margin: 5px;
-	justify-content: flex-start;
-	}
-
-.infotips {
-	width: 90%;
-	margin:15px;
-	background-color: #fef8ec;
-	flex: content;
-	padding: 10px;
-	}
-
-.tabla {background-color: #c8e8ea;
-		display: flex;
-		flex-direction: column;
-		margin: 5px;
-		justify-content: center;
-}
-
-.imagenFruta{
-	justify-content: space-around;
-	align-items: flex-start;
-	background-color: #9ad3ca;
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	}
-*/
-/* agregando GRIDS a la sección tips.html  con 2 columnas, con 5 filas y con 7 items*/
-/* aplicando BEM*/
-.Tips {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 49% 49%;
-      grid-template-columns: 49% 49%;
-  -ms-grid-rows: 1fr 1fr 1fr 1fr auto;
-      grid-template-rows: 1fr 1fr 1fr 1fr auto;
-  grid-gap: 10px;
-  background-color: #ebf9fa;
-      grid-template-areas: "titulo titulo" "subtitulo  item5" "item3 item5" "item4 item5" "tabla  foto";
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.Tips__item1 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  -ms-grid-column-span: 2;
-  grid-area: titulo;
-  border: solid 1px;
-  border-color: #7ac9d0;
-  text-align: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  background-color: #ebf9fa;
-  position: center;
-}
-
-.Tips__item2 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 1;
-  grid-area: subtitulo;
-  text-align: strech;
-  background-color: #c8e8ea;
-  border: solid 1px;
-  border-color: #7ac9d0;
-  position: center;
-}
-
-.Tips__item3 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 1;
-  grid-area: item3;
-  text-align: justify;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  background-color: #c8e8ea;
-  border: solid 1px;
-  border-color: #7ac9d0;
-  position: center;
-}
-
-.Tips__item4 {
-  -ms-grid-row: 4;
-  -ms-grid-column: 1;
-  grid-area: item4;
-  text-align: justify;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  background-color: #c8e8ea;
-  border: solid 1px;
-  border-color: #7ac9d0;
-  position: center;
-}
-
-.Tips__item5 {
-  -ms-grid-row: 2;
-  -ms-grid-row-span: 3;
-  -ms-grid-column: 2;
-  grid-area: item5;
-  font-style: italic;
-  text-align: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  border: solid 1px;
-  border-color: #7ac9d0;
-  position: center;
-}
-
-.Tips__tabla {
-  -ms-grid-row: 5;
-  -ms-grid-column: 1;
-  grid-area: tabla;
-  background-color: #c8e8ea;
-  position: center;
-}
-
-.Tips__imagenFruta {
-  -ms-grid-row: 5;
-  -ms-grid-column: 2;
-  grid-area: foto;
-  width: 98%;
-  position: center;
-  background-image: #9ad3ca;
-}
-
-/* agregando GRIDS a la sección index.html  con 5 columnas, con 3 filas y con 13 items*/
+/* agregando GRIDS a la sección tips.html  con 5 columnas, con 3 filas y con 13 items*/
 .grid {
+  width: 100%;
+  height: 1000px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 19.9% 19.9% 19.9% 19.9% 19.9%;
@@ -727,7 +599,7 @@ ul li:hover ul {display: block;}
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
   grid-gap: 1px;
-  background-color: #ebf9fa;
+  background-color: #fae0c7;
       grid-template-areas: "cuadro1 cuadro2 cuadro3 cuadro4 cuadro5" "cuadro6 nutri nutri nutri cuadro7" "cuadro8 cuadro9 cuadro10 cuadro11 cuadro12";
   justify-items: center;
   -webkit-box-align: center;

@@ -50,95 +50,92 @@
 
     </header>
 
-    <main class="Tips">
+    <main class="grid">
 
-        <!-- ESTO LO CAMBIE DE FLEXBOX A GRID-->
-        <!--para flexbox es div class="infotips"-->
-        <h2 class="Tips__item1">Tips del día</h2>
+        <!--GRID -->
+
+			<div>
+			<img class="img1" src="imagenes/img1.jpg" alt="foto" width="100%">
+			</div>
+			<div>
+			<img class="img2" src="imagenes/img3.jpg" alt="foto" width="100%">
+			</div>
+			<div>
+			<img class="img3" src="imagenes/img10.jpg" alt="foto" width="100%">
+			</div>
+			<div>
+			<img class="img4" src="imagenes/img6.jpg" alt="foto" width="100%">
+			</div>
+			<div>
+			<img class="img5" src="imagenes/img4.jpg" alt="foto" width="100%">
+			</div>
+			<div>
+			<img class="img6" src="imagenes/img8.jpg" alt="foto" width="100%">
+			</div>
+
+			<p class="nutri">
+				La nutrición es la ingesta de alimentos en relación con las necesidades dietéticas del organismo. Una buena nutrición (una dieta suficiente y equilibrada combinada con el ejercicio físico regular) es un elemento fundamental de la buena salud. Una mala nutrición puede reducir la inmunidad, aumentar la vulnerabilidad a las enfermedades, alterar el desarrollo físico y mental, y reducir la productividad.  (Fuente: OMS)
+			</p>
+
+			<div>
+			<img class="img7" src="imagenes/img27.jpg" alt="foto" width="100%">
+			</div>
+			<div>
+			<img class="img8" src="imagenes/img13.jpg" alt="foto" width="100%">
+			</div>
+			<div>
+			<img class="img9" src="imagenes/img21.jpg" alt="foto" width="100%">
+			</div>
+			<div>
+			<img class="img10" src="imagenes/img16.jpg" alt="foto" width="100%">
+			</div>
+			<div>
+			<img class="img11" src="imagenes/img20.jpg" alt="foto" width="100%">
+			</div>
+			<div>
+			<img class="img12" src="imagenes/img11.jpg" alt="foto" width="100%">
+			</div>
 
 
-        <!--para flexbox es div class="infotips"-->
-        <p class="Tips__item2">Al momento de leer el rótulo de un alimento, no olvidar tener en cuenta las siguientes recomendaciones nutricionales:</p>
+        
+        <!--
+        <div id="accordion">
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btnn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+	          NUTRICION (Fuente: OMS)
+	        </button>
+                    </h5>
+                </div>
 
-
-        <!--para flexbox es div class="infotips"-->
-        <p class="Tips__item3">Aumentar ingestas de proteínas, hidratos de carbono (que no sean azúcares), grasas mono y poliinsaturadas, fibra alimentaria, vitaminas y minerales.</p>
-        <p class="item4">Y disminuir ingestas de grasas saturadas, trans, colesterol, sodio y azúcar.</p>
-
-
-        <!--para flexbox es div class="infotips"-->
-        <p class="Tips__item5"><strong>Una vez que podemos comprender cómo leer la información nutricional de un producto alimentario, podemos seleccionar y controlar lo que ingerimos de un modo integral y consciente, cuidando nuestra nutrición y salud.</strong></p>
-
-        <section class="Tips__tabla">
-            <h3>Información Nutricional</h3>
-            <p>Estará expresada por PORCIÓN, indicando su cantidad en gramos o ml. y su equivalencia en unidades o una medida casera.
-                <p>
-                    <p>Ejemplo: Porción 30 g - 6 GALLETITAS </p>
-
-                    <table border="3" cellpadding="4" cellspacing="2" class="texto">
-
-                        <colgroup>
-                            <col style="background-color: #7ac9d0">
-                        </colgroup>
-
-                        <tr>
-                            <th>Información Nutricional</th>
-                            <th>Cantidad por porción</th>
-                            <th>% VD *</th>
-                        </tr>
-
-                        <tr>
-                            <td>Valor Energético **</td>
-                            <td> 121 kcal = 508 kJ </td>
-                            <td> 6 </td>
-                        </tr>
-                        <tr>
-                            <td>Carbohidratos</td>
-                            <td> 19 g </td>
-                            <td> 6 </td>
-                        </tr>
-                        <tr>
-                            <td>Proteínas</td>
-                            <td> 3.2 g </td>
-                            <td> 4 </td>
-                        </tr>
-                        <tr>
-                            <td>Grasas Totales</td>
-                            <td> 3.8 g </td>
-                            <td> 7 </td>
-                        </tr>
-                        <tr>
-                            <td>Grasas Saturadas</td>
-                            <td> 0.3 g </td>
-                            <td> 1 </td>
-                        </tr>
-                        <tr>
-                            <td>Grasas Trans</td>
-                            <td> 0.4 g </td>
-                            <td> --- </td>
-                        </tr>
-                        <tr>
-                            <td>Fibra Alimentaria</td>
-                            <td> 1.6 g </td>
-                            <td> 6 </td>
-                        </tr>
-                        <tr>
-                            <td>Sodio</td>
-                            <td> 228 mg </td>
-                            <td> 10 </td>
-                        </tr>
-                    </table>
-                    <h4>
-                        * VD: El Valor Diario es la ingesta diaria recomendada de un nutriente para mantener una alimentación saludable. % VD: El % de valor diario es el porcentaje de la ingesta diaria recomendada de un nutriente que se cubre con una porción del alimento. **
-                        Valor Energético: Es la energía que aporta el alimento por porción.
-                    </h4>
-        </section>
-
-        <!--para flexbox es class="Tips__imagenFruta"-->
-        <img class="Tips__imagenFruta" src="multimedia/frutas18.jpg" alt="Imagen alimentos">
-        <!--<img src="multimedia/frutas18.jpg" alt="Imagen alimentos">
-		<img src="multimedia/frutas18.jpg" alt="Imagen alimentos"> -->
-
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        La nutrición es la ingesta de alimentos en relación con las necesidades dietéticas del organismo. Una buena nutrición (una dieta suficiente y equilibrada combinada con el ejercicio físico regular) es un elemento fundamental de la buena salud. Una mala
+                        nutrición puede reducir la inmunidad, aumentar la vulnerabilidad a las enfermedades, alterar el desarrollo físico y mental, y reducir la productividad. (Fuente: OMS)
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btnn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+	          NUTRICION (Fuente: FAO)
+	        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        No importa cómo la definamos, la nutrición comienza con lo que comemos: los productos del sector alimentario y agrícola. Trabajando sobre nuestros sistemas alimentarios, sobre la forma en la que producimos, recolectamos, almacenamos, transportamos, transformamos
+                        y distribuimos alimentos, podemos mejorar nuestra dieta, nuestra salud y nuestro impacto sobre los recursos naturales. Por defecto o por exceso, los problemas de nutrición incluyen siempre decisiones y prácticas inadecuadas. La
+                        educación nutricional es un paso importante para enseñar a los consumidores a elegir alimentos saludables. (Fuente: FAO)
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+    -->
+        
     </main>
 
     <footer>
