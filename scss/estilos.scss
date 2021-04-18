@@ -166,7 +166,7 @@ footer {display: flex; /*flexbox*/
         height: 20vh;
 }
 
-.btn {width: 30%;
+.btn {width: 300px;
     height: 40px;
     font-size: 16px;
     font-family: 'Poppins', sans-serif;
@@ -198,7 +198,7 @@ footer {display: flex; /*flexbox*/
     /* aplicando BEM */
 
 .redes {width: 100%;
-    justify-content: space-between;
+    justify-content: space-around;;
     text-decoration-line: none;
     text-align: center;
     margin: auto;
@@ -868,32 +868,35 @@ ul li:hover ul {display: block;}
 }
 
 
-/* aplicando media queries para caelular*/
+/* aplicando media queries para celular*/
 
 @media screen and (max-width: 481px) {
 
     /*adaptando el header*/
 
     .identidad__logo {
-        top: 8px;
+        top: 10px;
         width: 50px;
         margin-left: 20px;
     }
     
     .identidad__nombre {
-        padding-top: 10px;
+        text-align: start;
+        padding-top: 15px;
         font-size: 18px;
         margin-left: 100px;
         
     }
     
     .identidad__profesion {
+        text-align: start;
         font-size: 12px;
         margin-left: 100px;
        
     }
     
     .identidad__matricula {
+        text-align: start;
         font-size: 12px;
         margin-left: 100px;
     }
@@ -921,25 +924,33 @@ ul li:hover ul {display: block;}
 
     /*adaptando el footer*/
 
-    .btn {font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        position: relative;
-        font-family: 'Poppins', sans-serif;
-        width: 250px;
+    
+    .btn {font-size: 12px;
+        width: 100px;
         height: 40px;
-        text-align: center;
-        margin: auto 10%;
+        margin-left: 8%;
+        margin-right: 0%;
+        margin-top: auto;
+        margin-bottom: auto;
         padding: 5px;
-        background-color: $amarillo;
-        color: $terracota;
-        align-content: center;
-        justify-content: center;
-        border: solid 1px $rosa;
+    }
+
+    .redes {
+        margin-right: 3%;
+        padding: 3px;
     }
     
+    /*
+    .btn {font-size: 14px;
+        width: 200px;
+        height: 40px;
+        margin: auto 3%;
+        padding: 5px;
+    }
+    */
+    
     .redes {width: 100%;
-        justify-content: space-between;
+        justify-content: space-around;
         text-decoration-line: none;
         text-align: center;
         margin: auto;
@@ -975,7 +986,7 @@ ul li:hover ul {display: block;}
     
     .kumetext {width: 100%;
         height: 100%;
-        padding: 2%;
+        
         margin-top: 5px;
         p {
             font-size: 10px;
@@ -1212,8 +1223,59 @@ ul li:hover ul {display: block;}
         margin-left: 100px;
     }
     
+    /*adaptando el footer*/
 
+    /*    
+    .btn {width: 30%;
+        height: 40px;
+        font-size: 14px;
+        margin: auto 5%;
+        padding: 5px;
+    }
+    */
     
+    .btn {font-size: 14px;
+        width: 200px;
+        height: 30px;
+        margin: auto 10%;
+        padding: 5px;
+    }
+    
+
+    .redes {width: 100%;
+        justify-content: space-around;
+        text-decoration-line: none;
+        text-align: center;
+        margin: auto;
+        padding: 1px;
+    }
+
+    .redes__email {
+        width: 30px;
+        border-radius: 30px;
+    }
+
+    .redes__watsapp {
+        width: 30px;
+        border-radius: 30px;
+    }
+
+    .redes__facebook {
+        width: 30px;
+        border-radius: 30px;
+    }
+
+    .redes__instagram {
+        width: 30px;
+        border-radius: 30px;
+    }
+
+    .redes__linkedin {
+        width: 30px;
+        border-radius: 30px;
+    }
+
+    /*
     .btn {font-style: normal;
         font-weight: normal;
         font-size: 16px;
@@ -1256,7 +1318,7 @@ ul li:hover ul {display: block;}
         border-radius: 30px;
     }
 
-
+    */
 
 
 
