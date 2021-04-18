@@ -241,13 +241,13 @@ footer {display: flex; /*flexbox*/
     margin-right: 1%;
 }
 
-/*main*/
+/*main index*/
 
 .medio {background-color: $rosa-claro;
 }
 
 
-    /* formato con bootstrap */
+    /* bootstrap */
 
 #carouselExampleDark {
     width: 60%;
@@ -269,7 +269,7 @@ footer {display: flex; /*flexbox*/
     }
 }
     
-    /* aplicando bem y flexbox*/
+/* main sobre-mi: aplicando bem y flexbox*/
 
 .presentacion {
     display: flex;
@@ -296,12 +296,15 @@ footer {display: flex; /*flexbox*/
     justify-self: center;
     align-content: center;
 }
+
 .presentacion__audio {
     width: 100%;
     height: 40px;
     padding: 5px;
     margin: 1%;   
+    background-color:rgba(254,252,230,0.9);
 }
+
 .presentacion__texto {
     flex-direction: column;
     flex-wrap: nowrap;

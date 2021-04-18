@@ -253,12 +253,12 @@ footer {
   margin-right: 1%;
 }
 
-/*main*/
+/*main index*/
 .medio {
   background-color: #fae0c7;
 }
 
-/* formato con bootstrap */
+/* bootstrap */
 #carouselExampleDark {
   width: 60%;
   padding: 10px;
@@ -282,7 +282,7 @@ footer {
       justify-content: space-around;
 }
 
-/* aplicando bem y flexbox*/
+/* main sobre-mi: aplicando bem y flexbox*/
 .presentacion {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -323,6 +323,7 @@ footer {
   height: 40px;
   padding: 5px;
   margin: 1%;
+  background-color: rgba(254, 252, 230, 0.9);
 }
 
 .presentacion__texto {
