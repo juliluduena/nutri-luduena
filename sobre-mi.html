@@ -17,10 +17,10 @@
 </head>
 
 <body>
-    <header id="grad">
+    <header id="encabezado">
         <div class="identidad">
-            <!--Aca va la imagen del logo (tengo que cambiarla, esta es provisoria)-->
-            <img src="multimedia/LogoRomi.png" alt="Logo" style="border-radius: 100%" class="identidad__logo">
+            <!--logo centro de nutrición Küme-->
+            <img src="multimedia/logo.png" alt="Logo" class="identidad__logo">
 
             <div>
                 <h1 class="identidad__nombre">Romina Ludueña</h1>
@@ -30,7 +30,7 @@
         </div>
 
         <nav class="nav">
-            <ul class="nav justify-content-end">
+            <ul class="nav justify-content-center">
                 <li class="nav-item">
                     <a class="nav-link" href="index.html">Inicio</a>
                 </li>
@@ -55,8 +55,13 @@
         <section class="contenedor">
             <!--Aca va una foto personal-->
             <div class="presentacion">
-                <img class="presentacion__img" src="multimedia/FotoRomi.jpg" alt="Foto" width="200px">
+                <div class="presentacion__multimedia">
+                    <img class="presentacion__img" src="multimedia/FotoRomi.jpg" alt="Foto Romina">
 
+                    <audio class="presentacion__audio" controls>
+                        <source src="multimedia/audio-romi.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
                 <div class="presentacion__texto">
                     <h2 class="presentacion__titulo">Acerca de mi...</h2>
                     <!-- Aca va a estar el texto que habla de distintos aspectos: personal, laboral, experiencia, historia, actualidad-->
@@ -70,42 +75,28 @@
                         <em>
                             Recibirás un apoyo constante, para lograr un cambio que puedas mantener en el tiempo, mejorando tu salud y calidad de vida.                        
                         </em>
-                    </p>
+                    </p>                        
                 </div>
             </div>
         </section>
 
-        <section class="contenedor">
-            <div class="video">
-                <video class="video__mp4" src="multimedia/VideoRomi.mp4" controls width="200px"></video>
-                <div class="video__texto">
-                    <h2 class="video__titulo">Diabetes...</h2>
-                    <!-- Aca va a estar el texto que profundiza el tema expuesto en el video-->
-                    <p class="video__parrafo">
-                        La diabetes tipo 2, que es la más frecuente, se puede prevenir. Puesto que la causa más importante es la obesidad, todas las acciones que tengan que ver con la prevención de la obesidad como evitar el sedentarismo, la comida “basura”, las bebidas azucaradas, van a tener un resultado positivo.
-                        Un estilo de vida saludable reduce en un 80 por ciento las posibilidades de tener diabetes tipo 2.
-                    </p>
-                    <p class="video__parrafo">
-                        Una vez que se ha diagnosticado la enfermedad, hay que prevenir la aparición de complicaciones micro y macrovasculares. El seguimiento del tratamiento prescrito, así como de las recomendaciones nutricionales y de actividad física es fundamental para evitar complicaciones como las cardiovasculares, las renales, la retinopatía diabética o el pie diabético.
-                    </p>
-                </div>
-            </div>
-        </section>
     </main>
 
     <footer>
 
         <!-- Boton que redirecciona a Contacto-->
-
+        
         <a class="btn btn-primary" href="contacto.html" role="button">Solicitar turno</a>
 
         <!-- Aca al final van los links de contacto y redes-->
+
+        <!-- que tengo que poner en el href del email y del whatsapp??-->
         <nav class="redes">
-            <a href=""><img src="multimedia/correo.png" alt="email" class="redes__email"></a>
-            <a href=""><img src="multimedia/watsapp.png" alt="WA" class="redes__watsapp"></a>
-            <a href="https://www.facebook.com/romina.luduena.50"><img src="multimedia/facebook.png" alt="FB" class="redes__facebook"></a>
-            <a href="https://www.instagram.com/romina.luduena.50/?hl=es"><img src="multimedia/instagram.png" alt="IG" class="redes__instagram"></a>
-            <a href="https://www.linkedin.com/"><img src="multimedia/linkedin.png" alt="LI" class="redes__linkedin"></a>
+            <a href=""><img src="multimedia/5.png" alt="email" class="redes__email"></a>
+            <a href=""><img src="multimedia/1.png" alt="whatsapp" class="redes__watsapp"></a>
+            <a href="https://www.facebook.com/romina.luduena.50"><img src="multimedia/2.png" alt="facebook" class="redes__facebook"></a>
+            <a href="https://www.instagram.com/romina.luduena.50/?hl=es"><img src="multimedia/4.png" alt="instagram" class="redes__instagram"></a>
+            <a href="https://www.linkedin.com/in/romina-luduena/"><img src="multimedia/3.png" alt="linkedin" class="redes__linkedin"></a>
         </nav>
     </footer>
 

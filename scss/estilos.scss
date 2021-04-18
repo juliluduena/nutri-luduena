@@ -44,6 +44,19 @@ h4 {
     padding: 5px;
 }
 
+/*utilizacion de extend: cada vez que lo use, agregar font-size, text-align y padding por separado*/
+%texto {
+    color: $oscuro;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+}
+
+
 
 /*header*/
 
@@ -55,53 +68,40 @@ header {background-color: $amarillo;
 #encabezado { background-color: $amarillo;
 }
 
+    /* aplicando BEM */
 .identidad__logo {
     width: 90px;
-    top: 20px;
+    top: 10px;
     margin-left: 20px;
     padding: 1px;
     position: absolute;
 }
 
-
-.texto {
+.identidad__nombre {
+    width: 60%;
     color: $oscuro;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    text-align: justify;
-    word-spacing: 1px;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    padding: 10px;
-    text-align: justify;
-}
-
-.identidad__nombre {
-    color: $oscuro;
-    text-decoration: none;
-    font-family: 'Comic Neue', cursive;
     font-style: italic;
     font-weight: normal;
-    font-size: 30px;
+    font-size: 22px;
     word-spacing: 1px;
     letter-spacing: 1px;
     line-height: 1;
     text-align: justify;
-    padding-top: 26px;
+    padding-top: 20px;
     margin-left: 125px;
     
 }
 
 .identidad__profesion {
+    width: 60%;
     color: $oscuro;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-style: italic;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 14px;
     word-spacing: 1px;
     letter-spacing: 1px;
     line-height: 1;
@@ -112,12 +112,13 @@ header {background-color: $amarillo;
 }
 
 .identidad__matricula {
+    width: 60%;
     color: $oscuro;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-style: italic;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 14px;
     word-spacing: 1px;
     letter-spacing: 1px;
     line-height: 1;
@@ -126,26 +127,35 @@ header {background-color: $amarillo;
     margin-left: 125px;
 }
 
-.nav {
-    padding: 10px;
+nav .nav {width: 500px;
+    height: 60px;
     position: relative;
     margin-left: auto;
     margin-right: auto;
+    margin-top: 1px;
+    margin-bottom: 1px;
     align-content: center;
     justify-content: center;
+    .nav-link {font-size: 16px;
+        font-family: 'Poppins', sans-serif;
+        font-weight: normal;
+        word-spacing: 1px;
+        letter-spacing: 0.5px;
+        line-height: 1;
+        text-align: center;
+        color: $oscuro;
+    }
     a {transition: font-size 5s; /*transition*/
     }
     a:hover {
         background-color: $oscuro;
         color: $amarillo;
         border-radius: 3px;
-        font-size: 20px;  /*transition*/
+        font-size: 18px;  /*transition*/
     }
 }
 
-.nav-link {
-    color: $oscuro;
-}
+
 
 /*footer*/
 
@@ -157,15 +167,18 @@ footer {display: flex; /*flexbox*/
         height: 20vh;
 }
 
-
-
-.btn {font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-    position: relative;
+.btn {width: 30%;
+    height: 40px;
+    font-size: 16px;
     font-family: 'Poppins', sans-serif;
-    width: 500px;
-    height: 50px;
+    font-weight: normal;
+    word-spacing: 1px;
+    letter-spacing: 0.5px;
+    line-height: 1;
+    text-align: center;
+    color: $oscuro;
+    font-style: normal;
+	position: relative;
     text-align: center;
     margin: auto 15%;
     padding: 10px;
@@ -183,39 +196,50 @@ footer {display: flex; /*flexbox*/
 }
 
 
-/* aplicando BEM */
+    /* aplicando BEM */
 
 .redes {width: 100%;
     justify-content: space-between;
     text-decoration-line: none;
     text-align: center;
     margin: auto;
+    margin-right: 5%;
     padding: 5px;
 }
 
 .redes__email {
     width: 40px;
     border-radius: 30px;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 .redes__watsapp {
     width: 40px;
     border-radius: 30px;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 .redes__facebook {
     width: 40px;
     border-radius: 30px;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 .redes__instagram {
     width: 40px;
     border-radius: 30px;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 .redes__linkedin {
     width: 40px;
     border-radius: 30px;
+    margin-left: 1%;
+    margin-right: 1%;
 }
 
 /*main*/
@@ -233,7 +257,122 @@ footer {display: flex; /*flexbox*/
     margin-right: auto;
 }
 
+.kumetext {width: 80%;
+    height: 100%;
+    color: $terracota;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-height: 1;
+    margin-bottom: 65px;
+}
 
+/* aplicando bem y flexbox*/
+
+.presentacion {
+    display: flex;
+    background-color: $rosa-claro;
+    width: 100%;
+    height: 100%;
+}
+.presentacion__multimedia {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 25%;
+    height: 80%;
+    margin: auto;
+}
+
+.presentacion__img {
+    width: 80%;
+    height: 160%;
+    padding: 5px;
+    margin-left:10%;
+    margin-right:10%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    justify-self: center;
+    align-content: center;
+}
+.presentacion__audio {
+    width: 100%;
+    height: 40px;
+    padding: 5px;
+    margin: 1%;   
+}
+.presentacion__texto {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 75%; 
+    height: 100%;  
+    justify-content: space-around;    
+}
+
+.presentacion__titulo {
+    width: 180px;
+    padding: 10px;
+    margin-left: 5%;
+    margin-top: 5%;
+    background-color: #ebf9fa;
+    text-align: justify;
+    justify-content: space-around;  
+    @extend %texto;
+    font-size: 16px;
+}
+
+.presentacion__parrafo {
+    width: 90%;
+    padding: 10px;
+    margin: 3% 5%;
+    background-color: #ebf9fa;
+    text-align: justify;
+    justify-content: space-around;    
+    @extend %texto;
+    font-size: 16px;
+}
+
+
+
+/*video ponerlo en tips*/
+.video {
+    background-color: #bcfefe;
+}
+
+.video__mp4 {
+    width: 10%;
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-bottom: auto;
+    justify-content: center;
+}
+
+.video__titulo {
+    width: 18%;
+    margin-left: 30%;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
+}
+
+.video__parrafo {
+    width: 60%;
+    padding: 10px;
+    background-color: #ebf9fa;
+    position: relative;
+    margin-left: 30%;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    text-align: justify;
+    justify-content: center;
+}
 /* KUME font-family: 'Nothing You Could Do', cursive;
  LETRA TRABAJADA font-family: 'Comic Neue', cursive;
  LETRA TEXTO COMUN font-family: 'Poppins', sans-serif; */
@@ -732,20 +871,59 @@ ul li:hover ul {display: block;}
 }
 
 
-/* aplicando  DISEÑO RESPONSIVE = Media Queries PARA CELULAR*/
+/* aplicando media queries para caelular*/
 
-@media screen and (max-width: 480px) {
-    /*adaptando el navegador*/
-    .nav {
-        top: 10px;
-        position: relative;
-        margin: auto;
-        left: 0px;
-        align-content: center;
-        justify-content: center;
+@media screen and (max-width: 481px) {
+
+    /*adaptando el header*/
+
+    .identidad__logo {
+        top: 8px;
+        width: 50px;
+        margin-left: 20px;
     }
     
+    .identidad__nombre {
+        padding-top: 10px;
+        font-size: 18px;
+        margin-left: 100px;
+        
+    }
     
+    .identidad__profesion {
+        font-size: 12px;
+        margin-left: 100px;
+       
+    }
+    
+    .identidad__matricula {
+        font-size: 12px;
+        margin-left: 100px;
+    }
+      
+    nav.nav {top: 1px;
+        bottom: 1px;
+        position: relative;
+        margin: auto;
+        left: 0px; 
+        .nav-item {align-items: center;
+            justify-items: center;
+            margin-left: 3px;
+            margin-right: 3px;
+        }
+        .nav-link {font-size: 12px;
+            padding: 3px;
+            letter-spacing: 0.3px;
+            word-spacing: 0.2px;
+        }
+        a {transition: font-size 5s; /*transition*/
+        }
+        a:hover {font-size: 14px;  /*transition*/
+        }
+    }
+
+    
+
     .btn {font-style: normal;
         font-weight: normal;
         font-size: 16px;
@@ -770,7 +948,7 @@ ul li:hover ul {display: block;}
         text-align: center;
         margin: auto;
         padding: 1px;
-}
+    }
 
     .redes__email {
         width: 30px;
@@ -797,8 +975,79 @@ ul li:hover ul {display: block;}
         border-radius: 30px;
     }
 
+    /* aplicando bem y flexbox*/
 
-/*
+    .contenedor {
+        display: flex;
+    }
+        
+    .presentacion {
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: $rosa-claro;
+        width: 100%;
+        height: 100%;
+    }
+    .presentacion__multimedia {
+        flex-direction: none;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+
+    .presentacion__img {
+        width: 60%;
+        height: 120%;
+        padding: 5px;
+        margin-left:20%;
+        margin-right:20%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        justify-self: center;
+        align-content: center;
+    }
+    .presentacion__audio {
+        width: 80%;
+        height: 40px;
+        padding: 5px;
+        margin-left:10%;
+        margin-right:10%;
+        margin-top: 1%;
+        margin-bottom: 1%;   
+    }
+    .presentacion__texto {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%; 
+        height: 100%;  
+        justify-content: center; 
+        font-size: 14px;   
+    }
+
+    .presentacion__titulo {
+        width: 50%;
+        padding: 10px;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 1%;
+        text-align: center;
+        justify-content: center; 
+        font-size: 14px;          
+    }
+
+    .presentacion__parrafo {
+        width: 90%;
+        padding: 10px;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: justify;
+        justify-content: center;    
+    }
+
+    /*
 
     a {
         font-size: 15px;
@@ -927,20 +1176,31 @@ ul li:hover ul {display: block;}
     }
 }
 
+/* aplicando  media queries para tablets */
 
-/* aplicando  DISEÑO RESPONSIVE = Media Queries PARA TABLET*/
-
-@media screen and (min-width: 481px) and (max-width: 1023px) {
-    /*adaptando el navegador*/
+@media screen and (min-width: 481px) and (max-width: 786px) {
     
-    .nav {
-        top: 10px;
-        position: relative;
-        margin: auto;
-        left: 0px;
-        align-content: center;
-        justify-content: center;
+    /*adaptando el header*/
+
+    .identidad__logo {
+        top: 15px;
+        width: 50px;
+        margin-left: 25px;
     }
+
+    .identidad__nombre {
+        margin-left: 100px;    
+    }
+
+    .identidad__profesion {
+        margin-left: 100px;
+    }
+
+    .identidad__matricula {
+        margin-left: 100px;
+    }
+    
+
     
     .btn {font-style: normal;
         font-weight: normal;
@@ -1116,76 +1376,4 @@ ul li:hover ul {display: block;}
         margin-left: auto;
         margin-right: auto;
     }
-}
-
-
-/* aplicando BEM */
-
-.presentacion {
-    background-color: #fae0c7;
-    width: 100%;
-    height: 100%;
-}
-
-.presentacion__img {
-    width: 10%;
-    position: absolute;
-    margin-left: 5%;
-    margin-top: 1%;
-    margin-bottom: auto;
-    justify-content: center;
-}
-
-.presentacion__titulo {
-    width: 18%;
-    margin-left: 30%;
-    margin-top: auto;
-    margin-bottom: auto;
-    justify-content: center;
-}
-
-.presentacion__parrafo {
-    width: 60%;
-    height: 80%;
-    padding: 10px;
-    background-color: #ebf9fa;
-    position: relative;
-    margin-left: 30%;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    text-align: justify;
-    justify-content: center;
-}
-
-.video {
-    background-color: #bcfefe;
-}
-
-.video__mp4 {
-    width: 10%;
-    position: absolute;
-    margin-left: 5%;
-    margin-top: 1%;
-    margin-bottom: auto;
-    justify-content: center;
-}
-
-.video__titulo {
-    width: 18%;
-    margin-left: 30%;
-    margin-top: auto;
-    margin-bottom: auto;
-    justify-content: center;
-}
-
-.video__parrafo {
-    width: 60%;
-    padding: 10px;
-    background-color: #ebf9fa;
-    position: relative;
-    margin-left: 30%;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    text-align: justify;
-    justify-content: center;
 }
