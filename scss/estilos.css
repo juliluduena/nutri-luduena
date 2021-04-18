@@ -36,8 +36,8 @@ h4 {
   padding: 5px;
 }
 
-/*utilizacion de extend: cada vez que lo use, agregar font-size, text-align y padding por separado*/
-.presentacion__titulo, .presentacion__parrafo {
+/*utilizacion de extend: cada vez que lo use, agregar font-size, line-height, text-align y padding por separado*/
+.kumetext p, .presentacion__titulo, .presentacion__parrafo {
   color: #d76249;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
@@ -45,7 +45,6 @@ h4 {
   font-weight: normal;
   word-spacing: 1px;
   letter-spacing: 1px;
-  line-height: 1.5;
 }
 
 /*header*/
@@ -269,24 +268,19 @@ footer {
 }
 
 .kumetext {
-  width: 80%;
+  width: 100%;
   height: 100%;
-  color: #b13a1f;
-  text-decoration: none;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 18px;
+  padding: 5%;
+  margin-top: 5px;
+}
+
+.kumetext p {
+  font-size: 14px;
+  line-height: 1.5;
+  padding: 2px;
   text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  word-spacing: 1px;
-  letter-spacing: 1px;
-  line-height: 1;
-  margin-bottom: 65px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 /* aplicando bem y flexbox*/
@@ -355,6 +349,7 @@ footer {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   font-size: 16px;
+  line-height: 1.5;
 }
 
 .presentacion__parrafo {
@@ -366,6 +361,7 @@ footer {
   -ms-flex-pack: distribute;
       justify-content: space-around;
   font-size: 16px;
+  line-height: 1.5;
 }
 
 /*video ponerlo en tips*/
@@ -953,6 +949,7 @@ ul li:hover ul {display: block;}
     font-size: 14px;
     /*transition*/
   }
+  /*adaptando el footer*/
   .btn {
     font-style: normal;
     font-weight: normal;
@@ -1004,7 +1001,22 @@ ul li:hover ul {display: block;}
     width: 30px;
     border-radius: 30px;
   }
-  /* aplicando bem y flexbox*/
+  /* adaptando main de index*/
+  .kumetext {
+    width: 100%;
+    height: 100%;
+    padding: 2%;
+    margin-top: 5px;
+  }
+  .kumetext p {
+    font-size: 10px;
+    line-height: 0.5;
+    padding: 1px;
+    text-align: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  /* adaptando main de sobre-mi y aplicando bem y flexbox*/
   .contenedor {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1091,6 +1103,7 @@ ul li:hover ul {display: block;}
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    font-size: 14px;
   }
   /*
 

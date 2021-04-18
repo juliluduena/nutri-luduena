@@ -44,7 +44,7 @@ h4 {
     padding: 5px;
 }
 
-/*utilizacion de extend: cada vez que lo use, agregar font-size, text-align y padding por separado*/
+/*utilizacion de extend: cada vez que lo use, agregar font-size, line-height, text-align y padding por separado*/
 %texto {
     color: $oscuro;
     text-decoration: none;
@@ -53,7 +53,6 @@ h4 {
     font-weight: normal;
     word-spacing: 1px;
     letter-spacing: 1px;
-    line-height: 1.5;
 }
 
 
@@ -257,21 +256,17 @@ footer {display: flex; /*flexbox*/
     margin-right: auto;
 }
 
-.kumetext {width: 80%;
+.kumetext {width: 100%;
     height: 100%;
-    color: $terracota;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 18px;
-    text-align: center;
-    justify-content: center;
-    align-content: center;
-    word-spacing: 1px;
-    letter-spacing: 1px;
-    line-height: 1;
-    margin-bottom: 65px;
+    padding: 5%;
+    margin-top: 5px;
+    p {@extend %texto;
+        font-size: 14px;
+        line-height: 1.5;
+        padding: 2px;
+        text-align: center;
+        justify-content: space-around;
+    }
 }
 
 /* aplicando bem y flexbox*/
@@ -325,6 +320,7 @@ footer {display: flex; /*flexbox*/
     justify-content: space-around;  
     @extend %texto;
     font-size: 16px;
+    line-height: 1.5;
 }
 
 .presentacion__parrafo {
@@ -336,6 +332,7 @@ footer {display: flex; /*flexbox*/
     justify-content: space-around;    
     @extend %texto;
     font-size: 16px;
+    line-height: 1.5;
 }
 
 
@@ -922,7 +919,7 @@ ul li:hover ul {display: block;}
         }
     }
 
-    
+    /*adaptando el footer*/
 
     .btn {font-style: normal;
         font-weight: normal;
@@ -940,7 +937,6 @@ ul li:hover ul {display: block;}
         justify-content: center;
         border: solid 1px $rosa;
     }
-    
     
     .redes {width: 100%;
         justify-content: space-between;
@@ -975,7 +971,22 @@ ul li:hover ul {display: block;}
         border-radius: 30px;
     }
 
-    /* aplicando bem y flexbox*/
+    /* adaptando main de index*/
+    
+    .kumetext {width: 100%;
+        height: 100%;
+        padding: 2%;
+        margin-top: 5px;
+        p {
+            font-size: 10px;
+            line-height: 0.5;
+            padding: 1px;
+            text-align: center;
+            justify-content: space-around;
+        }
+    }
+
+    /* adaptando main de sobre-mi y aplicando bem y flexbox*/
 
     .contenedor {
         display: flex;
@@ -1044,7 +1055,8 @@ ul li:hover ul {display: block;}
         margin-left: 5%;
         margin-right: 5%;
         text-align: justify;
-        justify-content: center;    
+        justify-content: center;  
+        font-size: 14px;   
     }
 
     /*
