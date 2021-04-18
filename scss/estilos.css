@@ -344,7 +344,7 @@ footer {
   padding: 10px;
   margin-left: 5%;
   margin-top: 5%;
-  background-color: #ebf9fa;
+  background-color: rgba(254, 252, 230, 0.9);
   text-align: justify;
   -ms-flex-pack: distribute;
       justify-content: space-around;
@@ -356,7 +356,7 @@ footer {
   width: 90%;
   padding: 10px;
   margin: 3% 5%;
-  background-color: #ebf9fa;
+  background-color: rgba(254, 252, 230, 0.9);
   text-align: justify;
   -ms-flex-pack: distribute;
       justify-content: space-around;

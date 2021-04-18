@@ -247,7 +247,7 @@ footer {display: flex; /*flexbox*/
 }
 
 
-/* formato con bootstrap */
+    /* formato con bootstrap */
 
 #carouselExampleDark {
     width: 60%;
@@ -268,8 +268,8 @@ footer {display: flex; /*flexbox*/
         justify-content: space-around;
     }
 }
-
-/* aplicando bem y flexbox*/
+    
+    /* aplicando bem y flexbox*/
 
 .presentacion {
     display: flex;
@@ -315,7 +315,7 @@ footer {display: flex; /*flexbox*/
     padding: 10px;
     margin-left: 5%;
     margin-top: 5%;
-    background-color: #ebf9fa;
+    background-color: rgba(254,252,230,0.9);
     text-align: justify;
     justify-content: space-around;  
     @extend %texto;
@@ -327,7 +327,7 @@ footer {display: flex; /*flexbox*/
     width: 90%;
     padding: 10px;
     margin: 3% 5%;
-    background-color: #ebf9fa;
+    background-color: rgba(254,252,230,0.9);
     text-align: justify;
     justify-content: space-around;    
     @extend %texto;
