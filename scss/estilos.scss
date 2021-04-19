@@ -154,8 +154,6 @@ nav .nav {width: 500px;
     }
 }
 
-
-
 /*footer*/
 
 footer {display: flex; /*flexbox*/
@@ -193,7 +191,6 @@ footer {display: flex; /*flexbox*/
     color: $amarillo;
     border-color: $amarillo;
 }
-
 
     /* aplicando BEM */
 
@@ -338,21 +335,153 @@ footer {display: flex; /*flexbox*/
     line-height: 1.5;
 }
 
+/* main contacto: aplicando bem y formulario */
+
+.contacto { width: 100%;
+display: flex;
+}
+
+/*TENGO QUE VER QUE ME CONVIENE USAR MAS: display: inline-block O position:relative/absolute
+PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CELULAR ??????*/
+
+.contacto__TextUno{position: relative;
+    width: 25%;
+    height: 100%;
+
+    .card {border: 3px solid $rosa-claro;
+        .card-img-top {background-color:$amarillo;
+            border: 2px solid $rosa-claro;
+        }
+        .card-body {background-color:$amarillo;
+            border: 2px solid $rosa-claro;
+            @extend %texto;
+            font-size: 16px;
+            line-height: 1.9;
+        }
+    }
+}
+
+.contacto__TextDos {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    background-color: rgba(254,252,230,0.5);
+    padding: 5px;
+    h2{@extend %texto;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: start;
+
+    }
+    .contacto__formulario{@extend %texto;
+        font-size: 16px;
+        line-height: 1.5;
+        text-align: start;
+
+    }
+}
+
+.contacto__formulario {
+    border: 3px solid $rosa-claro;
+    color: $oscuro;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: justify;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    padding: 10px;
+    text-align: center;
+    align-content: center ;
+    .casilla {color: $oscuro;
+        text-align: center;
+        justify-content: center;
+        input{border: 1px solid $terracota;
+            background-color: $amarillo;
+        }
+        
+         
+    }
+    .mensaje {text-align: center;
+        justify-content: center;
+
+    }
+    .casilla-boton {text-align: center;
+        justify-content: center;
+    }
+    .boton {background-color: $amarillo;
+        color: $terracota;
+        width: 80px;
+        border: 1px solid $terracota;
+        align-content: center;
+        justify-content: center;
+    }
+    .boton:hover {background-color: $oscuro;
+        color: $amarillo;
+        border-radius: 3px;
+        }
+}
+.contacto__TextTres{position: relative;
+    width: 25%;
+
+    .card {border: 3px solid $rosa-claro;
+        .card-img-top {background-color:$amarillo;
+            border: 2px solid $rosa-claro;
+        }
+        .card-body {background-color:$amarillo;
+            border: 2px solid $rosa-claro;
+            @extend %texto;
+            font-size: 14px;
+            line-height: 1.5;
+        }
+    }
+}
 
 
-/*video ponerlo en tips*/
+
+/*
+
+.contacto__TextUno {
+    width: 80%;
+    position: relative;
+    margin: 5px;
+}
+
+.contacto__TextDos {
+    display: inline-block;
+    background-color:white;
+    position: relative;
+    margin: auto;
+    float: right;
+}
+
+.contacto__TextTres
+
+.contacto__formulario {
+    color: $oscuro;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: justify;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    padding: 10px;
+    text-align: justify;
+}
+*/
+
+
+/* VER DE PONER EL VIDEO  - video ponerlo en tips
 .video {
     background-color: #bcfefe;
 }
 
-.video__mp4 {
-    width: 10%;
-    position: absolute;
-    margin-left: 5%;
-    margin-top: 1%;
-    margin-bottom: auto;
-    justify-content: center;
-}
 
 .video__titulo {
     width: 18%;
@@ -373,28 +502,7 @@ footer {display: flex; /*flexbox*/
     text-align: justify;
     justify-content: center;
 }
-/* KUME font-family: 'Nothing You Could Do', cursive;
- LETRA TRABAJADA font-family: 'Comic Neue', cursive;
- LETRA TEXTO COMUN font-family: 'Poppins', sans-serif; */
-
-/*color clarito #f7f5f2 */
-
-
-/*color azul oscuro #085163 */
-
-
-/*color turquesa:  #1cdfed */
-
-
-/*#f8dad0 #fae0c7 #feefdd  #ebf9fa*/
-
-
-/* COLOR PALETA 1: #001c44 $oscuro #0c5776 #2d99ae  #bcfefe #f8dad0 .. o mas clarito #fef8ec  */
-
-
-/* COLOR PALETA 2: #005059 , #08808e, #7ac9d0, #c8e8ea, #fe9a84 */
-
-
+*/
 /* formato con bootstrap */
 /*acordion
 .card-header {
@@ -446,24 +554,6 @@ footer {display: flex; /*flexbox*/
 }
 */
 
-.color {
-    color: #085163
-}
-
-.fondo {
-    background-color: #c8e8ea;
-    width: 100%;
-    background-repeat: no-repeat;
-}
-
-.fondos {
-    background-color: white;
-}
-
-.botonColor {
-    color: #fef8ec;
-}
-
 
 /* GRADIENT
 
@@ -512,45 +602,6 @@ h3 {
     position: relative;
     margin-left: 60px;
 }
-*/
-
-.relevante {
-    font-style: italic;
-    font-weight: normal;
-    font-size: 18px;
-}
-
-
-/* COSAS QUE MODIFIQUE: LAS DEJO POR LAS DUDAS... 
-
-.nav {top: 50px;
-	position: absolute;
-	display: inline-block;
-	left: 35%;}
-	 
-
-.a 	{color: $oscuro;
-	text-decoration: none;
-	font-family: 'Poppins', sans-serif;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	word-spacing: 1px;
-	letter-spacing: 1px;
-	line-height: 1.5;
-	text-align: center;
-	padding: 5px;
-	width: 100%;
-				transition:font-size 5s; 
-	}           
-	
-	
-a:hover {text-decoration-line: none;
-		color: #fef8ec;
-		background-color: #2d99ae;
-				font-size: 20px;
-		}                
-		
 
 p 	{color: $oscuro;
 	text-decoration: none;
@@ -567,100 +618,9 @@ p 	{color: $oscuro;
 */
 
 
-/*tamaño respecto a su contenedor es width: 97%;*/
 
+/*BOXMODELING a nuestro proyecto en "contacto"
 
-/*margin arriba/abajo y derecha/izquierda es margin: 10px auto; */
-
-
-/*para poner tamaño del border es border-width: 3px;*/
-
-
-/*
-ul li 	{color: $oscuro;
-		font-family: 'Poppins', sans-serif;
-		font-size: 16px;
-		text-align: justify;
-		word-spacing: 1px;
-		letter-spacing: 1px;
-		line-height: 1.5;
-		padding: 10px;
-   		left: 60%;}
-		
-
-ul ul li {background-color: white;
-		color: $oscuro;
-		font-family: 'Poppins', sans-serif;
-		font-size: 16px;
-		text-align: justify;
-		word-spacing: 1px;
-		letter-spacing: 1px;
-		line-height: 1.5;
-		padding: 10px;}
-
-
-ol li 	{color: #001c44;
-		font-family: 'Poppins', sans-serif;
-		font-size: 16px;
-		text-align: justify;
-		word-spacing: 1px;
-		letter-spacing: 1px;
-		line-height: 1.5;
-		display: inline-block;}
-*/
-
-
-/*BOXMODELING a nuestro proyecto en "index"
-ul	{list-style: none;
-	font-size: 0;}
-	
-		
-ul li {display: inline-block;
-		position:relative;}
-   		
-
-ul ul 	{position: absolute;
-		display: none;
-
-		list-style: none;
-		font-size: 0;}
-		
-
-ul ul li {display: block;
-		position:relative;}
-   		
-
-ul li:hover ul {display: block;}		
-		
-
-
-.BoxmodelImg1 	{margin: auto;
-				position: relative;		
-				}
-
-.textCero   {width: 900px;
-			background-color: #ebf9fa;
-			position: absolute;
-			top: 340px; 
-		    left: 65px;
-		    margin: auto;
-		    }
-
-
-
-.botonTurno {text-align: center;
-			margin: auto;
-			position: center;
-			padding: 10px;
-			}
-
-*/
-
-
-/*BOXMODELING a nuestro proyecto en "contacto"*/
-
-
-/* aplicando BEM*/
 
 .contacto {
     background-color: #fae0c7;
@@ -689,24 +649,7 @@ ul li:hover ul {display: block;}
     margin: auto;
     float: right;
 }
-
-
-/*justo para aplicar variable texto*/
-
-.contacto__formulario {
-    color: $oscuro;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    text-align: justify;
-    word-spacing: 1px;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    padding: 10px;
-    text-align: justify;
-}
+*/
 
 
 
@@ -762,25 +705,39 @@ ul li:hover ul {display: block;}
 
 .grid {
     width: 100%;
-    height: 1000px;
     display: grid;
-    grid-template-columns: 19.9% 19.9% 19.9% 19.9% 19.9%;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-gap: 1px;
     background-color: $rosa-claro;
-    grid-template-areas: "cuadro1 cuadro2 cuadro3 cuadro4 cuadro5" "cuadro6 nutri nutri nutri cuadro7" "cuadro8 cuadro9 cuadro10 cuadro11 cuadro12";
-    justify-items: center;
+    grid-template-areas: "cuadro1 cuadro2 cuadro3 cuadro4" 
+                         "cuadro1 nutri nutri cuadro5" 
+                         "cuadro6 cuadro7 cuadro8 cuadro9"
+                         "cuadro10 cuadro11 cuadro12 cuadro13";
+    /*justify-items: center;
     align-items: center;
     justify-content: center;
-    align-content: center;
+    align-content: center;*/
 }
 
-.img1 {
+.video__mp4 {
+    width: 70%;
     grid-area: cuadro1;
     border: solid 1px;
     border-color: #7ac9d0;
     position: center;
 }
+
+/*
+.video__mp4 {
+    width: 10%;
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-bottom: auto;
+    justify-content: center;
+}
+*/
 
 .img2 {
     grid-area: cuadro2;
@@ -870,6 +827,13 @@ ul li:hover ul {display: block;}
     position: center;
 }
 
+.img13 {
+    grid-area: cuadro13;
+    border: solid 1px;
+    border-color: #7ac9d0;
+    position: center;
+}
+
 
 /* aplicando media queries para celular*/
 
@@ -942,16 +906,7 @@ ul li:hover ul {display: block;}
         margin-right: 3%;
         padding: 3px;
     }
-    
-    /*
-    .btn {font-size: 14px;
-        width: 200px;
-        height: 40px;
-        margin: auto 3%;
-        padding: 5px;
-    }
-    */
-    
+        
     .redes {width: 100%;
         justify-content: space-around;
         text-decoration-line: none;
@@ -987,6 +942,13 @@ ul li:hover ul {display: block;}
 
     /* adaptando main de index*/
     
+    #carouselExampleDark {
+        width: 100%;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
     .kumetext {width: 100%;
         height: 100%;
         
@@ -1073,6 +1035,102 @@ ul li:hover ul {display: block;}
         font-size: 14px;   
     }
 
+    /* adaptando main de contacto */
+
+    .contacto { width: 100%;
+        display: flex;
+        }
+        
+        .contacto__TextUno {
+            width: 100%;
+        
+            .card {border: 3px solid $rosa-claro;
+                .card-img-top {background-color:$amarillo;
+                    border: 2px solid $rosa-claro;
+                }
+                .card-body {background-color:$amarillo;
+                    border: 2px solid $rosa-claro;
+                    font-size: 16px;
+                    line-height: 1.9;
+                }
+            }
+        }
+        
+        .contacto__TextDos {
+            width: 100%;
+            background-color: rgba(254,252,230,0.5);
+            padding: 5px;
+            h2{
+                font-size: 16px;
+                line-height: 1.5;
+                text-align: start;
+        
+            }
+            .contacto__formulario{
+                font-size: 16px;
+                line-height: 1.5;
+                text-align: start;
+        
+            }
+        }
+        
+        .contacto__formulario {
+            border: 3px solid $rosa-claro;
+            color: $oscuro;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 15px;
+            text-align: justify;
+            word-spacing: 1px;
+            letter-spacing: 1px;
+            line-height: 1.5;
+            padding: 10px;
+            text-align: center;
+            align-content: center ;
+            .casilla {color: $oscuro;
+                text-align: center;
+                justify-content: center;
+                input{border: 1px solid $terracota;
+                }
+                
+                
+            }
+            .mensaje {text-align: center;
+                justify-content: center;
+        
+            }
+            .casilla-boton {text-align: center;
+                justify-content: center;
+            }
+            .boton {background-color: $amarillo;
+                color: $terracota;
+                width: 80px;
+                border: 1px solid $terracota;
+                align-content: center;
+                justify-content: center;
+            }
+            .boton:hover {background-color: $oscuro;
+                color: $amarillo;
+                border-radius: 3px;
+                }
+        }
+        .contacto__TextTres{
+            width: 100%;
+        
+            .card {border: 3px solid $rosa-claro;
+                .card-img-top {background-color:$amarillo;
+                    border: 2px solid $rosa-claro;
+                }
+                .card-body {background-color:$amarillo;
+                    border: 2px solid $rosa-claro;
+                    font-size: 14px;
+                    line-height: 1.5;
+                }
+            }
+        }
+    
     /*
 
     a {
@@ -1098,7 +1156,7 @@ ul li:hover ul {display: block;}
     }
     */
     
-    /* adaptando el main: GRIDS a la sección index.html  con 5 columnas, con 6 filas y con 13 items*/
+    /* adaptando el main: GRIDS a la sección index.html  con 5 columnas, con 6 filas y con 13 items
     .grid {
         display: grid;
         grid-template-columns: 19.9% 19.9% 19.9% 19.9% 19.9%;
@@ -1193,13 +1251,7 @@ ul li:hover ul {display: block;}
         border-color: #7ac9d0;
         position: center;
     }
-    /* adaptando el carousel : MEDIA QUERIES CON BOOTSTRAP*/
-    #carouselExampleDark {
-        width: 100%;
-        padding: 10px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    */
 }
 
 /* aplicando  media queries para tablets */

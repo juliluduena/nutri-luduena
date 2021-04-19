@@ -50,51 +50,81 @@
 
     </header>
 
-    <main class="contacto">
-
-        <img src="multimedia/frutas41.jpg" alt="fotoNutricion" width="50%" height="" class="contacto__foto">
-
-        <section class="contacto__TextUno">
-            <h2>SOLICITAR TURNO</h2>
-            <p>En el marco adverso que enfrentamos por la pandemia de Coronavirus (COVID-19), continuaremos con las consultas online para aquellas personas que quieran comenzar o continuar con un tratamiento nutricional.</p>
-        </section>
-
-        <section class="contacto__TextDos">
-            <h2>Completar el siguiente formulario y a la brevedad me comunicaré para acordar tu turno:</h2>
-
-            <form class="contacto__formulario">
-                <br>
-                <label for="nombre">Nombre:</label>
-                <input type="text" placeholder="Ingrese su nombre" value="" required="">
-                <br>
-                <br>
-                <label for="apellido">Apellido:</label>
-                <input type="text" placeholder="Ingrese su apellido" value="" required="">
-                <br>
-                <br>
-                <label for="teléfono">Teléfono:</label>
-                <input type="number" placeholder="Ingrese su número" required="">
-                <br>
-                <br>
-                <label for="correo">Correo electrónico:</label>
-                <input type="email" placeholder="Ingrese su email" required="">
-                <!--
-				<br>
-				<br>
-				<label for="Ciudad">Seleccione su ciudad:</label> <br>
-				<input type="Radio" id="Bell Ville" name=""><label for="Bell Ville">Bell Ville</label> 
-				<input type="Radio" id="Otras" name="Otras"><label for="Otras">Otras</label>
-				-->
-                <br>
-                <br>
-                <label for="mensaje">Mensaje:</label>
-                <textarea name="text" cols="70" rows="3" minlength="5" maxlength="500" placeholder="Deje aquí su mensaje..."></textarea>
-                <br>
-                <br>
-                <input type="Submit" value="Enviar" required="">
-                <br>
-            </form>
-        </section>
+    <main class="medio">        
+        <div class="contacto">
+            <section class="contacto__TextUno">
+                <div class="card">
+                    <img src="multimedia/casa-kume.jpg" class="card-img-top" alt="foto casa kume">
+                    <div class="card-body">
+                        <p class="card-text"><strong>SOLICITAR TURNO</strong></p>
+                        <p class="card-text">En el marco adverso que enfrentamos por la pandemia de Coronavirus (COVID-19), continuaremos con las consultas online para aquellas personas que quieran comenzar o continuar con un tratamiento nutricional.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="contacto__TextDos">
+                <h2>Completar el siguiente formulario y a la brevedad me comunicaré para acordar tu turno:</h2>
+            
+                <form class="contacto__formulario">
+                    <br>
+                    <div class="casilla">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" placeholder="Ingrese su nombre" value="" required="">
+                    </div>
+                    <br>
+                    <br>
+                    <div class="casilla">
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" placeholder="Ingrese su apellido" value="" required="">
+                    </div>
+                    <br>
+                    <br>
+                    <div class="casilla">
+                        <label for="teléfono">Teléfono:</label>
+                        <input type="number" placeholder="Ingrese su número" required="">
+                    </div>
+                    <br>
+                    <br>
+                    <div class="casilla">
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" placeholder="Ingrese su email" required="">
+                    </div>
+                    <!--
+                    <br>
+                    <br>
+                    <label for="Ciudad">Seleccione su ciudad:</label> <br>
+                    <input type="Radio" id="Bell Ville" name=""><label for="Bell Ville">Bell Ville</label> 
+                    <input type="Radio" id="Otras" name="Otras"><label for="Otras">Otras</label>
+                    -->
+                    <br>
+                    <br>
+                    <div class="mensaje">
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea style="border: 1px solid #b13a1f; background-color: #fefce6;" name="text" cols="40" rows="6" minlength="5" maxlength="500" placeholder="Deje aquí su mensaje..."></textarea>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="casilla-boton">
+                        <input class="boton" type="Submit" value="Enviar" required="">
+                    </div>
+                    <br>
+                </form>
+            </section>
+            
+            <section class="contacto__TextTres">
+                <div class="card">
+                    <img src="imagenes/kume-texto.png" class="card-img-top" alt="foto kume">
+                    <div class="card-body">
+                        <p class="card-text">Datos de contacto:</p>
+                        <p class="card-text"><em>Romina Ludueña</em></p>
+                        <p class="card-text"><em>Lic. en Nutrición - M.P. 2701</em></p>
+                        <p class="card-text">Domicilio: Av. Italia 60</p>
+                        <p class="card-text">Teléfono: +54 9 3537 657781</P>
+                        <p class="card-text">rominutricion@hotmail.com</p>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer>

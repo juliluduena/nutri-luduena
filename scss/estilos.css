@@ -37,7 +37,7 @@ h4 {
 }
 
 /*utilizacion de extend: cada vez que lo use, agregar font-size, line-height, text-align y padding por separado*/
-.kumetext p, .presentacion__titulo, .presentacion__parrafo {
+.kumetext p, .presentacion__titulo, .presentacion__parrafo, .contacto__TextUno .card .card-body, .contacto__TextDos h2, .contacto__TextDos .contacto__formulario, .contacto__TextTres .card .card-body {
   color: #d76249;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
@@ -364,55 +364,201 @@ footer {
   line-height: 1.5;
 }
 
-/*video ponerlo en tips*/
-.video {
-  background-color: #bcfefe;
+/* main contacto: aplicando bem y formulario */
+.contacto {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.video__mp4 {
-  width: 10%;
-  position: absolute;
-  margin-left: 5%;
-  margin-top: 1%;
-  margin-bottom: auto;
+/*TENGO QUE VER QUE ME CONVIENE USAR MAS: display: inline-block O position:relative/absolute
+PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CELULAR ??????*/
+.contacto__TextUno {
+  position: relative;
+  width: 25%;
+  height: 100%;
+}
+
+.contacto__TextUno .card {
+  border: 3px solid #fae0c7;
+}
+
+.contacto__TextUno .card .card-img-top {
+  background-color: #fefce6;
+  border: 2px solid #fae0c7;
+}
+
+.contacto__TextUno .card .card-body {
+  background-color: #fefce6;
+  border: 2px solid #fae0c7;
+  font-size: 16px;
+  line-height: 1.9;
+}
+
+.contacto__TextDos {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  background-color: rgba(254, 252, 230, 0.5);
+  padding: 5px;
+}
+
+.contacto__TextDos h2 {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: start;
+}
+
+.contacto__TextDos .contacto__formulario {
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: start;
+}
+
+.contacto__formulario {
+  border: 3px solid #fae0c7;
+  color: #d76249;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  text-align: justify;
+  word-spacing: 1px;
+  letter-spacing: 1px;
+  line-height: 1.5;
+  padding: 10px;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.contacto__formulario .casilla {
+  color: #d76249;
+  text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
+
+.contacto__formulario .casilla input {
+  border: 1px solid #b13a1f;
+  background-color: #fefce6;
+}
+
+.contacto__formulario .mensaje {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacto__formulario .casilla-boton {
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacto__formulario .boton {
+  background-color: #fefce6;
+  color: #b13a1f;
+  width: 80px;
+  border: 1px solid #b13a1f;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacto__formulario .boton:hover {
+  background-color: #d76249;
+  color: #fefce6;
+  border-radius: 3px;
+}
+
+.contacto__TextTres {
+  position: relative;
+  width: 25%;
+}
+
+.contacto__TextTres .card {
+  border: 3px solid #fae0c7;
+}
+
+.contacto__TextTres .card .card-img-top {
+  background-color: #fefce6;
+  border: 2px solid #fae0c7;
+}
+
+.contacto__TextTres .card .card-body {
+  background-color: #fefce6;
+  border: 2px solid #fae0c7;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/*
+
+.contacto__TextUno {
+    width: 80%;
+    position: relative;
+    margin: 5px;
+}
+
+.contacto__TextDos {
+    display: inline-block;
+    background-color:white;
+    position: relative;
+    margin: auto;
+    float: right;
+}
+
+.contacto__TextTres
+
+.contacto__formulario {
+    color: $oscuro;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: justify;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    padding: 10px;
+    text-align: justify;
+}
+*/
+/* VER DE PONER EL VIDEO  - video ponerlo en tips
+.video {
+    background-color: #bcfefe;
+}
+
 
 .video__titulo {
-  width: 18%;
-  margin-left: 30%;
-  margin-top: auto;
-  margin-bottom: auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+    width: 18%;
+    margin-left: 30%;
+    margin-top: auto;
+    margin-bottom: auto;
+    justify-content: center;
 }
 
 .video__parrafo {
-  width: 60%;
-  padding: 10px;
-  background-color: #ebf9fa;
-  position: relative;
-  margin-left: 30%;
-  margin-top: 1px;
-  margin-bottom: 1px;
-  text-align: justify;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+    width: 60%;
+    padding: 10px;
+    background-color: #ebf9fa;
+    position: relative;
+    margin-left: 30%;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    text-align: justify;
+    justify-content: center;
 }
-
-/* KUME font-family: 'Nothing You Could Do', cursive;
- LETRA TRABAJADA font-family: 'Comic Neue', cursive;
- LETRA TEXTO COMUN font-family: 'Poppins', sans-serif; */
-/*color clarito #f7f5f2 */
-/*color azul oscuro #085163 */
-/*color turquesa:  #1cdfed */
-/*#f8dad0 #fae0c7 #feefdd  #ebf9fa*/
-/* COLOR PALETA 1: #001c44 $oscuro #0c5776 #2d99ae  #bcfefe #f8dad0 .. o mas clarito #fef8ec  */
-/* COLOR PALETA 2: #005059 , #08808e, #7ac9d0, #c8e8ea, #fe9a84 */
+*/
 /* formato con bootstrap */
 /*acordion
 .card-header {
@@ -463,24 +609,6 @@ footer {
     background-color: #c8e8ea;
 }
 */
-.color {
-  color: #085163;
-}
-
-.fondo {
-  background-color: #c8e8ea;
-  width: 100%;
-  background-repeat: no-repeat;
-}
-
-.fondos {
-  background-color: white;
-}
-
-.botonColor {
-  color: #fef8ec;
-}
-
 /* GRADIENT
 
 #encabezado {
@@ -521,43 +649,6 @@ h3 {
     position: relative;
     margin-left: 60px;
 }
-*/
-.relevante {
-  font-style: italic;
-  font-weight: normal;
-  font-size: 18px;
-}
-
-/* COSAS QUE MODIFIQUE: LAS DEJO POR LAS DUDAS... 
-
-.nav {top: 50px;
-	position: absolute;
-	display: inline-block;
-	left: 35%;}
-	 
-
-.a 	{color: $oscuro;
-	text-decoration: none;
-	font-family: 'Poppins', sans-serif;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	word-spacing: 1px;
-	letter-spacing: 1px;
-	line-height: 1.5;
-	text-align: center;
-	padding: 5px;
-	width: 100%;
-				transition:font-size 5s; 
-	}           
-	
-	
-a:hover {text-decoration-line: none;
-		color: #fef8ec;
-		background-color: #2d99ae;
-				font-size: 20px;
-		}                
-		
 
 p 	{color: $oscuro;
 	text-decoration: none;
@@ -572,132 +663,37 @@ p 	{color: $oscuro;
 	padding: 10px;
 	}
 */
-/*tamaño respecto a su contenedor es width: 97%;*/
-/*margin arriba/abajo y derecha/izquierda es margin: 10px auto; */
-/*para poner tamaño del border es border-width: 3px;*/
-/*
-ul li 	{color: $oscuro;
-		font-family: 'Poppins', sans-serif;
-		font-size: 16px;
-		text-align: justify;
-		word-spacing: 1px;
-		letter-spacing: 1px;
-		line-height: 1.5;
-		padding: 10px;
-   		left: 60%;}
-		
-
-ul ul li {background-color: white;
-		color: $oscuro;
-		font-family: 'Poppins', sans-serif;
-		font-size: 16px;
-		text-align: justify;
-		word-spacing: 1px;
-		letter-spacing: 1px;
-		line-height: 1.5;
-		padding: 10px;}
+/*BOXMODELING a nuestro proyecto en "contacto"
 
 
-ol li 	{color: #001c44;
-		font-family: 'Poppins', sans-serif;
-		font-size: 16px;
-		text-align: justify;
-		word-spacing: 1px;
-		letter-spacing: 1px;
-		line-height: 1.5;
-		display: inline-block;}
-*/
-/*BOXMODELING a nuestro proyecto en "index"
-ul	{list-style: none;
-	font-size: 0;}
-	
-		
-ul li {display: inline-block;
-		position:relative;}
-   		
-
-ul ul 	{position: absolute;
-		display: none;
-
-		list-style: none;
-		font-size: 0;}
-		
-
-ul ul li {display: block;
-		position:relative;}
-   		
-
-ul li:hover ul {display: block;}		
-		
-
-
-.BoxmodelImg1 	{margin: auto;
-				position: relative;		
-				}
-
-.textCero   {width: 900px;
-			background-color: #ebf9fa;
-			position: absolute;
-			top: 340px; 
-		    left: 65px;
-		    margin: auto;
-		    }
-
-
-
-.botonTurno {text-align: center;
-			margin: auto;
-			position: center;
-			padding: 10px;
-			}
-
-*/
-/*BOXMODELING a nuestro proyecto en "contacto"*/
-/* aplicando BEM*/
 .contacto {
-  background-color: #fae0c7;
+    background-color: #fae0c7;
 }
 
 .contacto__foto {
-  width: 48%;
-  position: relative;
-  margin: auto;
-  padding: 1px;
+    width: 48%;
+    position: relative;
+    margin: auto;
+    padding: 1px;
 }
 
 .contacto__TextUno {
-  width: 45%;
-  position: absolute;
-  top: 74%;
-  left: 10px;
-  margin: 5px;
+    width: 45%;
+    position: absolute;
+    top: 74%;
+    left: 10px;
+    margin: 5px;
 }
 
 .contacto__TextDos {
-  display: inline-block;
-  width: 52%;
-  background-color: #ebf9fa;
-  position: relative;
-  margin: auto;
-  float: right;
+    display: inline-block;
+    width: 52%;
+    background-color: #ebf9fa;
+    position: relative;
+    margin: auto;
+    float: right;
 }
-
-/*justo para aplicar variable texto*/
-.contacto__formulario {
-  color: #d76249;
-  text-decoration: none;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  text-align: justify;
-  word-spacing: 1px;
-  letter-spacing: 1px;
-  line-height: 1.5;
-  padding: 10px;
-  text-align: justify;
-}
-
+*/
 /*
 .botonTurno {
     width: 100%;
@@ -754,29 +750,25 @@ ul li:hover ul {display: block;}
 /* agregando GRIDS a la sección tips.html  con 5 columnas, con 3 filas y con 13 items*/
 .grid {
   width: 100%;
-  height: 1000px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 19.9% 19.9% 19.9% 19.9% 19.9%;
-      grid-template-columns: 19.9% 19.9% 19.9% 19.9% 19.9%;
-  -ms-grid-rows: 1fr 1fr 1fr;
-      grid-template-rows: 1fr 1fr 1fr;
+  -ms-grid-columns: 25% 25% 25% 25%;
+      grid-template-columns: 25% 25% 25% 25%;
+  -ms-grid-rows: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-gap: 1px;
   background-color: #fae0c7;
-      grid-template-areas: "cuadro1 cuadro2 cuadro3 cuadro4 cuadro5" "cuadro6 nutri nutri nutri cuadro7" "cuadro8 cuadro9 cuadro10 cuadro11 cuadro12";
-  justify-items: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-line-pack: center;
-      align-content: center;
+      grid-template-areas: "cuadro1 cuadro2 cuadro3 cuadro4"  "cuadro1 nutri nutri cuadro5"  "cuadro6 cuadro7 cuadro8 cuadro9" "cuadro10 cuadro11 cuadro12 cuadro13";
+  /*justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;*/
 }
 
-.img1 {
+.video__mp4 {
+  width: 70%;
   -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
   -ms-grid-column: 1;
   grid-area: cuadro1;
   border: solid 1px;
@@ -784,6 +776,16 @@ ul li:hover ul {display: block;}
   position: center;
 }
 
+/*
+.video__mp4 {
+    width: 10%;
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 1%;
+    margin-bottom: auto;
+    justify-content: center;
+}
+*/
 .img2 {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
@@ -812,8 +814,8 @@ ul li:hover ul {display: block;}
 }
 
 .img5 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 5;
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
   grid-area: cuadro5;
   border: solid 1px;
   border-color: #7ac9d0;
@@ -821,7 +823,7 @@ ul li:hover ul {display: block;}
 }
 
 .img6 {
-  -ms-grid-row: 2;
+  -ms-grid-row: 3;
   -ms-grid-column: 1;
   grid-area: cuadro6;
   border: solid 1px;
@@ -832,7 +834,7 @@ ul li:hover ul {display: block;}
 .nutri {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
-  -ms-grid-column-span: 3;
+  -ms-grid-column-span: 2;
   grid-area: nutri;
   border: solid 1px;
   border-color: #7ac9d0;
@@ -845,8 +847,8 @@ ul li:hover ul {display: block;}
 }
 
 .img7 {
-  -ms-grid-row: 2;
-  -ms-grid-column: 5;
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
   grid-area: cuadro7;
   border: solid 1px;
   border-color: #7ac9d0;
@@ -855,7 +857,7 @@ ul li:hover ul {display: block;}
 
 .img8 {
   -ms-grid-row: 3;
-  -ms-grid-column: 1;
+  -ms-grid-column: 3;
   grid-area: cuadro8;
   border: solid 1px;
   border-color: #7ac9d0;
@@ -864,7 +866,7 @@ ul li:hover ul {display: block;}
 
 .img9 {
   -ms-grid-row: 3;
-  -ms-grid-column: 2;
+  -ms-grid-column: 4;
   grid-area: cuadro9;
   border: solid 1px;
   border-color: #7ac9d0;
@@ -872,8 +874,8 @@ ul li:hover ul {display: block;}
 }
 
 .img10 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 3;
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
   grid-area: cuadro10;
   border: solid 1px;
   border-color: #7ac9d0;
@@ -881,8 +883,8 @@ ul li:hover ul {display: block;}
 }
 
 .img11 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 4;
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
   grid-area: cuadro11;
   border: solid 1px;
   border-color: #7ac9d0;
@@ -890,9 +892,18 @@ ul li:hover ul {display: block;}
 }
 
 .img12 {
-  -ms-grid-row: 3;
-  -ms-grid-column: 5;
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
   grid-area: cuadro12;
+  border: solid 1px;
+  border-color: #7ac9d0;
+  position: center;
+}
+
+.img13 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: cuadro13;
   border: solid 1px;
   border-color: #7ac9d0;
   position: center;
@@ -967,14 +978,6 @@ ul li:hover ul {display: block;}
     margin-right: 3%;
     padding: 3px;
   }
-  /*
-    .btn {font-size: 14px;
-        width: 200px;
-        height: 40px;
-        margin: auto 3%;
-        padding: 5px;
-    }
-    */
   .redes {
     width: 100%;
     -ms-flex-pack: distribute;
@@ -1006,6 +1009,12 @@ ul li:hover ul {display: block;}
     border-radius: 30px;
   }
   /* adaptando main de index*/
+  #carouselExampleDark {
+    width: 100%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .kumetext {
     width: 100%;
     height: 100%;
@@ -1108,6 +1117,115 @@ ul li:hover ul {display: block;}
             justify-content: center;
     font-size: 14px;
   }
+  /* adaptando main de contacto */
+  .contacto {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .contacto__TextUno {
+    width: 100%;
+  }
+  .contacto__TextUno .card {
+    border: 3px solid #fae0c7;
+  }
+  .contacto__TextUno .card .card-img-top {
+    background-color: #fefce6;
+    border: 2px solid #fae0c7;
+  }
+  .contacto__TextUno .card .card-body {
+    background-color: #fefce6;
+    border: 2px solid #fae0c7;
+    font-size: 16px;
+    line-height: 1.9;
+  }
+  .contacto__TextDos {
+    width: 100%;
+    background-color: rgba(254, 252, 230, 0.5);
+    padding: 5px;
+  }
+  .contacto__TextDos h2 {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: start;
+  }
+  .contacto__TextDos .contacto__formulario {
+    font-size: 16px;
+    line-height: 1.5;
+    text-align: start;
+  }
+  .contacto__formulario {
+    border: 3px solid #fae0c7;
+    color: #d76249;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    text-align: justify;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-height: 1.5;
+    padding: 10px;
+    text-align: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .contacto__formulario .casilla {
+    color: #d76249;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contacto__formulario .casilla input {
+    border: 1px solid #b13a1f;
+  }
+  .contacto__formulario .mensaje {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contacto__formulario .casilla-boton {
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contacto__formulario .boton {
+    background-color: #fefce6;
+    color: #b13a1f;
+    width: 80px;
+    border: 1px solid #b13a1f;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .contacto__formulario .boton:hover {
+    background-color: #d76249;
+    color: #fefce6;
+    border-radius: 3px;
+  }
+  .contacto__TextTres {
+    width: 100%;
+  }
+  .contacto__TextTres .card {
+    border: 3px solid #fae0c7;
+  }
+  .contacto__TextTres .card .card-img-top {
+    background-color: #fefce6;
+    border: 2px solid #fae0c7;
+  }
+  .contacto__TextTres .card .card-body {
+    background-color: #fefce6;
+    border: 2px solid #fae0c7;
+    font-size: 14px;
+    line-height: 1.5;
+  }
   /*
 
     a {
@@ -1132,145 +1250,102 @@ ul li:hover ul {display: block;}
         padding: 5px;
     }
     */
-  /* adaptando el main: GRIDS a la sección index.html  con 5 columnas, con 6 filas y con 13 items*/
-  .grid {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: 19.9% 19.9% 19.9% 19.9% 19.9%;
+  /* adaptando el main: GRIDS a la sección index.html  con 5 columnas, con 6 filas y con 13 items
+    .grid {
+        display: grid;
         grid-template-columns: 19.9% 19.9% 19.9% 19.9% 19.9%;
-    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
         grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-    grid-gap: 0.5px;
-    background-color: #ebf9fa;
+        grid-gap: 0.5px;
+        background-color: #ebf9fa;
         grid-template-areas: "cuadro1 nutri nutri nutri cuadro2" "cuadro3 nutri nutri nutri cuadro4" "cuadro5 nutri nutri nutri cuadro6" "cuadro7 nutri nutri nutri cuadro8" "cuadro9 nutri nutri nutri cuadro10" "cuadro11 nutri nutri nutri cuadro12";
-    justify-items: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -ms-flex-line-pack: center;
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
         align-content: center;
-  }
-  .img1 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 1;
-    grid-area: cuadro1;
-    border: solid 1px;
-    border-color: #7ac9d0;
-    position: center;
-  }
-  .img2 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 5;
-    grid-area: cuadro2;
-    border: solid 1px;
-    border-color: #7ac9d0;
-    position: center;
-  }
-  .img3 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 1;
-    grid-area: cuadro3;
-    border: solid 1px;
-    border-color: #7ac9d0;
-    position: center;
-  }
-  .img4 {
-    -ms-grid-row: 2;
-    -ms-grid-column: 5;
-    grid-area: cuadro4;
-    border: solid 1px;
-    border-color: #7ac9d0;
-    position: center;
-  }
-  .img5 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 1;
-    grid-area: cuadro5;
-    border: solid 1px;
-    border-color: #7ac9d0;
-    position: center;
-  }
-  .img6 {
-    -ms-grid-row: 3;
-    -ms-grid-column: 5;
-    grid-area: cuadro6;
-    border: solid 1px;
-    border-color: #7ac9d0;
-    position: center;
-  }
-  .nutri {
-    -ms-grid-row: 1;
-    -ms-grid-row-span: 6;
-    -ms-grid-column: 2;
-    -ms-grid-column-span: 3;
-    grid-area: nutri;
-    border: solid 1px;
-    border-color: #7ac9d0;
-    text-align: center;
-    -ms-flex-line-pack: center;
+    }
+    .img1 {
+        grid-area: cuadro1;
+        border: solid 1px;
+        border-color: #7ac9d0;
+        position: center;
+    }
+    .img2 {
+        grid-area: cuadro2;
+        border: solid 1px;
+        border-color: #7ac9d0;
+        position: center;
+    }
+    .img3 {
+        grid-area: cuadro3;
+        border: solid 1px;
+        border-color: #7ac9d0;
+        position: center;
+    }
+    .img4 {
+        grid-area: cuadro4;
+        border: solid 1px;
+        border-color: #7ac9d0;
+        position: center;
+    }
+    .img5 {
+        grid-area: cuadro5;
+        border: solid 1px;
+        border-color: #7ac9d0;
+        position: center;
+    }
+    .img6 {
+        grid-area: cuadro6;
+        border: solid 1px;
+        border-color: #7ac9d0;
+        position: center;
+    }
+    .nutri {
+        grid-area: nutri;
+        border: solid 1px;
+        border-color: #7ac9d0;
+        text-align: center;
         align-content: center;
-    padding: 10px;
-    background-color: #ebf9fa;
-    position: center;
-  }
-  .img7 {
-    -ms-grid-row: 4;
-    -ms-grid-column: 1;
-    grid-area: cuadro7;
-    border: solid 1px;
-    border-color: #7ac9d0;
-    position: center;
-  }
-  .img8 {
-    -ms-grid-row: 4;
-    -ms-grid-column: 5;
-    grid-area: cuadro8;
-    border: solid 1px;
-    border-color: #7ac9d0;
-    position: center;
-  }
-  .img9 {
-    -ms-grid-row: 5;
-    -ms-grid-column: 1;
-    grid-area: cuadro9;
-    border: solid 1px;
-    border-color: #7ac9d0;
-    position: center;
-  }
-  .img10 {
-    -ms-grid-row: 5;
-    -ms-grid-column: 5;
-    grid-area: cuadro10;
-    border: solid 1px;
-    border-color: #7ac9d0;
-    position: center;
-  }
-  .img11 {
-    -ms-grid-row: 6;
-    -ms-grid-column: 1;
-    grid-area: cuadro11;
-    border: solid 1px;
-    border-color: #7ac9d0;
-    position: center;
-  }
-  .img12 {
-    -ms-grid-row: 6;
-    -ms-grid-column: 5;
-    grid-area: cuadro12;
-    border: solid 1px;
-    border-color: #7ac9d0;
-    position: center;
-  }
-  /* adaptando el carousel : MEDIA QUERIES CON BOOTSTRAP*/
-  #carouselExampleDark {
-    width: 100%;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
-  }
+        padding: 10px;
+        background-color: #ebf9fa;
+        position: center;
+    }
+    .img7 {
+        grid-area: cuadro7;
+        border: solid 1px;
+        border-color: #7ac9d0;
+        position: center;
+    }
+    .img8 {
+        grid-area: cuadro8;
+        border: solid 1px;
+        border-color: #7ac9d0;
+        position: center;
+    }
+    .img9 {
+        grid-area: cuadro9;
+        border: solid 1px;
+        border-color: #7ac9d0;
+        position: center;
+    }
+    .img10 {
+        grid-area: cuadro10;
+        border: solid 1px;
+        border-color: #7ac9d0;
+        position: center;
+    }
+    .img11 {
+        grid-area: cuadro11;
+        border: solid 1px;
+        border-color: #7ac9d0;
+        position: center;
+    }
+    .img12 {
+        grid-area: cuadro12;
+        border: solid 1px;
+        border-color: #7ac9d0;
+        position: center;
+    }
+    */
 }
 
 /* aplicando  media queries para tablets */
