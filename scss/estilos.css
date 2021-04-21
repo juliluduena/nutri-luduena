@@ -37,7 +37,7 @@ h4 {
 }
 
 /*utilizacion de extend: cada vez que lo use, agregar font-size, line-height, text-align y padding por separado*/
-.kumetext p, .presentacion__titulo, .presentacion__parrafo, .contacto__TextUno .card .card-body, .contacto__TextDos h2, .contacto__TextDos .contacto__formulario, .contacto__TextTres .card .card-body, .nutri p {
+.kumetext p, .presentacion__titulo, .presentacion__parrafo, .contacto__TextUno .card .card-body, .contacto__TextDos h2, .contacto__TextDos .contacto__formulario, .contacto__TextTres .card .card-body, #accordion .btnn, .nutri p {
   color: #d76249;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
@@ -500,104 +500,58 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
   line-height: 1.5;
 }
 
+/* main recetas: aplicando accordion con bootstrap */
+#accordion .card {
+  width: 30%;
+}
+
+#accordion .card-header {
+  width: 100%;
+  color: papayawhip;
+}
+
+#accordion .btnn {
+  font-size: 14px;
+  line-height: 1.5;
+  width: 100%;
+  height: 30px;
+  padding: 5px;
+  background-color: #c8e8ea;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: none;
+  border-radius: 5px;
+}
+
+#accordion .btnn:hover {
+  background-color: #fe9a84;
+  color: white;
+}
+
+#accordion .card-body {
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 5px;
+}
+
+#accordion .foto {
+  width: 50%;
+}
+
+#accordion .descarga {
+  font-size: 14px;
+}
+
 /*
-
-.contacto__TextUno {
-    width: 80%;
-    position: relative;
-    margin: 5px;
-}
-
-.contacto__TextDos {
-    display: inline-block;
-    background-color:white;
-    position: relative;
-    margin: auto;
-    float: right;
-}
-
-.contacto__TextTres
-
-.contacto__formulario {
-    color: $oscuro;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    text-align: justify;
-    word-spacing: 1px;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    padding: 10px;
-    text-align: justify;
-}
-*/
-/* VER DE PONER EL VIDEO  - video ponerlo en tips
-.video {
-    background-color: #bcfefe;
-}
-
-
-.video__titulo {
-    width: 18%;
-    margin-left: 30%;
-    margin-top: auto;
-    margin-bottom: auto;
-    justify-content: center;
-}
-
-.video__parrafo {
-    width: 60%;
-    padding: 10px;
-    background-color: #ebf9fa;
-    position: relative;
-    margin-left: 30%;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    text-align: justify;
-    justify-content: center;
-}
-*/
-/* formato con bootstrap */
-/*acordion
-.card-header {
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.btnn {
-    font-family: 'Poppins', sans-serif;
-    color: $oscuro;
-    text-decoration: none;
-    width: 300px;
-    height: 50px;
-    text-align: justify;
-    margin: auto;
-    padding: 10px;
-    background-color: #c8e8ea;
-    align-content: center;
-    justify-content: center;
-    border: none;
-    border-radius: 5px;
-}
-
-.btnn:hover {
-    background-color: #fe9a84;
-    color: #f8dad0;
-}
-
-.card-body {
-    width: 90%;
-    font-family: 'Poppins', sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    justify-content: center;
-    padding: 10px;
-    background-color: #c8e8ea;
-}
-
 .nutricion {
     width: 90%;
     font-family: 'Poppins', sans-serif;
@@ -613,8 +567,8 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
 
 #encabezado {
     background-image: linear-gradient(to right, $amarillo, $naranja);
-}*/
-/* aplicando BEM*/
+}
+*/
 /*
 h1 {
     color: $oscuro;
@@ -663,91 +617,7 @@ p 	{color: $oscuro;
 	padding: 10px;
 	}
 */
-/*BOXMODELING a nuestro proyecto en "contacto"
-
-
-.contacto {
-    background-color: #fae0c7;
-}
-
-.contacto__foto {
-    width: 48%;
-    position: relative;
-    margin: auto;
-    padding: 1px;
-}
-
-.contacto__TextUno {
-    width: 45%;
-    position: absolute;
-    top: 74%;
-    left: 10px;
-    margin: 5px;
-}
-
-.contacto__TextDos {
-    display: inline-block;
-    width: 52%;
-    background-color: #ebf9fa;
-    position: relative;
-    margin: auto;
-    float: right;
-}
-*/
-/*
-.botonTurno {
-    width: 100%;
-    flex-direction: column;
-    flex-wrap: nowrap;
-}
-*/
-/*agregando FLEXBOX a la sección recetas.html*/
-/* aplicando BEM */
-.Recetas {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 20px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.Recetas__SopasyCaldos {
-  width: 30%;
-  margin: 10px;
-}
-
-.article {
-  background-color: #bcfefe;
-  -webkit-box-flex: content;
-      -ms-flex: content;
-          flex: content;
-  padding: 10px;
-  margin: 10px;
-}
-
-.Recetas__imagenes {
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  background-color: #feefdd;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-}
-
-.Recetas__img {
-  width: 400px;
-  height: 500px;
-  margin: 3px;
-}
-
-/* agregando GRIDS a la sección tips.html  con 5 columnas, con 3 filas y con 13 items*/
+/* agregando GRIDS a la sección tips.html  con 4 columnas, con 5 filas y con 16 items*/
 .grid {
   width: 100%;
   display: -ms-grid;
@@ -758,7 +628,7 @@ p 	{color: $oscuro;
       grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-gap: 1px;
   background-color: #fae0c7;
-      grid-template-areas: "cuadro1 cuadro3 cuadro11 cuadro4"  "cuadro1 nutri nutri cuadro5"  "cuadro6 cuadro8 cuadro7 cuadro13" "cuadro10 cuadro8 cuadro2 cuadro13" "cuadro9 cuadro14 cuadro12 cuadro15";
+      grid-template-areas: "cuadro1 cuadro3 cuadro11 cuadro4"  "cuadro1 nutri nutri cuadro13"  "cuadro6 cuadro8 cuadro7 cuadro13" "cuadro10 cuadro8 cuadro2 cuadro5" "cuadro9 cuadro14 cuadro12 cuadro15";
   justify-items: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -805,7 +675,7 @@ p 	{color: $oscuro;
 }
 
 .img5 {
-  -ms-grid-row: 2;
+  -ms-grid-row: 4;
   -ms-grid-column: 4;
   grid-area: cuadro5;
   position: center;
@@ -891,7 +761,7 @@ p 	{color: $oscuro;
 }
 
 .img13 {
-  -ms-grid-row: 3;
+  -ms-grid-row: 2;
   -ms-grid-row-span: 2;
   -ms-grid-column: 4;
   grid-area: cuadro13;

@@ -51,31 +51,138 @@
 
     </header>
 
-    <main class="Recetas">
-        <h2>¡Más que un recetario!</h2>
-        
-        <div>
-            <a href="download/pollo.pdf" target="_blank">Descargar: Recetas con pollo.</a>
-        </div>
-        <div>
-            <a href="download/budines-galletas.pdf" target="_blank">Descargar: Budines, galletas y más.</a>
-        </div>
-        <div>
-            <a href="download/preparaciones-calientes.pdf" target="_blank">Descargar: Preparaciones calientes.</a>
-        </div>
-        <div>
-            <a href="download/recetas-frutas.pdf" target="_blank">Descargar: Recetas con frutas.</a>
-        </div>
-        <div>
-            <a href="download/recetas-mayo.pdf" target="_blank">Descargar: Recetas de 1ro. de mayo.</a>
-        </div>
-        <div>
-            <a href="download/sanitizacion.pdf" target="_blank">Descargar: Sanitización de alimentos.</a>
-        </div>
-        <div>
-            <a href="download/sopas-caldos.pdf" target="_blank">Descargar: Sopas y caldos.</a>
-        </div>
+    <main class="medio">  
 
+        <div id="accordion">
+
+            <div class="card">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btnn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                        Tortas, budines, galletas y más.
+                        </button>
+                    </h5>
+                </div>
+
+                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        <img class="foto" src="imagenes/budines.jpg" alt="foto" width="100%">
+                        <div>
+                            <a class="descarga" href="download/budines-galletas.pdf" target="_blank">Descargar pdf: Tortas, budines, galletas y más.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btnn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            Preparaciones calientes.
+	                    </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        <img class="foto" src="imagenes/calientes.jpg" alt="foto" width="100%">
+                        <div>
+                            <a class="descarga" href="download/preparaciones-calientes.pdf" target="_blank">Descargar pdf: Preparaciones calientes.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="card">
+                <div class="card-header" id="headingThree">
+                    <h5 class="mb-0">
+                        <button class="btnn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            Recetas con pollo.
+	                    </button>
+                    </h5>
+                </div>
+                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+                    <div class="card-body">
+                        <img class="foto" src="imagenes/pollo.jpg" alt="foto" width="100%">
+                        <div>
+                            <a class="descarga" href="download/pollo.pdf" target="_blank">Descargar pdf: Recetas con pollo.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingFour">
+                    <h5 class="mb-0">
+                        <button class="btnn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                            Recetas con frutas.
+	                    </button>
+                    </h5>
+                </div>
+                <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+                    <div class="card-body">
+                        <img class="foto" src="imagenes/frutas.jpg" alt="foto" width="100%">
+                        <div>
+                            <a class="descarga" href="download/recetas-frutas.pdf" target="_blank">Descargar pdf: Recetas con frutas.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingFive">
+                    <h5 class="mb-0">
+                        <button class="btnn btn-link collapsed" data-toggle="collapse" data-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                            Recetas de 1ro de Mayo.
+	                    </button>
+                    </h5>
+                </div>
+                <div id="collapseFive" class="collapse" aria-labelledby="headingFive" data-parent="#accordion">
+                    <div class="card-body">
+                        <img class="foto" src="imagenes/mayo.jpg" alt="foto" width="100%">
+                        <div>
+                            <a class="descarga" href="download/recetas-mayo.pdf" target="_blank">Descargar: Recetas de 1ro. de Mayo.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingSix">
+                    <h5 class="mb-0">
+                        <button class="btnn btn-link collapsed" data-toggle="collapse" data-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                           Sanitización de alimentos. 
+	                    </button>
+                    </h5>
+                </div>
+                <div id="collapseSix" class="collapse" aria-labelledby="headingSix" data-parent="#accordion">
+                    <div class="card-body">
+                        <img class="foto" src="imagenes/sanitizacion.jpg" alt="foto" width="100%">
+                        <div>
+                            <a class="descarga" href="download/sanitizacion.pdf" target="_blank">Descargar pdf: Sanitización de alimentos.</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-header" id="headingSeven">
+                    <h5 class="mb-0">
+                        <button class="btnn btn-link collapsed" data-toggle="collapse" data-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                           Sopas y caldos. 
+	                    </button>
+                    </h5>
+                </div>
+                <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven" data-parent="#accordion">
+                    <div class="card-body">
+                        <img class="foto" src="imagenes/sopas-caldos.jpg" alt="foto" width="100%">
+                        <div>
+                            <a class="descarga" href="download/sopas-caldos.pdf" target="_blank">Descargar pdf: Sopas y caldos.</a>
+                        </div>            
+                    </div>
+                </div>
+            </div>
+
+        </div>
 
     </main>
 
