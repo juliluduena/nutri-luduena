@@ -283,23 +283,22 @@ footer {display: flex; /*flexbox*/
 }
 
 .presentacion__img {
-    width: 80%;
+    width: 78%;
     height: 160%;
-    padding: 5px;
     margin-left:10%;
     margin-right:10%;
-    margin-top: 1%;
-    margin-bottom: 1%;
+    margin-top: 5%;
+    margin-bottom: 2%;
     justify-self: center;
     align-content: center;
+    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
 }
 
 .presentacion__audio {
     width: 100%;
     height: 40px;
     padding: 5px;
-    margin: 1%;   
-    background-color:rgba(254,252,230,0.9);
+    margin: 3%;   
 }
 
 .presentacion__texto {
@@ -321,6 +320,7 @@ footer {display: flex; /*flexbox*/
     @extend %texto;
     font-size: 16px;
     line-height: 1.5;
+    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
 }
 
 .presentacion__parrafo {
@@ -333,6 +333,7 @@ footer {display: flex; /*flexbox*/
     @extend %texto;
     font-size: 16px;
     line-height: 1.5;
+    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
 }
 
 /* main contacto: aplicando bem y formulario */
@@ -347,6 +348,8 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
 .contacto__TextUno{position: relative;
     width: 25%;
     height: 100%;
+    margin-top: auto;
+    margin-bottom: auto;
 
     .card {border: 3px solid $rosa-claro;
         .card-img-top {background-color:$amarillo;
@@ -362,6 +365,8 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
 }
 
 .contacto__TextDos {
+    margin-top: auto;
+    margin-bottom: auto;
     position: relative;
     width: 50%;
     height: 100%;
@@ -426,6 +431,8 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
 }
 .contacto__TextTres{position: relative;
     width: 25%;
+    margin-top: auto;
+    margin-bottom: auto;
 
     .card {border: 3px solid $rosa-claro;
         .card-img-top {background-color:$amarillo;
@@ -444,7 +451,11 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
 
 #accordion {
 
-    .card {width: 30%;}
+
+    .card {width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     .card-header {
         width: 100%;
@@ -559,7 +570,7 @@ p 	{color: $oscuro;
 	}
 */
 
-/* agregando GRIDS a la sección tips.html  con 4 columnas, con 5 filas y con 16 items*/
+/* sección tips.html: agregando grid  con 4 columnas, con 5 filas y con 16 items*/
 
 .grid {
     width: 100%;
@@ -583,37 +594,43 @@ p 	{color: $oscuro;
     width: 75%;
     grid-area: cuadro1;
     position: center;
-    padding-top: 7px;
+    margin-top: 7px;
+    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img2 {
     grid-area: cuadro2;
     position: center;
-    padding: 10px;
+    margin: 10px;
+    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img3 {
     grid-area: cuadro3;
     position: center;
-    padding: 10px;
+    margin: 10px;
+    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img4 {
     grid-area: cuadro4;
     position: center;
-    padding: 10px;
+    margin: 10px;
+    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img5 {
     grid-area: cuadro5;
     position: center;
-    padding: 10px;
+    margin: 10px;
+    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img6 {
     grid-area: cuadro6;
     position: center;
-    padding: 10px;
+    margin: 10px;
+    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
 }
 
 .nutri {
@@ -621,7 +638,7 @@ p 	{color: $oscuro;
     text-align: center;
     align-content: center;
     background-color: rgba(254,252,230,0.9);
-    border: 1px solid $oscuro;
+    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
     position: center;
     padding: 10px;
     margin: 10px;
@@ -635,55 +652,64 @@ p 	{color: $oscuro;
 .img7 {
     grid-area: cuadro7;
     position: center;
-    padding: 10px;
+    margin: 10px;
+    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img8 {
     grid-area: cuadro8;
     position: center;
-    padding: 10px;
+    margin: 10px;
+    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img9 {
     grid-area: cuadro9;
     position: center;
-    padding: 10px;
+    margin: 10px;
+    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img10 {
     grid-area: cuadro10;
     position: center;
-    padding: 10px;
+    margin: 10px;
+    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img11 {
     grid-area: cuadro11;
     position: center;
-    padding: 10px;
+    margin: 10px;
+    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img12 {
     grid-area: cuadro12;
     position: center;
-    padding: 10px;
+    margin: 10px;
+    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img13 {
     grid-area: cuadro13;
     position: center;
-    padding: 10px;
+    margin: 10px;
+    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img14 {
     grid-area: cuadro14;
     position: center;
-    padding: 10px;
+    margin: 10px;
+    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img15 {
     grid-area: cuadro15;
     position: center;
-    padding: 10px;
+    margin: 10px;
+    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
 }
 
 /* aplicando media queries para celular*/
