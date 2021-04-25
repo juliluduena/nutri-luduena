@@ -4,7 +4,16 @@
     padding: 0
 }
 
+/* GRADIENT lo voy a usar????
+
+#encabezado {
+    background-image: linear-gradient(to right, $amarillo, $naranja);
+}
+*/
+
+
 /*paleta colores*/
+
 $terracota: #b13a1f;
 $oscuro: #d76249;
 $rosa: #f5d6c3;
@@ -55,196 +64,200 @@ h4 {
     letter-spacing: 1px;
 }
 
-
-
-/*header*/
+/*header: aplicando flexbox y bem*/
 
 header {background-color: $amarillo;
-        position: sticky;
-        width: 100%;
+    position: sticky;
+    width: 100%;
+    height: 120px;
 }
 
 #encabezado { background-color: $amarillo;
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
 }
 
-    /* aplicando BEM */
-.identidad__logo {
-    width: 90px;
-    top: 10px;
-    margin-left: 20px;
-    padding: 1px;
-    position: absolute;
-}
+.identidad { width: 40%;
+    height: 120px;
+    .identidad__logo {
+        width: 60px;
+        top: 10px;
+        margin-left: 20px;
+        padding: 1px;
+        position: absolute;
+    }
 
-.identidad__nombre {
-    width: 60%;
-    color: $oscuro;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 22px;
-    word-spacing: 1px;
-    letter-spacing: 1px;
-    line-height: 1;
-    text-align: justify;
-    padding-top: 20px;
-    margin-left: 125px;
-    
-}
-
-.identidad__profesion {
-    width: 60%;
-    color: $oscuro;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 14px;
-    word-spacing: 1px;
-    letter-spacing: 1px;
-    line-height: 1;
-    text-align: justify;
-    padding: 1px;
-    margin-left: 125px;
-   
-}
-
-.identidad__matricula {
-    width: 60%;
-    color: $oscuro;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 14px;
-    word-spacing: 1px;
-    letter-spacing: 1px;
-    line-height: 1;
-    text-align: justify;
-    padding: 1px;
-    margin-left: 125px;
-}
-
-nav .nav {width: 500px;
-    height: 60px;
-    position: relative;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1px;
-    margin-bottom: 1px;
-    align-content: center;
-    justify-content: center;
-    .nav-link {font-size: 16px;
-        font-family: 'Poppins', sans-serif;
-        font-weight: normal;
-        word-spacing: 1px;
-        letter-spacing: 0.5px;
-        line-height: 1;
-        text-align: center;
+    .identidad__nombre {
+        width: 200px;
         color: $oscuro;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 18px;
+        word-spacing: 1px;
+        letter-spacing: 1px;
+        line-height: 1;
+        text-align: justify;
+        padding-top: 20px;
+        margin-left: 125px;
+        
     }
-    a {transition: font-size 5s; /*transition*/
+
+    .identidad__profesion {
+        width: 200px;
+        color: $oscuro;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 14px;
+        word-spacing: 1px;
+        letter-spacing: 1px;
+        line-height: 1;
+        text-align: justify;
+        padding: 1px;
+        margin-left: 125px;
+    
     }
-    a:hover {
-        background-color: $oscuro;
-        color: $amarillo;
-        border-radius: 3px;
-        font-size: 18px;  /*transition*/
+
+    .identidad__matricula {
+        width: 100px;
+        color: $oscuro;
+        text-decoration: none;
+        font-family: 'Poppins', sans-serif;
+        font-style: italic;
+        font-weight: normal;
+        font-size: 14px;
+        word-spacing: 1px;
+        letter-spacing: 1px;
+        line-height: 1;
+        text-align: justify;
+        padding: 1px;
+        margin-left: 125px;
     }
 }
 
-/*footer*/
+nav {width: 60%;
+    height: 120px; 
+    align-content: center;
+    justify-content: flex-end;
+    
+    .nav {width: 500px;
+        height: 60px;
+        margin-top: 1px;
+        margin-bottom: 1px;
+        align-content: center;
+        justify-content: center;
+        .nav-link {font-size: 14px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: normal;
+            word-spacing: 1px;
+            letter-spacing: 0.5px;
+            line-height: 1;
+            text-align: center;
+            color: $oscuro;
+        }
+        a {transition: font-size 5s; /*transition*/
+        }
+        a:hover {
+            background-color: $oscuro;
+            color: $amarillo;
+            border-radius: 3px;
+            font-size: 16px;  /*transition*/
+        }
+    }
+}
+
+/*footer: aplicando flexbox, boton de bootstrap y bem*/
 
 footer {display: flex; /*flexbox*/
-        flex-direction: row;
-        flex-wrap: nowrap;
-        background-color: $amarillo;
-        width: 100%;
-        height: 20vh;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: $amarillo;
+    width: 100%;
+    height: 20vh;
 }
 
 .btn {width: 300px;
-    height: 40px;
-    font-size: 16px;
-    font-family: 'Poppins', sans-serif;
-    font-weight: normal;
-    word-spacing: 1px;
-    letter-spacing: 0.5px;
-    line-height: 1;
-    text-align: center;
-    color: $oscuro;
-    font-style: normal;
-	position: relative;
-    text-align: center;
-    margin: auto 15%;
-    padding: 10px;
-    background-color: $amarillo;
-    color: $terracota;
-    align-content: center;
-    justify-content: center;
-    border: solid 1px $rosa;
+height: 40px;
+font-size: 16px;
+font-family: 'Poppins', sans-serif;
+font-weight: normal;
+word-spacing: 1px;
+letter-spacing: 0.5px;
+line-height: 1;
+text-align: center;
+color: $oscuro;
+font-style: normal;
+position: relative;
+text-align: center;
+margin: auto 15%;
+padding: 10px;
+background-color: $amarillo;
+color: $terracota;
+align-content: center;
+justify-content: center;
+border: solid 1px $rosa;
 }
 
 .btn:hover {
-    background-color: $oscuro;
-    color: $amarillo;
-    border-color: $amarillo;
+background-color: $oscuro;
+color: $amarillo;
+border-color: $amarillo;
 }
 
-    /* aplicando BEM */
-
 .redes {width: 100%;
-    justify-content: space-around;;
-    text-decoration-line: none;
-    text-align: center;
-    margin: auto;
-    margin-right: 5%;
-    padding: 5px;
+justify-content: space-around;;
+text-decoration-line: none;
+text-align: center;
+margin: auto;
+margin-right: 5%;
+padding: 5px;
 }
 
 .redes__email {
-    width: 40px;
-    border-radius: 30px;
-    margin-left: 1%;
-    margin-right: 1%;
+width: 40px;
+border-radius: 30px;
+margin-left: 1%;
+margin-right: 1%;
 }
 
 .redes__watsapp {
-    width: 40px;
-    border-radius: 30px;
-    margin-left: 1%;
-    margin-right: 1%;
+width: 40px;
+border-radius: 30px;
+margin-left: 1%;
+margin-right: 1%;
 }
 
 .redes__facebook {
-    width: 40px;
-    border-radius: 30px;
-    margin-left: 1%;
-    margin-right: 1%;
+width: 40px;
+border-radius: 30px;
+margin-left: 1%;
+margin-right: 1%;
 }
 
 .redes__instagram {
-    width: 40px;
-    border-radius: 30px;
-    margin-left: 1%;
-    margin-right: 1%;
+width: 40px;
+border-radius: 30px;
+margin-left: 1%;
+margin-right: 1%;
 }
 
 .redes__linkedin {
-    width: 40px;
-    border-radius: 30px;
-    margin-left: 1%;
-    margin-right: 1%;
+width: 40px;
+border-radius: 30px;
+margin-left: 1%;
+margin-right: 1%;
 }
 
-/*main index*/
+/*main index: aplicando carousel de bootstrap*/
 
 .medio {background-color: $rosa-claro;
 }
-
-
-    /* bootstrap */
 
 #carouselExampleDark {
     width: 60%;
@@ -266,7 +279,7 @@ footer {display: flex; /*flexbox*/
     }
 }
     
-/* main sobre-mi: aplicando bem y flexbox*/
+/* main sobre-mi: presentación del Centro de Nutrición kume y del profesional. Aplicando bem y flexbox*/
 
 .presentacion {
     display: flex;
@@ -498,77 +511,6 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
     .descarga { font-size: 14px;
     }
 }
-/*
-.nutricion {
-    width: 90%;
-    font-family: 'Poppins', sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    justify-content: center;
-    padding: 10px;
-    background-color: #c8e8ea;
-}
-*/
-
-/* GRADIENT
-
-#encabezado {
-    background-image: linear-gradient(to right, $amarillo, $naranja);
-}
-*/
-
-/*
-h1 {
-    color: $oscuro;
-    text-decoration: none;
-    font-family: 'Comic Neue', cursive;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 30px;
-    word-spacing: 1px;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    text-align: justify;
-    padding: 5px;
-    position: absolute;
-    top: 10px;
-    margin-left: 50px;
-}
-*/
-
-
-
-/*
-h3 {
-    color: $oscuro;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 16px;
-    word-spacing: 1px;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    text-align: justify;
-    padding: 1px;
-    position: relative;
-    margin-left: 60px;
-}
-
-p 	{color: $oscuro;
-	text-decoration: none;
-	font-family: 'Poppins', sans-serif;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	word-spacing: 1px;
-	letter-spacing: 1px;
-	line-height: 1.5;
-	text-align: justify;
-	padding: 10px;
-	}
-*/
 
 /* sección tips.html: agregando grid  con 4 columnas, con 5 filas y con 16 items*/
 
@@ -717,52 +659,116 @@ p 	{color: $oscuro;
 @media screen and (max-width: 481px) {
 
     /*adaptando el header*/
+    
+    header {background-color: $amarillo;
+        position: sticky;
+        width: 100%;
+        height: 140px;
+    }
 
-    .identidad__logo {
-        top: 10px;
-        width: 50px;
-        margin-left: 20px;
+    #encabezado { background-color: $amarillo;
+        width: 100%;
+        height: 140px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
-    
-    .identidad__nombre {
-        text-align: start;
-        padding-top: 15px;
-        font-size: 18px;
-        margin-left: 100px;
+
+    .identidad { width: 100%;
+        height: 90px;   
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+
+        .identidad__logo {
+            width: 50px;
+            top: 5px;
+            margin-left: 15px;
+            padding: 1px;
+            position: absolute;
+        }
+
+        .identidad__nombre {
+            width: 160px;
+            color: $oscuro;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-style: italic;
+            font-weight: normal;
+            font-size: 14px;
+            word-spacing: 1px;
+            letter-spacing: 1px;
+            line-height: 1;
+            text-align: justify;
+            padding-top: 14px;
+            margin-left: 90px;
+            
+        }
+
+        .identidad__profesion {
+            width: 160px;
+            color: $oscuro;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-style: italic;
+            font-weight: normal;
+            font-size: 12px;
+            word-spacing: 1px;
+            letter-spacing: 1px;
+            line-height: 1;
+            text-align: justify;
+            padding: 1px;
+            margin-left: 90px;
         
-    }
-    
-    .identidad__profesion {
-        text-align: start;
-        font-size: 12px;
-        margin-left: 100px;
-       
-    }
-    
-    .identidad__matricula {
-        text-align: start;
-        font-size: 12px;
-        margin-left: 100px;
-    }
-      
-    nav.nav {top: 1px;
-        bottom: 1px;
-        position: relative;
-        margin: auto;
-        left: 0px; 
-        .nav-item {align-items: center;
-            justify-items: center;
-            margin-left: 3px;
-            margin-right: 3px;
         }
-        .nav-link {font-size: 12px;
-            padding: 3px;
-            letter-spacing: 0.3px;
-            word-spacing: 0.2px;
+
+        .identidad__matricula {
+            width: 100px;
+            color: $oscuro;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-style: italic;
+            font-weight: normal;
+            font-size: 12px;
+            word-spacing: 1px;
+            letter-spacing: 1px;
+            line-height: 1;
+            text-align: justify;
+            padding: 1px;
+            margin-left: 90px;
         }
-        a {transition: font-size 5s; /*transition*/
-        }
-        a:hover {font-size: 14px;  /*transition*/
+    }
+    nav {width: 100%;
+        height: 50px; 
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        
+        .nav {width: 400px;
+            height: 60px;
+            margin-top: 1px;
+            margin-bottom: 1px;
+            align-content: center;
+            justify-content: center;
+            .nav-link {font-size: 12px;
+                font-family: 'Poppins', sans-serif;
+                font-weight: normal;
+                word-spacing: 0.3px;
+                letter-spacing: 0.5px;
+                line-height: 1;
+                text-align: center;
+                color: $oscuro;
+                padding: 5px;
+            }
+            a {transition: font-size 5s; /*transition*/
+            }
+            a:hover {
+                background-color: $oscuro;
+                color: $amarillo;
+                border-radius: 3px;
+                font-size: 14px;  /*transition*/
+            }
         }
     }
 
@@ -831,7 +837,7 @@ p 	{color: $oscuro;
         
         margin-top: 5px;
         p {
-            font-size: 10px;
+            font-size: 8px;
             line-height: 0.5;
             padding: 1px;
             text-align: center;
@@ -1134,37 +1140,123 @@ p 	{color: $oscuro;
 /* aplicando  media queries para tablets */
 
 @media screen and (min-width: 481px) and (max-width: 786px) {
-    
+   
     /*adaptando el header*/
-
-    .identidad__logo {
-        top: 15px;
-        width: 50px;
-        margin-left: 25px;
+        
+    header {background-color: $amarillo;
+        position: sticky;
+        width: 100%;
+        height: 140px;
     }
 
-    .identidad__nombre {
-        margin-left: 100px;    
+    #encabezado { background-color: $amarillo;
+        width: 100%;
+        height: 140px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
     }
 
-    .identidad__profesion {
-        margin-left: 100px;
+    .identidad { width: 100%;
+        height: 90px;   
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+
+        .identidad__logo {
+            width: 50px;
+            top: 5px;
+            margin-left: 15px;
+            padding: 1px;
+            position: absolute;
+        }
+
+        .identidad__nombre {
+            width: 160px;
+            color: $oscuro;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-style: italic;
+            font-weight: normal;
+            font-size: 14px;
+            word-spacing: 1px;
+            letter-spacing: 1px;
+            line-height: 1;
+            text-align: justify;
+            padding-top: 14px;
+            margin-left: 90px;
+            
+        }
+
+        .identidad__profesion {
+            width: 160px;
+            color: $oscuro;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-style: italic;
+            font-weight: normal;
+            font-size: 12px;
+            word-spacing: 1px;
+            letter-spacing: 1px;
+            line-height: 1;
+            text-align: justify;
+            padding: 1px;
+            margin-left: 90px;
+        
+        }
+
+        .identidad__matricula {
+            width: 100px;
+            color: $oscuro;
+            text-decoration: none;
+            font-family: 'Poppins', sans-serif;
+            font-style: italic;
+            font-weight: normal;
+            font-size: 12px;
+            word-spacing: 1px;
+            letter-spacing: 1px;
+            line-height: 1;
+            text-align: justify;
+            padding: 1px;
+            margin-left: 90px;
+        }
+    }
+    nav {width: 100%;
+        height: 50px; 
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        
+        .nav {width: 400px;
+            height: 60px;
+            margin-top: 1px;
+            margin-bottom: 1px;
+            align-content: center;
+            justify-content: center;
+            .nav-link {font-size: 12px;
+                font-family: 'Poppins', sans-serif;
+                font-weight: normal;
+                word-spacing: 0.3px;
+                letter-spacing: 0.5px;
+                line-height: 1;
+                text-align: center;
+                color: $oscuro;
+                padding: 5px;
+            }
+            a {transition: font-size 5s; /*transition*/
+            }
+            a:hover {
+                background-color: $oscuro;
+                color: $amarillo;
+                border-radius: 3px;
+                font-size: 14px;  /*transition*/
+            }
+        }
     }
 
-    .identidad__matricula {
-        margin-left: 100px;
-    }
     
     /*adaptando el footer*/
-
-    /*    
-    .btn {width: 30%;
-        height: 40px;
-        font-size: 14px;
-        margin: auto 5%;
-        padding: 5px;
-    }
-    */
     
     .btn {font-size: 14px;
         width: 200px;
@@ -1207,78 +1299,172 @@ p 	{color: $oscuro;
         border-radius: 30px;
     }
 
-    /*
-    .btn {font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        position: relative;
-        font-family: 'Poppins', sans-serif;
-        width: 250px;
-        height: 40px;
-        text-align: center;
-        margin: auto 10%;
-        padding: 5px;
-        background-color: $amarillo;
-        color: $terracota;
-        align-content: center;
-        justify-content: center;
-        border: solid 1px $rosa;
-    }
-    
-    .redes__email {
-        width: 40px;
-        border-radius: 30px;
+     /* adaptando main de index*/
+
+    #carouselExampleDark {
+        width: 100%;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
     }
 
-    .redes__watsapp {
-        width: 40px;
-        border-radius: 30px;
+    /* adaptando main de sobre-mi y aplicando bem y flexbox*/
+
+
+    .contenedor {
+        display: flex;
     }
-
-    .redes__facebook {
-        width: 40px;
-        border-radius: 30px;
-    }
-
-    .redes__instagram {
-        width: 40px;
-        border-radius: 30px;
-    }
-
-    .redes__linkedin {
-        width: 40px;
-        border-radius: 30px;
-    }
-
-    */
-
-
-
-/*
-
-    a {
-        font-size: 15px;
-        word-spacing: 1px;
-        letter-spacing: 1px;
         
-        line-height: 1.5;
-        text-align: center;
-        padding: 5px;
+    .presentacion {
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: $rosa-claro;
+        width: 100%;
+        height: 100%;
     }
-    ul {
-        list-style: none;
-        font-size: 0;
+    .presentacion__multimedia {
+        flex-direction: none;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        margin: auto;
     }
-    ul li {
-        display: inline-block;
-        position: relative;
-        left: 5px;
-    }
-    .botonTurno {
-        padding: 5px;
-    }
-    */
 
+    .presentacion__img {
+        width: 60%;
+        height: 120%;
+        padding: 5px;
+        margin-left:20%;
+        margin-right:20%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        justify-self: center;
+        align-content: center;
+    }
+    .presentacion__audio {
+        width: 80%;
+        height: 40px;
+        padding: 5px;
+        margin-left:10%;
+        margin-right:10%;
+        margin-top: 1%;
+        margin-bottom: 1%;   
+    }
+    .presentacion__texto {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%; 
+        height: 100%;  
+        justify-content: center; 
+        font-size: 14px;   
+    }
+
+    .presentacion__titulo {
+        width: 50%;
+        padding: 10px;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 1%;
+        text-align: center;
+        justify-content: center; 
+        font-size: 14px;          
+    }
+
+    .presentacion__parrafo {
+        width: 90%;
+        padding: 10px;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: justify;
+        justify-content: center;  
+        font-size: 14px;   
+    }
+
+    /*
+    .contenedor {
+        display: flex;
+    }
+        
+    .presentacion {
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: $rosa-claro;
+        width: 100%;
+        height: 100%;
+    }
+    .presentacion__multimedia {
+        flex-direction: none;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+
+    .presentacion__img {
+        width: 60%;
+        height: 120%;
+        padding: 5px;
+        margin-left:20%;
+        margin-right:20%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        justify-self: center;
+        align-content: center;
+    }
+    .presentacion__audio {
+        width: 80%;
+        height: 40px;
+        padding: 5px;
+        margin-left:10%;
+        margin-right:10%;
+        margin-top: 1%;
+        margin-bottom: 1%;   
+    }
+    .presentacion__texto {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%; 
+        height: 100%;  
+        justify-content: center; 
+        font-size: 14px;   
+    }
+
+    .presentacion__titulo {
+        width: 50%;
+        padding: 10px;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 1%;
+        text-align: center;
+        justify-content: center; 
+        font-size: 14px;          
+    }
+
+    .presentacion__parrafo {
+        width: 90%;
+        padding: 10px;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: justify;
+        justify-content: center;  
+        font-size: 14px;   
+    }*/
+
+
+
+
+
+
+
+
+
+
+
+    
     /* adaptando el main: GRIDS a la sección index.html  con 5 columnas, con 6 filas y con 13 items*/
     .grid {
         display: grid;
@@ -1375,11 +1561,5 @@ p 	{color: $oscuro;
         border-color: #7ac9d0;
         position: center;
     }
-    /* adaptando el carousel : MEDIA QUERIES CON BOOTSTRAP*/
-    #carouselExampleDark {
-        width: 100%;
-        padding: 10px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    
 }

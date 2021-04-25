@@ -5,6 +5,12 @@
   padding: 0;
 }
 
+/* GRADIENT lo voy a usar????
+
+#encabezado {
+    background-image: linear-gradient(to right, $amarillo, $naranja);
+}
+*/
 /*paleta colores*/
 /*estilos textos*/
 h2 {
@@ -47,35 +53,51 @@ h4 {
   letter-spacing: 1px;
 }
 
-/*header*/
+/*header: aplicando flexbox y bem*/
 header {
   background-color: #fefce6;
   position: -webkit-sticky;
   position: sticky;
   width: 100%;
+  height: 120px;
 }
 
 #encabezado {
   background-color: #fefce6;
+  width: 100%;
+  height: 120px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
 }
 
-/* aplicando BEM */
-.identidad__logo {
-  width: 90px;
+.identidad {
+  width: 40%;
+  height: 120px;
+}
+
+.identidad .identidad__logo {
+  width: 60px;
   top: 10px;
   margin-left: 20px;
   padding: 1px;
   position: absolute;
 }
 
-.identidad__nombre {
-  width: 60%;
+.identidad .identidad__nombre {
+  width: 200px;
   color: #d76249;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   font-style: italic;
   font-weight: normal;
-  font-size: 22px;
+  font-size: 18px;
   word-spacing: 1px;
   letter-spacing: 1px;
   line-height: 1;
@@ -84,8 +106,8 @@ header {
   margin-left: 125px;
 }
 
-.identidad__profesion {
-  width: 60%;
+.identidad .identidad__profesion {
+  width: 200px;
   color: #d76249;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
@@ -100,8 +122,8 @@ header {
   margin-left: 125px;
 }
 
-.identidad__matricula {
-  width: 60%;
+.identidad .identidad__matricula {
+  width: 100px;
   color: #d76249;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
@@ -114,14 +136,21 @@ header {
   text-align: justify;
   padding: 1px;
   margin-left: 125px;
+}
+
+nav {
+  width: 60%;
+  height: 120px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 nav .nav {
   width: 500px;
   height: 60px;
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
   margin-top: 1px;
   margin-bottom: 1px;
   -ms-flex-line-pack: center;
@@ -132,7 +161,7 @@ nav .nav {
 }
 
 nav .nav .nav-link {
-  font-size: 16px;
+  font-size: 14px;
   font-family: 'Poppins', sans-serif;
   font-weight: normal;
   word-spacing: 1px;
@@ -152,11 +181,11 @@ nav .nav a:hover {
   background-color: #d76249;
   color: #fefce6;
   border-radius: 3px;
-  font-size: 18px;
+  font-size: 16px;
   /*transition*/
 }
 
-/*footer*/
+/*footer: aplicando flexbox, boton de bootstrap y bem*/
 footer {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -205,7 +234,6 @@ footer {
   border-color: #fefce6;
 }
 
-/* aplicando BEM */
 .redes {
   width: 100%;
   -ms-flex-pack: distribute;
@@ -253,12 +281,11 @@ footer {
   margin-right: 1%;
 }
 
-/*main index*/
+/*main index: aplicando carousel de bootstrap*/
 .medio {
   background-color: #fae0c7;
 }
 
-/* bootstrap */
 #carouselExampleDark {
   width: 60%;
   padding: 10px;
@@ -282,7 +309,7 @@ footer {
       justify-content: space-around;
 }
 
-/* main sobre-mi: aplicando bem y flexbox*/
+/* main sobre-mi: presentación del Centro de Nutrición kume y del profesional. Aplicando bem y flexbox*/
 .presentacion {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -563,72 +590,6 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
   font-size: 14px;
 }
 
-/*
-.nutricion {
-    width: 90%;
-    font-family: 'Poppins', sans-serif;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-    justify-content: center;
-    padding: 10px;
-    background-color: #c8e8ea;
-}
-*/
-/* GRADIENT
-
-#encabezado {
-    background-image: linear-gradient(to right, $amarillo, $naranja);
-}
-*/
-/*
-h1 {
-    color: $oscuro;
-    text-decoration: none;
-    font-family: 'Comic Neue', cursive;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 30px;
-    word-spacing: 1px;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    text-align: justify;
-    padding: 5px;
-    position: absolute;
-    top: 10px;
-    margin-left: 50px;
-}
-*/
-/*
-h3 {
-    color: $oscuro;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-style: italic;
-    font-weight: normal;
-    font-size: 16px;
-    word-spacing: 1px;
-    letter-spacing: 1px;
-    line-height: 1.5;
-    text-align: justify;
-    padding: 1px;
-    position: relative;
-    margin-left: 60px;
-}
-
-p 	{color: $oscuro;
-	text-decoration: none;
-	font-family: 'Poppins', sans-serif;
-	font-style: normal;
-	font-weight: normal;
-	font-size: 16px;
-	word-spacing: 1px;
-	letter-spacing: 1px;
-	line-height: 1.5;
-	text-align: justify;
-	padding: 10px;
-	}
-*/
 /* sección tips.html: agregando grid  con 4 columnas, con 5 filas y con 16 items*/
 .grid {
   width: 100%;
@@ -831,54 +792,137 @@ p 	{color: $oscuro;
 /* aplicando media queries para celular*/
 @media screen and (max-width: 481px) {
   /*adaptando el header*/
-  .identidad__logo {
-    top: 10px;
+  header {
+    background-color: #fefce6;
+    position: -webkit-sticky;
+    position: sticky;
+    width: 100%;
+    height: 140px;
+  }
+  #encabezado {
+    background-color: #fefce6;
+    width: 100%;
+    height: 140px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .identidad {
+    width: 100%;
+    height: 90px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .identidad .identidad__logo {
     width: 50px;
-    margin-left: 20px;
+    top: 5px;
+    margin-left: 15px;
+    padding: 1px;
+    position: absolute;
   }
-  .identidad__nombre {
-    text-align: start;
-    padding-top: 15px;
-    font-size: 18px;
-    margin-left: 100px;
+  .identidad .identidad__nombre {
+    width: 160px;
+    color: #d76249;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-height: 1;
+    text-align: justify;
+    padding-top: 14px;
+    margin-left: 90px;
   }
-  .identidad__profesion {
-    text-align: start;
+  .identidad .identidad__profesion {
+    width: 160px;
+    color: #d76249;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: normal;
     font-size: 12px;
-    margin-left: 100px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-height: 1;
+    text-align: justify;
+    padding: 1px;
+    margin-left: 90px;
   }
-  .identidad__matricula {
-    text-align: start;
+  .identidad .identidad__matricula {
+    width: 100px;
+    color: #d76249;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: normal;
     font-size: 12px;
-    margin-left: 100px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-height: 1;
+    text-align: justify;
+    padding: 1px;
+    margin-left: 90px;
   }
-  nav.nav {
-    top: 1px;
-    bottom: 1px;
-    position: relative;
-    margin: auto;
-    left: 0px;
+  nav {
+    width: 100%;
+    height: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  nav.nav .nav-item {
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    justify-items: center;
-    margin-left: 3px;
-    margin-right: 3px;
+  nav .nav {
+    width: 400px;
+    height: 60px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  nav.nav .nav-link {
+  nav .nav .nav-link {
     font-size: 12px;
-    padding: 3px;
-    letter-spacing: 0.3px;
-    word-spacing: 0.2px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    word-spacing: 0.3px;
+    letter-spacing: 0.5px;
+    line-height: 1;
+    text-align: center;
+    color: #d76249;
+    padding: 5px;
   }
-  nav.nav a {
+  nav .nav a {
     -webkit-transition: font-size 5s;
     transition: font-size 5s;
     /*transition*/
   }
-  nav.nav a:hover {
+  nav .nav a:hover {
+    background-color: #d76249;
+    color: #fefce6;
+    border-radius: 3px;
     font-size: 14px;
     /*transition*/
   }
@@ -940,7 +984,7 @@ p 	{color: $oscuro;
     margin-top: 5px;
   }
   .kumetext p {
-    font-size: 10px;
+    font-size: 8px;
     line-height: 0.5;
     padding: 1px;
     text-align: center;
@@ -1270,29 +1314,141 @@ p 	{color: $oscuro;
 /* aplicando  media queries para tablets */
 @media screen and (min-width: 481px) and (max-width: 786px) {
   /*adaptando el header*/
-  .identidad__logo {
-    top: 15px;
+  header {
+    background-color: #fefce6;
+    position: -webkit-sticky;
+    position: sticky;
+    width: 100%;
+    height: 140px;
+  }
+  #encabezado {
+    background-color: #fefce6;
+    width: 100%;
+    height: 140px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .identidad {
+    width: 100%;
+    height: 90px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .identidad .identidad__logo {
     width: 50px;
-    margin-left: 25px;
+    top: 5px;
+    margin-left: 15px;
+    padding: 1px;
+    position: absolute;
   }
-  .identidad__nombre {
-    margin-left: 100px;
+  .identidad .identidad__nombre {
+    width: 160px;
+    color: #d76249;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 14px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-height: 1;
+    text-align: justify;
+    padding-top: 14px;
+    margin-left: 90px;
   }
-  .identidad__profesion {
-    margin-left: 100px;
+  .identidad .identidad__profesion {
+    width: 160px;
+    color: #d76249;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 12px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-height: 1;
+    text-align: justify;
+    padding: 1px;
+    margin-left: 90px;
   }
-  .identidad__matricula {
-    margin-left: 100px;
+  .identidad .identidad__matricula {
+    width: 100px;
+    color: #d76249;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-style: italic;
+    font-weight: normal;
+    font-size: 12px;
+    word-spacing: 1px;
+    letter-spacing: 1px;
+    line-height: 1;
+    text-align: justify;
+    padding: 1px;
+    margin-left: 90px;
+  }
+  nav {
+    width: 100%;
+    height: 50px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav .nav {
+    width: 400px;
+    height: 60px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  nav .nav .nav-link {
+    font-size: 12px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: normal;
+    word-spacing: 0.3px;
+    letter-spacing: 0.5px;
+    line-height: 1;
+    text-align: center;
+    color: #d76249;
+    padding: 5px;
+  }
+  nav .nav a {
+    -webkit-transition: font-size 5s;
+    transition: font-size 5s;
+    /*transition*/
+  }
+  nav .nav a:hover {
+    background-color: #d76249;
+    color: #fefce6;
+    border-radius: 3px;
+    font-size: 14px;
+    /*transition*/
   }
   /*adaptando el footer*/
-  /*    
-    .btn {width: 30%;
-        height: 40px;
-        font-size: 14px;
-        margin: auto 5%;
-        padding: 5px;
-    }
-    */
   .btn {
     font-size: 14px;
     width: 200px;
@@ -1330,74 +1486,173 @@ p 	{color: $oscuro;
     width: 30px;
     border-radius: 30px;
   }
-  /*
-    .btn {font-style: normal;
-        font-weight: normal;
-        font-size: 16px;
-        position: relative;
-        font-family: 'Poppins', sans-serif;
-        width: 250px;
-        height: 40px;
-        text-align: center;
-        margin: auto 10%;
-        padding: 5px;
-        background-color: $amarillo;
-        color: $terracota;
+  /* adaptando main de index*/
+  #carouselExampleDark {
+    width: 100%;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  /* adaptando main de sobre-mi y aplicando bem y flexbox*/
+  .contenedor {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .presentacion {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    background-color: #fae0c7;
+    width: 100%;
+    height: 100%;
+  }
+  .presentacion__multimedia {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: none;
+            flex-direction: none;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    margin: auto;
+  }
+  .presentacion__img {
+    width: 60%;
+    height: 120%;
+    padding: 5px;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    -ms-grid-column-align: center;
+        justify-self: center;
+    -ms-flex-line-pack: center;
         align-content: center;
-        justify-content: center;
-        border: solid 1px $rosa;
-    }
-    
-    .redes__email {
-        width: 40px;
-        border-radius: 30px;
-    }
-
-    .redes__watsapp {
-        width: 40px;
-        border-radius: 30px;
-    }
-
-    .redes__facebook {
-        width: 40px;
-        border-radius: 30px;
-    }
-
-    .redes__instagram {
-        width: 40px;
-        border-radius: 30px;
-    }
-
-    .redes__linkedin {
-        width: 40px;
-        border-radius: 30px;
-    }
-
-    */
+  }
+  .presentacion__audio {
+    width: 80%;
+    height: 40px;
+    padding: 5px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 1%;
+    margin-bottom: 1%;
+  }
+  .presentacion__texto {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    height: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 14px;
+  }
+  .presentacion__titulo {
+    width: 50%;
+    padding: 10px;
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 1%;
+    text-align: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 14px;
+  }
+  .presentacion__parrafo {
+    width: 90%;
+    padding: 10px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    margin-left: 5%;
+    margin-right: 5%;
+    text-align: justify;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 14px;
+  }
   /*
-
-    a {
-        font-size: 15px;
-        word-spacing: 1px;
-        letter-spacing: 1px;
+    .contenedor {
+        display: flex;
+    }
         
-        line-height: 1.5;
+    .presentacion {
+        flex-direction: column;
+        flex-wrap: wrap;
+        background-color: $rosa-claro;
+        width: 100%;
+        height: 100%;
+    }
+    .presentacion__multimedia {
+        flex-direction: none;
+        flex-wrap: wrap;
+        width: 100%;
+        height: 100%;
+        margin: auto;
+    }
+
+    .presentacion__img {
+        width: 60%;
+        height: 120%;
+        padding: 5px;
+        margin-left:20%;
+        margin-right:20%;
+        margin-top: 1%;
+        margin-bottom: 1%;
+        justify-self: center;
+        align-content: center;
+    }
+    .presentacion__audio {
+        width: 80%;
+        height: 40px;
+        padding: 5px;
+        margin-left:10%;
+        margin-right:10%;
+        margin-top: 1%;
+        margin-bottom: 1%;   
+    }
+    .presentacion__texto {
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%; 
+        height: 100%;  
+        justify-content: center; 
+        font-size: 14px;   
+    }
+
+    .presentacion__titulo {
+        width: 50%;
+        padding: 10px;
+        margin-left: 25%;
+        margin-right: 25%;
+        margin-top: 1%;
         text-align: center;
-        padding: 5px;
+        justify-content: center; 
+        font-size: 14px;          
     }
-    ul {
-        list-style: none;
-        font-size: 0;
-    }
-    ul li {
-        display: inline-block;
-        position: relative;
-        left: 5px;
-    }
-    .botonTurno {
-        padding: 5px;
-    }
-    */
+
+    .presentacion__parrafo {
+        width: 90%;
+        padding: 10px;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        margin-left: 5%;
+        margin-right: 5%;
+        text-align: justify;
+        justify-content: center;  
+        font-size: 14px;   
+    }*/
   /* adaptando el main: GRIDS a la sección index.html  con 5 columnas, con 6 filas y con 13 items*/
   .grid {
     display: -ms-grid;
@@ -1532,13 +1787,6 @@ p 	{color: $oscuro;
     border: solid 1px;
     border-color: #7ac9d0;
     position: center;
-  }
-  /* adaptando el carousel : MEDIA QUERIES CON BOOTSTRAP*/
-  #carouselExampleDark {
-    width: 100%;
-    padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
   }
 }
 /*# sourceMappingURL=estilos.css.map */
