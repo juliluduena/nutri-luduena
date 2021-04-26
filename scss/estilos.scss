@@ -518,13 +518,13 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 0.8fr 0.8fr 1.2fr 0.8fr 1.2fr;
     grid-gap: 1px;
     background-color: $rosa-claro;
     grid-template-areas: "cuadro1 cuadro3 cuadro11 cuadro4" 
                          "cuadro1 nutri nutri cuadro13" 
-                         "cuadro6 cuadro8 cuadro7 cuadro13"
-                         "cuadro10 cuadro8 cuadro2 cuadro5"
+                         "cuadro6 cuadro8 cuadro5 cuadro13"
+                         "cuadro10 cuadro8 cuadro2 cuadro7"
                          "cuadro9 cuadro14 cuadro12 cuadro15";
     justify-items: center;
     align-items: center;
@@ -533,10 +533,8 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
 }
 
 .video {
-    width: 75%;
     grid-area: cuadro1;
     position: center;
-    margin-top: 7px;
     box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
 }
 
@@ -637,8 +635,38 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
     grid-area: cuadro13;
     position: center;
     margin: 10px;
-    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);        
 }
+
+.bbtn {@extend %texto;
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 1px;
+    text-align: center;
+    background-color: $amarillo;
+    align-content: center;
+    justify-content: center;
+    border: solid 1px $rosa;
+}
+    
+.bbtn:hover {background-color: $oscuro;
+    color: $amarillo;
+    border-color: $amarillo;
+}
+
+.card-body {background-color: $amarillo;
+}
+
+.modal-dialog {background-color:$rosa;
+}
+
+.modal-content {background-color: $amarillo;
+    @extend %texto;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.modal-header .modal-body .modal-footer{ border: 1px solid $rosa;}
 
 .img14 {
     grid-area: cuadro14;
@@ -738,6 +766,7 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
             margin-left: 90px;
         }
     }
+
     nav {width: 100%;
         height: 50px; 
         flex-direction: column;
@@ -876,6 +905,7 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
         justify-self: center;
         align-content: center;
     }
+
     .presentacion__audio {
         width: 80%;
         height: 40px;
@@ -917,11 +947,185 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
         font-size: 14px;   
     }
 
+    /* adaptando grids de la sección tips.html:  con 2 columnas, con 10 filas y con 16 items*/
+      
+    .grid {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 1.2fr 1.2fr 1.2fr;
+        grid-gap: 0.5px;
+        background-color: $rosa-claro;
+        grid-template-areas:"cuadro3 cuadro11" 
+                            "nutri nutri"
+                            "nutri nutri"
+                            "cuadro10 cuadro4"
+                            "cuadro1 cuadro2"
+                            "cuadro1 cuadro7"
+                            "cuadro8 cuadro13"
+                            "cuadro8 cuadro13"
+                            "cuadro14 cuadro5 cuadro12"
+                            "cuadro6 cuadro15 cuadro9";
+        justify-items: center;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .video {
+        width: 80%;
+        grid-area: cuadro1;
+        position: center;
+        margin-top: 7px;
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    }
+
+    .img2 {
+        grid-area: cuadro2;
+        position: center;
+        margin: 5px;
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    }
+    
+    .img3 {
+        grid-area: cuadro3;
+        position: center;
+        margin: 5px;
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    }
+
+    .img4 {
+        grid-area: cuadro4;
+        position: center;
+        margin: 5px;
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    }
+
+    .img5 {
+        grid-area: cuadro5;
+        position: center;
+        margin: 5px;
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    }
+
+    .img6 {
+        grid-area: cuadro6;
+        position: center;
+        margin: 5px;
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    }
+
+    .nutri {
+        grid-area: nutri;
+        text-align: center;
+        align-content: center;
+        background-color: rgba(254,252,230,0.9);
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        position: center;
+        padding: 5px;
+        margin: 5px;
+        p { padding-top: 5px;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+    }
+
+    .img7 {
+        grid-area: cuadro7;
+        position: center;
+        margin: 5px;
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    }
+
+    .img8 {
+        grid-area: cuadro8;
+        position: center;
+        margin: 5px;
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    }
+
+    .img9 {
+        grid-area: cuadro9;
+        position: center;
+        margin: 5px;
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    }
+
+    .img10 {
+        grid-area: cuadro10;
+        position: center;
+        margin: 5px;
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    }
+
+    .img11 {
+        grid-area: cuadro11;
+        position: center;
+        margin: 5px;
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    }
+
+    .img12 {
+        grid-area: cuadro12;
+        position: center;
+        margin: 5px;
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    }
+
+    .img13 {
+        grid-area: cuadro13;
+        position: center;
+        margin: 5px;
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);        
+    }
+
+    .bbtn {font-size: 12px;
+        line-height: 1.5;
+        padding: 1px;
+        text-align: center;
+        background-color: $amarillo;
+        align-content: center;
+        justify-content: center;
+        border: solid 1px $rosa;
+    }
+        
+    .bbtn:hover {background-color: $oscuro;
+        color: $amarillo;
+        border-color: $amarillo;
+    }
+
+    .card-body {background-color: $amarillo;
+    }
+
+    .modal-dialog {background-color:$rosa;
+    }
+
+    .modal-content {background-color: $amarillo;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .modal-header .modal-body .modal-footer{ border: 1px solid $rosa;}
+
+    .img14 {
+        grid-area: cuadro14;
+        position: center;
+        margin: 5px;
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    }
+
+    .img15 {
+        grid-area: cuadro15;
+        position: center;
+        margin: 5px;
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    }
+
     /* adaptando main de contacto */
 
     .contacto { width: 100%;
         display: flex;
-        }
+       
         
         .contacto__TextUno {
             width: 100%;
@@ -956,7 +1160,7 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
             }
         }
         
-        .contacto__formulario {
+        .contacto__formulario{
             border: 3px solid $rosa-claro;
             color: $oscuro;
             text-decoration: none;
@@ -974,7 +1178,8 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
             .casilla {color: $oscuro;
                 text-align: center;
                 justify-content: center;
-                input{border: 1px solid $terracota;
+                input{
+                    border: 1px solid $terracota;
                 }
                 
                 
@@ -996,7 +1201,7 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
             .boton:hover {background-color: $oscuro;
                 color: $amarillo;
                 border-radius: 3px;
-                }
+            }
         }
         .contacto__TextTres{
             width: 100%;
@@ -1012,129 +1217,9 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
                 }
             }
         }
-    
-    /*
-
-    a {
-        font-size: 15px;
-        word-spacing: 1px;
-        letter-spacing: 1px;
-        
-        line-height: 1.5;
-        text-align: center;
-        padding: 5px;
     }
-    ul {
-        list-style: none;
-        font-size: 0;
-    }
-    ul li {
-        display: inline-block;
-        position: relative;
-        left: 5px;
-    }
-    .botonTurno {
-        padding: 5px;
-    }
-    */
-    
-    /* adaptando el main: GRIDS a la sección index.html  con 5 columnas, con 6 filas y con 13 items
-    .grid {
-        display: grid;
-        grid-template-columns: 19.9% 19.9% 19.9% 19.9% 19.9%;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-        grid-gap: 0.5px;
-        background-color: #ebf9fa;
-        grid-template-areas: "cuadro1 nutri nutri nutri cuadro2" "cuadro3 nutri nutri nutri cuadro4" "cuadro5 nutri nutri nutri cuadro6" "cuadro7 nutri nutri nutri cuadro8" "cuadro9 nutri nutri nutri cuadro10" "cuadro11 nutri nutri nutri cuadro12";
-        justify-items: center;
-        align-items: center;
-        justify-content: center;
-        align-content: center;
-    }
-    .img1 {
-        grid-area: cuadro1;
-        border: solid 1px;
-        border-color: #7ac9d0;
-        position: center;
-    }
-    .img2 {
-        grid-area: cuadro2;
-        border: solid 1px;
-        border-color: #7ac9d0;
-        position: center;
-    }
-    .img3 {
-        grid-area: cuadro3;
-        border: solid 1px;
-        border-color: #7ac9d0;
-        position: center;
-    }
-    .img4 {
-        grid-area: cuadro4;
-        border: solid 1px;
-        border-color: #7ac9d0;
-        position: center;
-    }
-    .img5 {
-        grid-area: cuadro5;
-        border: solid 1px;
-        border-color: #7ac9d0;
-        position: center;
-    }
-    .img6 {
-        grid-area: cuadro6;
-        border: solid 1px;
-        border-color: #7ac9d0;
-        position: center;
-    }
-    .nutri {
-        grid-area: nutri;
-        border: solid 1px;
-        border-color: #7ac9d0;
-        text-align: center;
-        align-content: center;
-        padding: 10px;
-        background-color: #ebf9fa;
-        position: center;
-    }
-    .img7 {
-        grid-area: cuadro7;
-        border: solid 1px;
-        border-color: #7ac9d0;
-        position: center;
-    }
-    .img8 {
-        grid-area: cuadro8;
-        border: solid 1px;
-        border-color: #7ac9d0;
-        position: center;
-    }
-    .img9 {
-        grid-area: cuadro9;
-        border: solid 1px;
-        border-color: #7ac9d0;
-        position: center;
-    }
-    .img10 {
-        grid-area: cuadro10;
-        border: solid 1px;
-        border-color: #7ac9d0;
-        position: center;
-    }
-    .img11 {
-        grid-area: cuadro11;
-        border: solid 1px;
-        border-color: #7ac9d0;
-        position: center;
-    }
-    .img12 {
-        grid-area: cuadro12;
-        border: solid 1px;
-        border-color: #7ac9d0;
-        position: center;
-    }
-    */
 }
+
 
 /* aplicando  media queries para tablets */
 
@@ -1254,7 +1339,6 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
         }
     }
 
-    
     /*adaptando el footer*/
     
     .btn {font-size: 14px;
@@ -1298,7 +1382,7 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
         border-radius: 30px;
     }
 
-     /* adaptando main de index*/
+    /* adaptando main de index*/
 
     #carouselExampleDark {
         width: 100%;
@@ -1309,7 +1393,6 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
 
     /* adaptando main de sobre-mi y aplicando bem y flexbox*/
 
-
     .contenedor {
         display: flex;
     }
@@ -1379,185 +1462,177 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
         justify-content: center;  
         font-size: 14px;   
     }
-
-    /*
-    .contenedor {
-        display: flex;
-    }
-        
-    .presentacion {
-        flex-direction: column;
-        flex-wrap: wrap;
-        background-color: $rosa-claro;
-        width: 100%;
-        height: 100%;
-    }
-    .presentacion__multimedia {
-        flex-direction: none;
-        flex-wrap: wrap;
-        width: 100%;
-        height: 100%;
-        margin: auto;
-    }
-
-    .presentacion__img {
-        width: 60%;
-        height: 120%;
-        padding: 5px;
-        margin-left:20%;
-        margin-right:20%;
-        margin-top: 1%;
-        margin-bottom: 1%;
-        justify-self: center;
-        align-content: center;
-    }
-    .presentacion__audio {
-        width: 80%;
-        height: 40px;
-        padding: 5px;
-        margin-left:10%;
-        margin-right:10%;
-        margin-top: 1%;
-        margin-bottom: 1%;   
-    }
-    .presentacion__texto {
-        flex-direction: row;
-        flex-wrap: wrap;
-        width: 100%; 
-        height: 100%;  
-        justify-content: center; 
-        font-size: 14px;   
-    }
-
-    .presentacion__titulo {
-        width: 50%;
-        padding: 10px;
-        margin-left: 25%;
-        margin-right: 25%;
-        margin-top: 1%;
-        text-align: center;
-        justify-content: center; 
-        font-size: 14px;          
-    }
-
-    .presentacion__parrafo {
-        width: 90%;
-        padding: 10px;
-        margin-top: 2%;
-        margin-bottom: 2%;
-        margin-left: 5%;
-        margin-right: 5%;
-        text-align: justify;
-        justify-content: center;  
-        font-size: 14px;   
-    }*/
-
-
-
-
-
-
-
-
-
-
-
-    
-    /* adaptando el main: GRIDS a la sección index.html  con 5 columnas, con 6 filas y con 13 items*/
+  
+    /* adaptando grids de la sección tips.html:  con 3 columnas, con 7 filas y con 16 items*/
+      
     .grid {
+        width: 100%;
         display: grid;
-        grid-template-columns: 33.17% 33.17% 33.17%;
-        grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 0.8fr 0.8fr 0.8fr 0.8fr 1.2fr 1.2fr 1.2fr;
         grid-gap: 0.5px;
-        background-color: #ebf9fa;
-        grid-template-areas: "cuadro1 cuadro2 cuadro3" "cuadro4 cuadro5 cuadro6" "nutri nutri nutri" "nutri nutri nutri" "cuadro7 cuadro8 cuadro9" "cuadro10 cuadro11 cuadro12";
+        background-color: $rosa-claro;
+        grid-template-areas:"cuadro3 cuadro11 cuadro4" 
+                            "nutri nutri nutri"
+                            "cuadro10 cuadro2 cuadro7"
+                            "cuadro8 cuadro1 cuadro13"
+                            "cuadro8 cuadro1 cuadro13"
+                            "cuadro14 cuadro5 cuadro12"
+                            "cuadro6 cuadro15 cuadro9";
         justify-items: center;
         align-items: center;
         justify-content: center;
         align-content: center;
     }
-    .img1 {
+
+    .video {
+        width: 80%;
         grid-area: cuadro1;
-        border: solid 1px;
-        border-color: #7ac9d0;
         position: center;
+        margin-top: 7px;
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
     }
+
     .img2 {
         grid-area: cuadro2;
-        border: solid 1px;
-        border-color: #7ac9d0;
         position: center;
-    }
-    .img3 {
-        grid-area: cuadro3;
-        border: solid 1px;
-        border-color: #7ac9d0;
-        position: center;
-    }
-    .img4 {
-        grid-area: cuadro4;
-        border: solid 1px;
-        border-color: #7ac9d0;
-        position: center;
-    }
-    .img5 {
-        grid-area: cuadro5;
-        border: solid 1px;
-        border-color: #7ac9d0;
-        position: center;
-    }
-    .img6 {
-        grid-area: cuadro6;
-        border: solid 1px;
-        border-color: #7ac9d0;
-        position: center;
-    }
-    .nutri {
-        grid-area: nutri;
-        border: solid 1px;
-        border-color: #7ac9d0;
-        text-align: center;
-        align-content: center;
-        justify-content: center;
-        padding: 10px;
-        background-color: #ebf9fa;
-        position: center;
-    }
-    .img7 {
-        grid-area: cuadro7;
-        border: solid 1px;
-        border-color: #7ac9d0;
-        position: center;
-    }
-    .img8 {
-        grid-area: cuadro8;
-        border: solid 1px;
-        border-color: #7ac9d0;
-        position: center;
-    }
-    .img9 {
-        grid-area: cuadro9;
-        border: solid 1px;
-        border-color: #7ac9d0;
-        position: center;
-    }
-    .img10 {
-        grid-area: cuadro10;
-        border: solid 1px;
-        border-color: #7ac9d0;
-        position: center;
-    }
-    .img11 {
-        grid-area: cuadro11;
-        border: solid 1px;
-        border-color: #7ac9d0;
-        position: center;
-    }
-    .img12 {
-        grid-area: cuadro12;
-        border: solid 1px;
-        border-color: #7ac9d0;
-        position: center;
+        margin: 5px;
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
     }
     
+    .img3 {
+        grid-area: cuadro3;
+        position: center;
+        margin: 5px;
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    }
+
+    .img4 {
+        grid-area: cuadro4;
+        position: center;
+        margin: 5px;
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    }
+
+    .img5 {
+        grid-area: cuadro5;
+        position: center;
+        margin: 5px;
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    }
+
+    .img6 {
+        grid-area: cuadro6;
+        position: center;
+        margin: 5px;
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    }
+
+    .nutri {
+        grid-area: nutri;
+        text-align: center;
+        align-content: center;
+        background-color: rgba(254,252,230,0.9);
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        position: center;
+        padding: 5px;
+        margin: 5px;
+        p { padding-top: 5px;
+            font-size: 12px;
+            line-height: 1.5;
+        }
+    }
+
+    .img7 {
+        grid-area: cuadro7;
+        position: center;
+        margin: 5px;
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    }
+
+    .img8 {
+        grid-area: cuadro8;
+        position: center;
+        margin: 5px;
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    }
+
+    .img9 {
+        grid-area: cuadro9;
+        position: center;
+        margin: 5px;
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    }
+
+    .img10 {
+        grid-area: cuadro10;
+        position: center;
+        margin: 5px;
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    }
+
+    .img11 {
+        grid-area: cuadro11;
+        position: center;
+        margin: 5px;
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    }
+
+    .img12 {
+        grid-area: cuadro12;
+        position: center;
+        margin: 5px;
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    }
+
+    .img13 {
+        grid-area: cuadro13;
+        position: center;
+        margin: 5px;
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);        
+    }
+
+    .bbtn {font-size: 12px;
+        line-height: 1.5;
+        padding: 1px;
+        text-align: center;
+        background-color: $amarillo;
+        align-content: center;
+        justify-content: center;
+        border: solid 1px $rosa;
+    }
+        
+    .bbtn:hover {background-color: $oscuro;
+        color: $amarillo;
+        border-color: $amarillo;
+    }
+
+    .card-body {background-color: $amarillo;
+    }
+
+    .modal-dialog {background-color:$rosa;
+    }
+
+    .modal-content {background-color: $amarillo;
+        font-size: 12px;
+        line-height: 1.5;
+    }
+
+    .modal-header .modal-body .modal-footer{ border: 1px solid $rosa;}
+
+    .img14 {
+        grid-area: cuadro14;
+        position: center;
+        margin: 5px;
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    }
+
+    .img15 {
+        grid-area: cuadro15;
+        position: center;
+        margin: 5px;
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    }
 }
+
+  

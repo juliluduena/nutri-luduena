@@ -51,9 +51,8 @@
     </header>
 
     <main class="grid">
-
-        <!--GRID -->
-            <div class="video">
+        <!--aplicando grid, incluyendo video, bootstrap, card, modals -->
+            <div class="video" style="width: 70%;">
                 <video class="video__mp4" src="multimedia/VideoRomi.mp4" controls width="100%"></video>
 			</div>
 			<div class="img2">
@@ -66,22 +65,117 @@
 			    <img src="imagenes/img20.jpg" alt="foto" width="100%">
 			</div>
 			<div class="img5">
-			    <img src="imagenes/img81.jpg" alt="foto" width="100%">
+                <div class="card">
+                    <img class="card-img-top" src="imagenes/img81.jpg" alt="foto comida variedad y color" width="100%">
+                    <div class="card-body">
+                        <!-- Small modal-->
+                        <button type="button" class="bbtn" data-toggle="modal" data-target="#mySmallModalcinco">Variedad y color de frutas y verduras.</button>
+
+                        <div class="modal fade" id="mySmallModalcinco" tabindex="-1" role="dialog" aria-labelledby="mySmallModalcinco" aria-hidden="false">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <p>Este grupo de alimentos es fuente de vitaminas, minerales y antioxidantes necesarios para el funcionamiento de nuestro  cuerpo. </p>
+                                        <p>Su consumo diario ayuda a prevenir enfermedades.</p>
+                                        <p>Contienen fibra que contribuye a generar sensación de saciedad, mantener el buen funcionamiento intestinal. Los niveles de colesterol y glucosa en sangre y un peso saludable.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="bbtn" data-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 			</div>
 			<div class="img6">
-			    <img src="imagenes/img16.jpg" alt="foto" width="100%">
+                <div class="card">
+                    <img class="card-img-top" src="imagenes/img16.jpg" alt="foto agua sana" width="100%">
+                    <div class="card-body">
+                        <!-- Small modal-->
+                        <button type="button" class="bbtn" data-toggle="modal" data-target="#mySmallModalseis">Incorporación de actividad física.</button>
+
+                        <div class="modal fade" id="mySmallModalseis" tabindex="-1" role="dialog" aria-labelledby="mySmallModalseis" aria-hidden="false">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <p>La actividad física abarca el ejercicio, pero también otras actividades que implican movimiento corporal y se realizan como parte de los momentos de juego, trabajo, formas de transporte activas, tareas domésticas y actividades recreativas.</p>
+                                        <p>Realizar al menos 30 minutos de actividad física moderada, continua o fraccionada, todos los días para mantener una vida activa.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="bbtn" data-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 			</div>
             <div class="nutri">
-			    <p>La nutrición es la ingesta de alimentos en relación con las necesidades dietéticas del organismo. Una buena nutrición (una dieta suficiente y equilibrada combinada con el ejercicio físico regular) es un elemento fundamental de la buena salud. Una mala nutrición puede reducir la inmunidad, aumentar la vulnerabilidad a las enfermedades, alterar el desarrollo físico y mental, y reducir la productividad.  (Fuente: OMS)</p>
+			    <p>La nutrición es la ingesta de alimentos en relación con las necesidades dietéticas del organismo. Una buena nutrición (una dieta suficiente y equilibrada combinada con el ejercicio físico regular) es un elemento fundamental de la buena salud. (Fuente: OMS)</p>
             </div>
 			<div class="img7">
 	    		<img src="imagenes/img27.jpg" alt="foto" width="100%">
 			</div>
 	    	<div class="img8">
-	            <img src="imagenes/img5.jpg" alt="foto" width="100%">
+                <div class="card">
+                    <img class="card-img-top" src="imagenes/img5.jpg" alt="foto mujer con verduras" width="100%">
+                    <div class="card-body">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="bbtn" data-toggle="modal" data-target="#modaluno">
+                            Consejos para mejorar la salud.
+                        </button>
+                        
+                        <!-- Modal -->
+                        <div class="modal fade" id="modaluno" tabindex="-1" role="dialog" aria-labelledby="modaluno-uno" aria-hidden="false">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modaluno-uno">10 recomendaciones para una alimentación saludable:</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <p>1- Incorporar a diario alimentos de todos los grupos y realizar al menos 30 minutos de actividad física.</p>
+                                    <p>2- Tomar a diario 8 vasos de agua segura.</p>
+                                    <p>3- Consumir a diario 5 porciones de frutas y verduras en variedad de tipos y colores.</p>
+                                    <p>4- Reducir el uso de sal y el consumo de alimentos con alto contenido de sodio.</p>
+                                    <p>5- Limitar el consumo de bebidas azucaradas y de alimentos con elevado contenido de grasas, azúcar y sal.</p>
+                                    <p>6- Consumir diariamente leche, yogur o queso, preferentemente descremados.</p>
+                                    <p>7- Al consumir carnes quitarle la grasa visible, aumentar el consumo de pescado e incluir huevo.</p>
+                                    <p>8- Consumir legumbres, cereales preferentemente integrales, papa, batata, choclo o mandioca.</p>
+                                    <p>9- Consumir aceite crudo como condimento, frutas secas o semillas.</p>
+                                    <p>10-El consumo de bebidas alcohólicas debe ser responsable. Los niños, adolescentes y mujeres embarazadas no deben consumirlas. Evitarlas siempre al conducir.</p>
+                                    <p>Fuente: Ministerio de Salud Argentina.</p>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="bbtn" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 			</div>
 			<div class="img9">
-	    		<img src="imagenes/img11.jpg" alt="foto" width="100%">
+                <div class="card">
+                    <img class="card-img-top" src="imagenes/img11.jpg" alt="foto ejercicio físico en niños" width="100%">
+                    <div class="card-body">
+                        <!-- Small modal-->
+                        <button type="button" class="bbtn" data-toggle="modal" data-target="#mySmallModaluno">Actividad física en edad temprana.</button>
+
+                        <div class="modal fade" id="mySmallModaluno" tabindex="-1" role="dialog" aria-labelledby="mySmallModaluno" aria-hidden="false">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <p>Los niños/as y adolescentes que realizan actividad física tienen más probabilidad de mantener ese hábito a lo largo de la vida.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="bbtn" data-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 			</div>
 			<div class="img10">
 		    	<img src="imagenes/img21.jpg" alt="foto" width="100%">
@@ -90,36 +184,115 @@
     			<img src="imagenes/img18.jpg" alt="foto" width="100%">
 			</div>
 			<div class="img12">
-	    		<img src="imagenes/img2.jpg" alt="foto" width="100%">
+                <div class="card">
+                    <img class="card-img-top" src="imagenes/img2.jpg" alt="foto agua sana" width="100%">
+                    <div class="card-body">
+                        <!-- Small modal-->
+                        <button type="button" class="bbtn" data-toggle="modal" data-target="#mySmallModaldos">¿Por qué es importante beber agua?</button>
+
+                        <div class="modal fade" id="mySmallModaldos" tabindex="-1" role="dialog" aria-labelledby="mySmallModaldos" aria-hidden="false">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <p>Es necesario beber agua y reponer las pérdidas diarias. Se pierden por día entre 2 y 3 litros de agua a través del sudor, la respiración, la orina y las heces.</p>
+                                        <p>Hidratarse significa incorporar la cantidad adecuada de agua para que el cuerpo funcione normalmente: 8 vasos de agua segura por día.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="bbtn" data-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 			</div>
             <div class="img13">
-                <img src="imagenes/img141.jpg" alt="foto" width="100%">
-            </div>
-            <div class="img14">
-                <img src="imagenes/img28.jpg" alt="foto" width="100%">
-            </div>
-            <div class="img15">
-                <img src="imagenes/img29.jpg" alt="foto" width="100%">
-            </div>
-        <!--
-        <section class="contenedor">
-            <div class="video">
-                <video class="video__mp4" src="multimedia/VideoRomi.mp4" controls width="200px"></video>
-                <div class="video__texto">
-                    <h2 class="video__titulo">Diabetes...</h2>
-                    
-                    <p class="video__parrafo">
-                        La diabetes tipo 2, que es la más frecuente, se puede prevenir. Puesto que la causa más importante es la obesidad, todas las acciones que tengan que ver con la prevención de la obesidad como evitar el sedentarismo, la comida “basura”, las bebidas azucaradas, van a tener un resultado positivo.
-                        Un estilo de vida saludable reduce en un 80 por ciento las posibilidades de tener diabetes tipo 2.
-                    </p>
-                    <p class="video__parrafo">
-                        Una vez que se ha diagnosticado la enfermedad, hay que prevenir la aparición de complicaciones micro y macrovasculares. El seguimiento del tratamiento prescrito, así como de las recomendaciones nutricionales y de actividad física es fundamental para evitar complicaciones como las cardiovasculares, las renales, la retinopatía diabética o el pie diabético.
-                    </p>
+                <div class="card">
+                    <img class="card-img-top" src="imagenes/img141.jpg" alt="foto sanitizando frutas y verduras" width="100%">
+                    <div class="card-body">
+                        <!-- Button trigger modal -->
+                        <button type="button" class="bbtn" data-toggle="modal" data-target="#modaldos">
+                            ¿Cómo sanitizar las frutas y verduras?
+                        </button>
+                        <!-- Long Modal -->
+                        <div class="modal fade" id="modaldos" tabindex="-1" role="dialog" aria-labelledby="modaldos-dos" aria-hidden="false">
+                            <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="modaldos-dos">Sanitización de frutas y verduras:</h5>
+                                </div>
+                                <div class="modal-body">
+                                    <p>1- Colocar las frutas y verduras en la bacha.</p>
+                                    <p>2- Lavar bajo chorro de agua una por una, con nuestras manos retirar la suciedad.</p>
+                                    <p>3- Una vez lavado todo (solo con agua) retirar de la bacha y colocar sobre la mesada limpia.</p>
+                                    <p>4- Limpiar y desinfectar la bacha.</p>
+                                    <p>5- Llenar la bacha con agua, a un nivel suficiente para sumergir los vegetales y frutas.</p>
+                                    <p>6- Calcular las gotas que debemos colocar en el agua, según lo que indique el rótulo de la lavandina. Ej. Si dice 2 gotas por litro de agua, entonces para 4 litros debemos colocar 8 gotas.</p>
+                                    <p>7- Tener en cuenta que debemos utilizar lavandina apta para agua-alimentos. Se identifican en el rótulo con el logo de una gota.</p>
+                                    <p>8- Colocada la lavandina, sumergir las frutas y verduras y dejar reposar por 10 minutos.</p>
+                                    <p>9- Finalizado el reposo, retirar. Colocar sobre un repasador limpio o sobre papel descartable para secarlos.</p>
+                                    <p>10- Por último, guardamos en la heladera.</p>
+                                </div>
+                                <div class="modal-footer">
+                                <button type="button" class="bbtn" data-dismiss="modal">Cerrar</button>
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-        </section>
-        
-            -->            
+            <div class="img14">
+                <div class="card">
+                    <img class="card-img-top" src="imagenes/img28.jpg" alt="foto comida sana" width="100%">
+                    <div class="card-body">
+                        <!-- Small modal-->
+                        <button type="button" class="bbtn" data-toggle="modal" data-target="#mySmallModaltres">¿Qué es la alimentación saludable?</button>
+
+                        <div class="modal fade" id="mySmallModaltres" tabindex="-1" role="dialog" aria-labelledby="mySmallModaltres" aria-hidden="false">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <p>Es aquella que aporta todos los nutrientes esenciales y la energía necesaria para que cada persona pueda llevar adelante las actividades diarias y mantenerse sana.</p>
+                                        <p>La alimentación debe respetar los gustos y hábitos, o sea, la cultura de cada persona y/o familia.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="bbtn" data-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="img15">
+                <div class="card">
+                    <img class="card-img-top" src="imagenes/img29.jpg" alt="foto actividad física" width="100%">
+                    <div class="card-body">
+                        <!-- Small modal-->
+                        <button type="button" class="bbtn" data-toggle="modal" data-target="#mySmallModalcuatro">Beneficios de realizar actividad física.</button>
+
+                        <div class="modal fade" id="mySmallModalcuatro" tabindex="-1" role="dialog" aria-labelledby="mySmallModalcuatro" aria-hidden="false">
+                            <div class="modal-dialog modal-sm">
+                                <div class="modal-content">
+                                    <div class="modal-body">
+                                        <p>Nuestro cuerpo necesita actividad física porque nos ayuda a prolongar, mejorar la calidad de los años de vida y mantenernos sanos, ayudando a:</p>
+                                        <p>• controlar el peso,</p>
+                                        <p>• disminuir el estrés,</p>
+                                        <p>• mejorar en humor, rendimiento mental y capacidad para estudiar,</p>
+                                        <p>• descansar mejor,</p>
+                                        <p>• mejorar la salud ósea,</p>
+                                        <p>• mantener niveles adecuados de colesterol y grasas en sangre.</p>
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="bbtn" data-dismiss="modal">Cerrar</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>      
     </main>
 
     <footer>
