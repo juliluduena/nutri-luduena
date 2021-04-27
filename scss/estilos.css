@@ -43,7 +43,7 @@ h4 {
 }
 
 /*utilizacion de extend: cada vez que lo use, agregar font-size, line-height, text-align y padding por separado*/
-.kumetext p, .presentacion__titulo, .presentacion__parrafo, .contacto__TextUno .card .card-body, .contacto__TextDos h2, .contacto__TextDos .contacto__formulario, .contacto__TextTres .card .card-body, #accordion .btnn, .nutri p, .bbtn, .modal-content {
+.kumetext p, .presentacion__titulo, .presentacion__parrafo, .contacto__TextUno .card .card-body, .contacto__TextDos h2, .contacto__TextDos .contacto__formulario, .contacto__TextTres .card .card-body, .recetarios__titulo h2, .recetarios__contenido, #accordion .card-header, #accordion .btnn, .nutri p, .bbtn, .modal-content {
   color: #d76249;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
@@ -202,8 +202,18 @@ footer {
   height: 20vh;
 }
 
+.boton-turno {
+  width: 30%;
+  padding: 10px;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .btn {
-  width: 300px;
+  width: 150px;
   height: 40px;
   font-size: 16px;
   font-family: 'Poppins', sans-serif;
@@ -216,15 +226,9 @@ footer {
   font-style: normal;
   position: relative;
   text-align: center;
-  margin: auto 15%;
   padding: 10px;
   background-color: #fefce6;
   color: #b13a1f;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   border: solid 1px #f5d6c3;
 }
 
@@ -235,7 +239,7 @@ footer {
 }
 
 .redes {
-  width: 100%;
+  width: 70%;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   -webkit-text-decoration-line: none;
@@ -538,24 +542,77 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
 }
 
 /* main recetas: aplicando accordion con bootstrap */
+.recetarios {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+  height: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.recetarios__titulo {
+  width: 300px;
+  padding: 20px;
+}
+
+.recetarios__titulo h2 {
+  background-color: rgba(254, 252, 230, 0.9);
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+}
+
+.recetarios__contenido {
+  width: 80%;
+  padding: 20px;
+  background-color: rgba(254, 252, 230, 0.9);
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+}
+
+#accordion {
+  padding: 20px;
+}
+
 #accordion .card {
-  width: 30%;
+  width: 350px;
+  height: 100%;
   margin-left: auto;
   margin-right: auto;
+  background-color: #fefce6;
+  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
 }
 
 #accordion .card-header {
+  font-size: 16px;
   width: 100%;
-  color: papayawhip;
 }
 
 #accordion .btnn {
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5;
   width: 100%;
   height: 30px;
   padding: 5px;
-  background-color: #c8e8ea;
+  background-color: #fefce6;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-pack: center;
@@ -566,8 +623,8 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
 }
 
 #accordion .btnn:hover {
-  background-color: #fe9a84;
-  color: white;
+  background-color: #d76249;
+  color: #fefce6;
 }
 
 #accordion .card-body {
@@ -964,14 +1021,11 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
   }
   /*adaptando el footer*/
   .btn {
-    font-size: 12px;
-    width: 100px;
+    font-size: 10px;
+    width: 65px;
     height: 40px;
-    margin-left: 8%;
-    margin-right: 0%;
-    margin-top: auto;
-    margin-bottom: auto;
-    padding: 5px;
+    margin: auto 2%;
+    padding: 3px;
   }
   .redes {
     margin-right: 3%;
@@ -1122,11 +1176,11 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
     display: grid;
     -ms-grid-columns: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-    -ms-grid-rows: 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 1.2fr 1.2fr 1.2fr;
-        grid-template-rows: 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 1.2fr 1.2fr 1.2fr;
+    -ms-grid-rows: 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 1.2fr 1.2fr 1.2fr 1.2fr;
+        grid-template-rows: 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 1.2fr 1.2fr 1.2fr 1.2fr;
     grid-gap: 0.5px;
     background-color: #fae0c7;
-        grid-template-areas: "cuadro3 cuadro11"  "nutri nutri" "nutri nutri" "cuadro10 cuadro4" "cuadro1 cuadro2" "cuadro1 cuadro7" "cuadro8 cuadro13" "cuadro8 cuadro13" "cuadro14 cuadro5 cuadro12" "cuadro6 cuadro15 cuadro9";
+        grid-template-areas: "cuadro3 cuadro11"  "nutri nutri" "cuadro10 cuadro4" "cuadro1 cuadro2" "cuadro1 cuadro7" "cuadro8 cuadro13" "cuadro8 cuadro13" "cuadro14 cuadro12" "cuadro5 cuadro15" "cuadro6 cuadro9";
     justify-items: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -1139,7 +1193,7 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
   }
   .video {
     width: 80%;
-    -ms-grid-row: 5;
+    -ms-grid-row: 4;
     -ms-grid-row-span: 2;
     -ms-grid-column: 1;
     grid-area: cuadro1;
@@ -1149,7 +1203,7 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
             box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
   }
   .img2 {
-    -ms-grid-row: 5;
+    -ms-grid-row: 4;
     -ms-grid-column: 2;
     grid-area: cuadro2;
     position: center;
@@ -1167,7 +1221,7 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
             box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
   }
   .img4 {
-    -ms-grid-row: 4;
+    -ms-grid-row: 3;
     -ms-grid-column: 2;
     grid-area: cuadro4;
     position: center;
@@ -1177,7 +1231,7 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
   }
   .img5 {
     -ms-grid-row: 9;
-    -ms-grid-column: 2;
+    -ms-grid-column: 1;
     grid-area: cuadro5;
     position: center;
     margin: 5px;
@@ -1195,7 +1249,6 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
   }
   .nutri {
     -ms-grid-row: 2;
-    -ms-grid-row-span: 2;
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-area: nutri;
@@ -1215,7 +1268,7 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
     line-height: 1.5;
   }
   .img7 {
-    -ms-grid-row: 6;
+    -ms-grid-row: 5;
     -ms-grid-column: 2;
     grid-area: cuadro7;
     position: center;
@@ -1224,7 +1277,7 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
             box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
   }
   .img8 {
-    -ms-grid-row: 7;
+    -ms-grid-row: 6;
     -ms-grid-row-span: 2;
     -ms-grid-column: 1;
     grid-area: cuadro8;
@@ -1235,7 +1288,7 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
   }
   .img9 {
     -ms-grid-row: 10;
-    -ms-grid-column: 3;
+    -ms-grid-column: 2;
     grid-area: cuadro9;
     position: center;
     margin: 5px;
@@ -1243,7 +1296,7 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
             box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
   }
   .img10 {
-    -ms-grid-row: 4;
+    -ms-grid-row: 3;
     -ms-grid-column: 1;
     grid-area: cuadro10;
     position: center;
@@ -1261,8 +1314,8 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
             box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
   }
   .img12 {
-    -ms-grid-row: 9;
-    -ms-grid-column: 3;
+    -ms-grid-row: 8;
+    -ms-grid-column: 2;
     grid-area: cuadro12;
     position: center;
     margin: 5px;
@@ -1270,7 +1323,7 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
             box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
   }
   .img13 {
-    -ms-grid-row: 7;
+    -ms-grid-row: 6;
     -ms-grid-row-span: 2;
     -ms-grid-column: 2;
     grid-area: cuadro13;
@@ -1312,7 +1365,7 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
     border: 1px solid #f5d6c3;
   }
   .img14 {
-    -ms-grid-row: 9;
+    -ms-grid-row: 8;
     -ms-grid-column: 1;
     grid-area: cuadro14;
     position: center;
@@ -1321,7 +1374,7 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
             box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
   }
   .img15 {
-    -ms-grid-row: 10;
+    -ms-grid-row: 9;
     -ms-grid-column: 2;
     grid-area: cuadro15;
     position: center;

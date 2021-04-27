@@ -182,7 +182,13 @@ footer {display: flex; /*flexbox*/
     height: 20vh;
 }
 
-.btn {width: 300px;
+.boton-turno {width: 30%;
+    padding: 10px;
+    align-content: center;
+    justify-content: center;
+}
+
+.btn {width: 150px;
 height: 40px;
 font-size: 16px;
 font-family: 'Poppins', sans-serif;
@@ -195,12 +201,9 @@ color: $oscuro;
 font-style: normal;
 position: relative;
 text-align: center;
-margin: auto 15%;
 padding: 10px;
 background-color: $amarillo;
 color: $terracota;
-align-content: center;
-justify-content: center;
 border: solid 1px $rosa;
 }
 
@@ -210,8 +213,8 @@ color: $amarillo;
 border-color: $amarillo;
 }
 
-.redes {width: 100%;
-justify-content: space-around;;
+.redes {width: 70%;
+justify-content: space-around;
 text-decoration-line: none;
 text-align: center;
 margin: auto;
@@ -462,27 +465,65 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
 
 /* main recetas: aplicando accordion con bootstrap */
 
+.recetarios {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 100%; 
+    height: 100%;  
+    justify-content: space-evenly; 
+    align-items: center;
+      
+}
+
+.recetarios__titulo {
+    width: 300px;
+    padding: 20px;
+    h2{background-color: rgba(254,252,230,0.9);
+        text-align: center;  
+        @extend %texto;
+        font-size: 16px;
+        line-height: 1.5;
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    }
+}
+
+.recetarios__contenido {
+    width: 80%;
+    padding: 20px;
+    background-color: rgba(254,252,230,0.9);
+    text-align: center;  
+    @extend %texto;
+    font-size: 16px;
+    line-height: 1.5;
+    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    
+}
+
 #accordion {
-
-
-    .card {width: 30%;
+    padding: 20px;
+    
+    .card {width: 350px;
+        height: 100%;
         margin-left: auto;
         margin-right: auto;
+        background-color: $amarillo;
+        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
     }
 
-    .card-header {
+    .card-header {@extend %texto;
+        font-size: 16px;
         width: 100%;
-        color: papayawhip;
 
     }
 
     .btnn { @extend %texto;
-        font-size: 14px;
+        font-size: 16px;
         line-height: 1.5;
         width: 100%;
         height: 30px;
         padding: 5px;
-        background-color: #c8e8ea;
+        background-color: $amarillo;
         align-content: center;
         justify-content: center;
         border: none;
@@ -490,8 +531,8 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
     }
 
     .btnn:hover {
-        background-color: #fe9a84;
-        color: white;
+        background-color: $oscuro;
+        color: $amarillo;
     }
 
     .card-body {
@@ -804,14 +845,11 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
     /*adaptando el footer*/
 
     
-    .btn {font-size: 12px;
-        width: 100px;
+    .btn {font-size: 10px;
+        width: 65px;
         height: 40px;
-        margin-left: 8%;
-        margin-right: 0%;
-        margin-top: auto;
-        margin-bottom: auto;
-        padding: 5px;
+        margin: auto 2%;
+        padding: 3px;
     }
 
     .redes {
@@ -953,19 +991,19 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 1.2fr 1.2fr 1.2fr;
+        grid-template-rows: 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 0.8fr 1.2fr 1.2fr 1.2fr 1.2fr;
         grid-gap: 0.5px;
         background-color: $rosa-claro;
         grid-template-areas:"cuadro3 cuadro11" 
-                            "nutri nutri"
                             "nutri nutri"
                             "cuadro10 cuadro4"
                             "cuadro1 cuadro2"
                             "cuadro1 cuadro7"
                             "cuadro8 cuadro13"
                             "cuadro8 cuadro13"
-                            "cuadro14 cuadro5 cuadro12"
-                            "cuadro6 cuadro15 cuadro9";
+                            "cuadro14 cuadro12"
+                            "cuadro5 cuadro15"
+                            "cuadro6 cuadro9";
         justify-items: center;
         align-items: center;
         justify-content: center;
