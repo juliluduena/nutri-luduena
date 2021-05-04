@@ -43,7 +43,7 @@ h4 {
 }
 
 /*utilizacion de extend: cada vez que lo use, agregar font-size, line-height, text-align y padding por separado*/
-.kumetext p, .presentacion__titulo, .presentacion__parrafo, .contacto__TextUno .card .card-body, .contacto__TextDos h2, .contacto__TextDos .contacto__formulario, .contacto__TextTres .card .card-body, .recetarios__titulo h2, .recetarios__contenido, #accordion .card-header, #accordion .btnn, .nutri p, .bbtn, .modal-content {
+.btn, .kumetext p, .presentacion__titulo, .presentacion__parrafo, .contacto__TextUno .card .card-body, .contacto__TextDos h2, .contacto__TextDos .contacto__formulario, .contacto__TextTres .card .card-body, .recetarios__titulo h2, .recetarios__contenido, #accordion .card-header, #accordion .btnn, .nutri p, .bbtn, .modal-content {
   color: #d76249;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
@@ -185,50 +185,29 @@ nav .nav a:hover {
   /*transition*/
 }
 
-/*footer: aplicando flexbox, boton de bootstrap y bem*/
+/*footer: aplicando flexbox*/
 footer {
+  background-color: #fefce6;
+  width: 100%;
+  height: 120px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  /*flexbox*/
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: nowrap;
       flex-wrap: nowrap;
-  background-color: #fefce6;
-  width: 100%;
-  height: 20vh;
-}
-
-.boton-turno {
-  width: 30%;
-  padding: 10px;
-  -ms-flex-line-pack: center;
-      align-content: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 .btn {
-  width: 150px;
+  width: 200px;
   height: 40px;
   font-size: 16px;
-  font-family: 'Poppins', sans-serif;
-  font-weight: normal;
-  word-spacing: 1px;
-  letter-spacing: 0.5px;
-  line-height: 1;
   text-align: center;
-  color: #d76249;
-  font-style: normal;
-  position: relative;
-  text-align: center;
-  padding: 10px;
+  margin: auto;
   background-color: #fefce6;
-  color: #b13a1f;
   border: solid 1px #f5d6c3;
 }
 
@@ -239,50 +218,15 @@ footer {
 }
 
 .redes {
-  width: 70%;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-text-decoration-line: none;
-          text-decoration-line: none;
-  text-align: center;
   margin: auto;
-  margin-right: 5%;
-  padding: 5px;
 }
 
-.redes__email {
-  width: 40px;
-  border-radius: 30px;
-  margin-left: 1%;
-  margin-right: 1%;
+.redes__icono {
+  margin: 10px;
 }
 
-.redes__watsapp {
+.icono {
   width: 40px;
-  border-radius: 30px;
-  margin-left: 1%;
-  margin-right: 1%;
-}
-
-.redes__facebook {
-  width: 40px;
-  border-radius: 30px;
-  margin-left: 1%;
-  margin-right: 1%;
-}
-
-.redes__instagram {
-  width: 40px;
-  border-radius: 30px;
-  margin-left: 1%;
-  margin-right: 1%;
-}
-
-.redes__linkedin {
-  width: 40px;
-  border-radius: 30px;
-  margin-left: 1%;
-  margin-right: 1%;
 }
 
 /*main index: aplicando carousel de bootstrap*/
@@ -890,7 +834,7 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
     position: -webkit-sticky;
     position: sticky;
     width: 100%;
-    height: 140px;
+    height: 160px;
   }
   #encabezado {
     background-color: #fefce6;
@@ -986,7 +930,7 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
             justify-content: center;
   }
   nav .nav {
-    width: 400px;
+    width: 300px;
     height: 60px;
     margin-top: 1px;
     margin-bottom: 1px;
@@ -1020,46 +964,24 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
     /*transition*/
   }
   /*adaptando el footer*/
-  .btn {
-    font-size: 10px;
-    width: 65px;
-    height: 40px;
-    margin: auto 2%;
-    padding: 3px;
-  }
-  .redes {
-    margin-right: 3%;
-    padding: 3px;
-  }
-  .redes {
+  footer {
     width: 100%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-text-decoration-line: none;
-            text-decoration-line: none;
-    text-align: center;
-    margin: auto;
-    padding: 1px;
+    height: 170px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
-  .redes__email {
-    width: 30px;
-    border-radius: 30px;
+  .btn {
+    width: 140px;
+    height: 35px;
+    font-size: 14px;
   }
-  .redes__watsapp {
-    width: 30px;
-    border-radius: 30px;
+  .redes__icono {
+    margin: 5px;
   }
-  .redes__facebook {
+  .icono {
     width: 30px;
-    border-radius: 30px;
-  }
-  .redes__instagram {
-    width: 30px;
-    border-radius: 30px;
-  }
-  .redes__linkedin {
-    width: 30px;
-    border-radius: 30px;
   }
   /* adaptando main de index*/
   #carouselExampleDark {
@@ -1597,7 +1519,7 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
             justify-content: center;
   }
   nav .nav {
-    width: 400px;
+    width: 500px;
     height: 60px;
     margin-top: 1px;
     margin-bottom: 1px;
@@ -1608,10 +1530,10 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
             justify-content: center;
   }
   nav .nav .nav-link {
-    font-size: 12px;
+    font-size: 14px;
     font-family: 'Poppins', sans-serif;
     font-weight: normal;
-    word-spacing: 0.3px;
+    word-spacing: 0.7px;
     letter-spacing: 0.5px;
     line-height: 1;
     text-align: center;
@@ -1627,46 +1549,31 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
     background-color: #d76249;
     color: #fefce6;
     border-radius: 3px;
-    font-size: 14px;
+    font-size: 15px;
     /*transition*/
   }
   /*adaptando el footer*/
-  .btn {
-    font-size: 14px;
-    width: 200px;
-    height: 30px;
-    margin: auto 10%;
-    padding: 5px;
-  }
-  .redes {
+  footer {
+    background-color: #fefce6;
     width: 100%;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-text-decoration-line: none;
-            text-decoration-line: none;
-    text-align: center;
-    margin: auto;
-    padding: 1px;
+    height: 120px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
   }
-  .redes__email {
-    width: 30px;
-    border-radius: 30px;
+  .btn {
+    width: 140px;
+    height: 35px;
+    font-size: 14px;
   }
-  .redes__watsapp {
-    width: 30px;
-    border-radius: 30px;
-  }
-  .redes__facebook {
-    width: 30px;
-    border-radius: 30px;
-  }
-  .redes__instagram {
-    width: 30px;
-    border-radius: 30px;
-  }
-  .redes__linkedin {
-    width: 30px;
-    border-radius: 30px;
+  .redes__icono {
+    margin: 5px;
   }
   /* adaptando main de index*/
   #carouselExampleDark {
