@@ -307,9 +307,7 @@ margin: auto;
 
 
 .contacto {
-    padding: 10px;
-    width: 100%; 
-    height: 100%;  
+    padding: 10px; 
        
 }
 
@@ -404,9 +402,13 @@ margin: auto;
     margin-bottom: 5%;
 }
 
-.turno__fotokume{width: 300px;}
+.turno__fotokume{width: 300px;
+    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+}
 
-.turno__fotocasa{width: 300px;}
+.turno__fotocasa{width: 300px;
+    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+}
 
 .turno__datoscontacto{width: 300px;
     background-color: $amarillo;
@@ -772,7 +774,7 @@ margin: auto;
         align-content: center;
         justify-content: center;
         
-        .nav {width: 300px;
+        .nav {width: 90%;
             height: 60px;
             margin-top: 1px;
             margin-bottom: 1px;
@@ -828,7 +830,6 @@ margin: auto;
 
     .kumetext {width: 100%;
         height: 100%;
-        
         margin-top: 5px;
         p {
             font-size: 8px;
@@ -880,6 +881,7 @@ margin: auto;
         margin-top: 1%;
         margin-bottom: 1%;   
     }
+
     .presentacion__texto {
         flex-direction: row;
         flex-wrap: wrap;
@@ -1088,103 +1090,65 @@ margin: auto;
 
     /* adaptando main de contacto */
 
-    .contacto { width: 100%;
+    .contacto {
+        padding: 5px; 
+        
+    }
+
+
+    .turno__titulo {
+        width: 160px;
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .turno__covid {
+        width: 90%;
+        padding: 5px;
+        margin: 2% auto;
+        font-size: 14px;
+    }
+
+    .turno__subtitulo {
+        width: 90%;
+        padding: 5px;
+        margin: 2% auto;
+        font-size: 14px;
+    }
+
+    .turno__formulario {
+        width: 90%;
+        height: 600px;
+        margin: auto;
+        font-size: 14px;
+        padding: 5px;     
+    }
+
+    .turno__datos {width: 90%;
         display: flex;
-       
-        
-        .contacto__TextUno {
-            width: 100%;
-        
-            .card {border: 3px solid $rosa-claro;
-                .card-img-top {background-color:$amarillo;
-                    border: 2px solid $rosa-claro;
-                }
-                .card-body {background-color:$amarillo;
-                    border: 2px solid $rosa-claro;
-                    font-size: 16px;
-                    line-height: 1.9;
-                }
-            }
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .turno__fotokume{width: 90%;
+        margin: 3% auto;
+
+    }
+
+    .turno__fotocasa{width: 90%;
+        margin: 3% auto;
+    }
+
+    .turno__datoscontacto{width: 90%;
+        margin: 3% auto;
+        padding: 5px;
+        .turno__datosromi{font-size: 13px;
         }
-        
-        .contacto__TextDos {
-            width: 100%;
-            background-color: rgba(254,252,230,0.5);
-            padding: 5px;
-            h2{
-                font-size: 16px;
-                line-height: 1.5;
-                text-align: start;
-        
-            }
-            .contacto__formulario{
-                font-size: 16px;
-                line-height: 1.5;
-                text-align: start;
-        
-            }
-        }
-        
-        .contacto__formulario{
-            border: 3px solid $rosa-claro;
-            color: $oscuro;
-            text-decoration: none;
-            font-family: 'Poppins', sans-serif;
-            font-style: normal;
-            font-weight: normal;
-            font-size: 15px;
-            text-align: justify;
-            word-spacing: 1px;
-            letter-spacing: 1px;
-            line-height: 1.5;
-            padding: 10px;
-            text-align: center;
-            align-content: center ;
-            .casilla {color: $oscuro;
-                text-align: center;
-                justify-content: center;
-                input{
-                    border: 1px solid $terracota;
-                }
-                
-                
-            }
-            .mensaje {text-align: center;
-                justify-content: center;
-        
-            }
-            .casilla-boton {text-align: center;
-                justify-content: center;
-            }
-            .boton {background-color: $amarillo;
-                color: $terracota;
-                width: 80px;
-                border: 1px solid $terracota;
-                align-content: center;
-                justify-content: center;
-            }
-            .boton:hover {background-color: $oscuro;
-                color: $amarillo;
-                border-radius: 3px;
-            }
-        }
-        .contacto__TextTres{
-            width: 100%;
-        
-            .card {border: 3px solid $rosa-claro;
-                .card-img-top {background-color:$amarillo;
-                    border: 2px solid $rosa-claro;
-                }
-                .card-body {background-color:$amarillo;
-                    border: 2px solid $rosa-claro;
-                    font-size: 14px;
-                    line-height: 1.5;
-                }
-            }
-        }
+
     }
 }
-
 
 /* aplicando  media queries para tablets */
 
@@ -1277,7 +1241,7 @@ margin: auto;
         align-content: center;
         justify-content: center;
         
-        .nav {width: 500px;
+        .nav {width: 90%;
             height: 60px;
             margin-top: 1px;
             margin-bottom: 1px;
@@ -1573,6 +1537,68 @@ margin: auto;
         margin: 5px;
         box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
     }
+
+    /* adaptando main de contacto */
+
+    .contacto {
+        padding: 10px; 
+        
+    }
+
+    .turno__titulo {
+        width: 160px;
+        padding: 10px;
+        font-size: 14px;
+    }
+
+    .turno__covid {
+        width: 90%;
+        padding: 10px;
+        margin: 2% auto;
+        font-size: 14px;
+    }
+
+    .turno__subtitulo {
+        width: 90%;
+        padding: 10px;
+        margin: 2% auto;
+        font-size: 14px;
+    }
+
+    .turno__formulario {
+        width: 90%;
+        height: 600px;
+        margin: auto;
+        font-size: 14px;
+        padding: 10px;     
+    }
+
+    .turno__datos {width: 90%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .turno__fotokume{width: 70%;
+        margin: 3% auto;
+
+    }
+
+    .turno__fotocasa{width: 70%;
+        margin: 3% auto;
+    }
+
+    .turno__datoscontacto{width: 70%;
+        margin: 3% auto;
+        padding: 10px;
+        .turno__datosromi{font-size: 14px;
+        }
+
+    }
 }
+
+
 
   
