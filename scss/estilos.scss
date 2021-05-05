@@ -305,113 +305,119 @@ margin: auto;
 
 /* main contacto: aplicando bem y formulario */
 
-.contacto { width: 100%;
-display: flex;
+
+.contacto {
+    padding: 10px;
+    width: 100%; 
+    height: 100%;  
+       
 }
 
-/*TENGO QUE VER QUE ME CONVIENE USAR MAS: display: inline-block O position:relative/absolute
-PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CELULAR ??????*/
 
-.contacto__TextUno{position: relative;
-    width: 25%;
-    height: 100%;
-    margin-top: auto;
-    margin-bottom: auto;
-
-    .card {border: 3px solid $rosa-claro;
-        .card-img-top {background-color:$amarillo;
-            border: 2px solid $rosa-claro;
-        }
-        .card-body {background-color:$amarillo;
-            border: 2px solid $rosa-claro;
-            @extend %texto;
-            font-size: 16px;
-            line-height: 1.9;
-        }
-    }
+.turno__titulo {
+    width: 180px;
+    padding: 10px;
+    margin: auto;
+    background-color: rgba(254,252,230,0.9);
+    text-align: center;
+    @extend %texto;
+    font-size: 16px;
+    line-height: 1.5;
+    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
 }
 
-.contacto__TextDos {
-    margin-top: auto;
-    margin-bottom: auto;
-    position: relative;
-    width: 50%;
-    height: 100%;
-    background-color: rgba(254,252,230,0.5);
-    padding: 5px;
-    h2{@extend %texto;
-        font-size: 16px;
-        line-height: 1.5;
-        text-align: start;
-
-    }
-    .contacto__formulario{@extend %texto;
-        font-size: 16px;
-        line-height: 1.5;
-        text-align: start;
-
-    }
+.turno__covid {
+    width: 70%;
+    padding: 10px;
+    margin: 3% auto;
+    background-color: rgba(254,252,230,0.9);
+    text-align: center;   
+    @extend %texto;
+    font-size: 16px;
+    line-height: 1.5;
+    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
 }
 
-.contacto__formulario {
-    border: 3px solid $rosa-claro;
-    color: $oscuro;
-    text-decoration: none;
-    font-family: 'Poppins', sans-serif;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 15px;
-    text-align: justify;
-    word-spacing: 1px;
-    letter-spacing: 1px;
+.turno__subtitulo {
+    width: 70%;
+    padding: 10px;
+    margin: 3% auto;
+    background-color: rgba(254,252,230,0.9);
+    text-align: center; 
+    @extend %texto;
+    font-size: 16px;
+    line-height: 1.5;
+    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+}
+
+
+.turno__formulario {
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    background-color: rgba(254,252,230,0.9);
+    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    @extend %texto;
+    font-size: 16px;
     line-height: 1.5;
     padding: 10px;
     text-align: center;
-    align-content: center ;
+    align-content: center;
     .casilla {color: $oscuro;
         text-align: center;
         justify-content: center;
-        input{border: 1px solid $terracota;
+        input{border: 1px solid $oscuro;
+            border-radius: 3px;
+            background-color: $amarillo;
+        }         
+    }
+    .mensaje {color: $oscuro;
+        text-align: center;
+        justify-content: center;
+        textarea{border: 1px solid $oscuro;
+            border-radius: 3px;
             background-color: $amarillo;
         }
-        
-         
-    }
-    .mensaje {text-align: center;
-        justify-content: center;
-
     }
     .casilla-boton {text-align: center;
         justify-content: center;
     }
     .boton {background-color: $amarillo;
-        color: $terracota;
+        color: $oscuro;
         width: 80px;
-        border: 1px solid $terracota;
+        border: 1px solid $oscuro;
+        border-radius: 3px;
         align-content: center;
         justify-content: center;
     }
     .boton:hover {background-color: $oscuro;
         color: $amarillo;
         border-radius: 3px;
-        }
-}
-.contacto__TextTres{position: relative;
-    width: 25%;
-    margin-top: auto;
-    margin-bottom: auto;
-
-    .card {border: 3px solid $rosa-claro;
-        .card-img-top {background-color:$amarillo;
-            border: 2px solid $rosa-claro;
-        }
-        .card-body {background-color:$amarillo;
-            border: 2px solid $rosa-claro;
-            @extend %texto;
-            font-size: 14px;
-            line-height: 1.5;
-        }
     }
+}
+
+.turno__datos {display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.turno__fotokume{width: 300px;}
+
+.turno__fotocasa{width: 300px;}
+
+.turno__datoscontacto{width: 300px;
+    background-color: $amarillo;
+    padding: 10px;
+    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    .turno__datosromi{text-align: center; 
+        @extend %texto;
+        font-size: 16px;
+        line-height: 1.5;
+    }
+
 }
 
 /* main recetas: aplicando accordion con bootstrap */

@@ -50,81 +50,66 @@
 
     </header>
 
-    <main class="medio">        
-        <div class="contacto">
-            <section class="contacto__TextUno">
-                <div class="card">
-                    <img src="multimedia/casa-kume.jpg" class="card-img-top" alt="foto casa kume">
-                    <div class="card-body">
-                        <p class="card-text"><strong>SOLICITAR TURNO</strong></p>
-                        <p class="card-text">En el marco adverso que enfrentamos por la pandemia de Coronavirus (COVID-19), continuaremos con las consultas online para aquellas personas que quieran comenzar o continuar con un tratamiento nutricional.</p>
-                    </div>
-                </div>
-            </section>
+    <main class="medio">    
+    <div class="contacto">
+        <p class="turno__titulo"><strong>SOLICITAR TURNO</strong></p>
+        <p class="turno__covid">En el marco adverso que enfrentamos por la pandemia de Coronavirus (COVID-19), contamos  con dos modalidades de consultas: continuaremos con las consultas presenciales cumpliendo con el protocolo recomendado y también con consultas online para aquellas personas que desean comenzar o continuar con un tratamiento nutricional, por medio de videollamadas programadas.</p>
+        
+        <h2 class="turno__subtitulo">Completar el siguiente formulario y a la brevedad me comunicaré para acordar tu turno:</h2>
             
-            <section class="contacto__TextDos">
-                <h2>Completar el siguiente formulario y a la brevedad me comunicaré para acordar tu turno:</h2>
-            
-                <form class="contacto__formulario">
-                    <br>
-                    <div class="casilla">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" placeholder="Ingrese su nombre" value="" required="">
-                    </div>
-                    <br>
-                    <br>
-                    <div class="casilla">
-                        <label for="apellido">Apellido:</label>
-                        <input type="text" placeholder="Ingrese su apellido" value="" required="">
-                    </div>
-                    <br>
-                    <br>
-                    <div class="casilla">
-                        <label for="teléfono">Teléfono:</label>
-                        <input type="number" placeholder="Ingrese su número" required="">
-                    </div>
-                    <br>
-                    <br>
-                    <div class="casilla">
-                        <label for="correo">Correo electrónico:</label>
-                        <input type="email" placeholder="Ingrese su email" required="">
-                    </div>
-                    <!--
-                    <br>
-                    <br>
-                    <label for="Ciudad">Seleccione su ciudad:</label> <br>
-                    <input type="Radio" id="Bell Ville" name=""><label for="Bell Ville">Bell Ville</label> 
-                    <input type="Radio" id="Otras" name="Otras"><label for="Otras">Otras</label>
-                    -->
-                    <br>
-                    <br>
-                    <div class="mensaje">
-                        <label for="mensaje">Mensaje:</label>
-                        <textarea style="border: 1px solid #b13a1f; background-color: #fefce6;" name="text" cols="40" rows="6" minlength="5" maxlength="500" placeholder="Deje aquí su mensaje..."></textarea>
-                    </div>
-                    <br>
-                    <br>
-                    <div class="casilla-boton">
-                        <input class="boton" type="Submit" value="Enviar" required="">
-                    </div>
-                    <br>
-                </form>
-            </section>
-            
-            <section class="contacto__TextTres">
-                <div class="card">
-                    <img src="imagenes/textokume.png" class="card-img-top" alt="foto kume">
-                    <div class="card-body">
-                        <p class="card-text">Datos de contacto:</p>
-                        <p class="card-text"><em>Romina Ludueña</em></p>
-                        <p class="card-text"><em>Lic. en Nutrición - M.P. 2701</em></p>
-                        <p class="card-text">Domicilio: Av. Italia 60</p>
-                        <p class="card-text">Teléfono: +54 9 3537 657781</P>
-                        <p class="card-text">rominutricion@hotmail.com</p>
-                    </div>
-                </div>
-            </section>
+        <form class="turno__formulario">
+            <br>
+            <div class="casilla">
+                <label for="nombre">Nombre:</label>
+                <input type="text" placeholder="Ingrese su nombre" value="" required="">
+            </div>
+            <br>
+            <br>
+            <div class="casilla">
+                <label for="apellido">Apellido:</label>
+                <input type="text" placeholder="Ingrese su apellido" value="" required="">
+            </div>
+            <br>
+            <br>
+            <div class="casilla">
+                <label for="teléfono">Teléfono:</label>
+                <input type="number" placeholder="Ingrese su número" required="">
+            </div>
+            <br>
+            <br>
+            <div class="casilla">
+                <label for="correo">E-mail:</label>
+                <input type="email" placeholder="Ingrese su email" required="">
+            </div>
+            <br>
+            <br>
+            <div class="mensaje">
+                <label for="mensaje">Mensaje:</label>
+                <textarea name="text" cols="30" rows="6" minlength="5" maxlength="500" placeholder="Deje aquí su mensaje..."></textarea>
+            </div>
+            <br>
+            <br>
+            <div class="casilla-boton">
+                <input class="boton" type="Submit" value="Enviar" required="">
+            </div>
+            <br>
+        </form>
+
+        <div class="turno__datos">
+            <img src="imagenes/textokume.png" class="turno__fotokume" alt="foto kume">
+
+            <img src="multimedia/casa-kume.jpg" class="turno__fotocasa" alt="foto casa kume">    
+       
+            <div  class="turno__datoscontacto">
+                <p class="turno__datosromi">Datos de contacto:</p>
+                <p class="turno__datosromi"><em>Romina Ludueña</em></p>
+                <p class="turno__datosromi"><em>Lic. en Nutrición - M.P. 2701</em></p>
+                <p class="turno__datosromi">Domicilio: Av. Italia 60</p>
+                <p class="turno__datosromi">Teléfono: +54 9 3537 657781</P>
+                <p class="turno__datosromi">rominutricion@hotmail.com</p>
+            </div>
         </div>
+    </div>    
     </main>
 
     <footer>

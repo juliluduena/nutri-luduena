@@ -43,7 +43,7 @@ h4 {
 }
 
 /*utilizacion de extend: cada vez que lo use, agregar font-size, line-height, text-align y padding por separado*/
-.btn, .kumetext p, .presentacion__titulo, .presentacion__parrafo, .contacto__TextUno .card .card-body, .contacto__TextDos h2, .contacto__TextDos .contacto__formulario, .contacto__TextTres .card .card-body, .recetarios__titulo h2, .recetarios__contenido, #accordion .card-header, #accordion .btnn, .nutri p, .bbtn, .modal-content {
+.btn, .kumetext p, .presentacion__titulo, .presentacion__parrafo, .turno__titulo, .turno__covid, .turno__subtitulo, .turno__formulario, .turno__datoscontacto .turno__datosromi, .recetarios__titulo h2, .recetarios__contenido, #accordion .card-header, #accordion .btnn, .nutri p, .bbtn, .modal-content {
   color: #d76249;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
@@ -345,71 +345,55 @@ footer {
 
 /* main contacto: aplicando bem y formulario */
 .contacto {
+  padding: 10px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-/*TENGO QUE VER QUE ME CONVIENE USAR MAS: display: inline-block O position:relative/absolute
-PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CELULAR ??????*/
-.contacto__TextUno {
-  position: relative;
-  width: 25%;
   height: 100%;
-  margin-top: auto;
-  margin-bottom: auto;
 }
 
-.contacto__TextUno .card {
-  border: 3px solid #fae0c7;
-}
-
-.contacto__TextUno .card .card-img-top {
-  background-color: #fefce6;
-  border: 2px solid #fae0c7;
-}
-
-.contacto__TextUno .card .card-body {
-  background-color: #fefce6;
-  border: 2px solid #fae0c7;
-  font-size: 16px;
-  line-height: 1.9;
-}
-
-.contacto__TextDos {
-  margin-top: auto;
-  margin-bottom: auto;
-  position: relative;
-  width: 50%;
-  height: 100%;
-  background-color: rgba(254, 252, 230, 0.5);
-  padding: 5px;
-}
-
-.contacto__TextDos h2 {
+.turno__titulo {
+  width: 180px;
+  padding: 10px;
+  margin: auto;
+  background-color: rgba(254, 252, 230, 0.9);
+  text-align: center;
   font-size: 16px;
   line-height: 1.5;
-  text-align: start;
+  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
 }
 
-.contacto__TextDos .contacto__formulario {
+.turno__covid {
+  width: 70%;
+  padding: 10px;
+  margin: 3% auto;
+  background-color: rgba(254, 252, 230, 0.9);
+  text-align: center;
   font-size: 16px;
   line-height: 1.5;
-  text-align: start;
+  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
 }
 
-.contacto__formulario {
-  border: 3px solid #fae0c7;
-  color: #d76249;
-  text-decoration: none;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 15px;
-  text-align: justify;
-  word-spacing: 1px;
-  letter-spacing: 1px;
+.turno__subtitulo {
+  width: 70%;
+  padding: 10px;
+  margin: 3% auto;
+  background-color: rgba(254, 252, 230, 0.9);
+  text-align: center;
+  font-size: 16px;
+  line-height: 1.5;
+  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+}
+
+.turno__formulario {
+  width: 600px;
+  height: 600px;
+  margin: auto;
+  background-color: rgba(254, 252, 230, 0.9);
+  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+  font-size: 16px;
   line-height: 1.5;
   padding: 10px;
   text-align: center;
@@ -417,7 +401,7 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
       align-content: center;
 }
 
-.contacto__formulario .casilla {
+.turno__formulario .casilla {
   color: #d76249;
   text-align: center;
   -webkit-box-pack: center;
@@ -425,30 +409,39 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
           justify-content: center;
 }
 
-.contacto__formulario .casilla input {
-  border: 1px solid #b13a1f;
+.turno__formulario .casilla input {
+  border: 1px solid #d76249;
+  border-radius: 3px;
   background-color: #fefce6;
 }
 
-.contacto__formulario .mensaje {
+.turno__formulario .mensaje {
+  color: #d76249;
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.contacto__formulario .casilla-boton {
+.turno__formulario .mensaje textarea {
+  border: 1px solid #d76249;
+  border-radius: 3px;
+  background-color: #fefce6;
+}
+
+.turno__formulario .casilla-boton {
   text-align: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
 }
 
-.contacto__formulario .boton {
+.turno__formulario .boton {
   background-color: #fefce6;
-  color: #b13a1f;
+  color: #d76249;
   width: 80px;
-  border: 1px solid #b13a1f;
+  border: 1px solid #d76249;
+  border-radius: 3px;
   -ms-flex-line-pack: center;
       align-content: center;
   -webkit-box-pack: center;
@@ -456,32 +449,48 @@ PARA QUE CON MEDIA QUERIES PUEDA PONER UNO ABAJO DEL OTRO PARA DISPOSITIVO DE CE
           justify-content: center;
 }
 
-.contacto__formulario .boton:hover {
+.turno__formulario .boton:hover {
   background-color: #d76249;
   color: #fefce6;
   border-radius: 3px;
 }
 
-.contacto__TextTres {
-  position: relative;
-  width: 25%;
-  margin-top: auto;
-  margin-bottom: auto;
+.turno__datos {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
-.contacto__TextTres .card {
-  border: 3px solid #fae0c7;
+.turno__fotokume {
+  width: 300px;
 }
 
-.contacto__TextTres .card .card-img-top {
+.turno__fotocasa {
+  width: 300px;
+}
+
+.turno__datoscontacto {
+  width: 300px;
   background-color: #fefce6;
-  border: 2px solid #fae0c7;
+  padding: 10px;
+  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
 }
 
-.contacto__TextTres .card .card-body {
-  background-color: #fefce6;
-  border: 2px solid #fae0c7;
-  font-size: 14px;
+.turno__datoscontacto .turno__datosromi {
+  text-align: center;
+  font-size: 16px;
   line-height: 1.5;
 }
 
