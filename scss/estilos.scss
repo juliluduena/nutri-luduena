@@ -4,14 +4,6 @@
     padding: 0
 }
 
-/* GRADIENT lo voy a usar????
-
-#encabezado {
-    background-image: linear-gradient(to right, $amarillo, $naranja);
-}
-*/
-
-
 /*paleta colores*/
 
 $terracota: #b13a1f;
@@ -54,6 +46,7 @@ h4 {
 }
 
 /*utilizacion de extend: cada vez que lo use, agregar font-size, line-height, text-align y padding por separado*/
+
 %texto {
     color: $oscuro;
     text-decoration: none;
@@ -258,7 +251,7 @@ margin: auto;
     margin-bottom: 2%;
     justify-self: center;
     align-content: center;
-    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .presentacion__audio {
@@ -287,7 +280,7 @@ margin: auto;
     @extend %texto;
     font-size: 16px;
     line-height: 1.5;
-    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .presentacion__parrafo {
@@ -300,7 +293,7 @@ margin: auto;
     @extend %texto;
     font-size: 16px;
     line-height: 1.5;
-    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 /* main contacto: aplicando bem y formulario */
@@ -321,7 +314,7 @@ margin: auto;
     @extend %texto;
     font-size: 16px;
     line-height: 1.5;
-    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .turno__covid {
@@ -333,7 +326,7 @@ margin: auto;
     @extend %texto;
     font-size: 16px;
     line-height: 1.5;
-    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .turno__subtitulo {
@@ -345,7 +338,7 @@ margin: auto;
     @extend %texto;
     font-size: 16px;
     line-height: 1.5;
-    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 
@@ -354,7 +347,7 @@ margin: auto;
     height: 600px;
     margin: auto;
     background-color: rgba(254,252,230,0.9);
-    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     @extend %texto;
     font-size: 16px;
     line-height: 1.5;
@@ -403,17 +396,17 @@ margin: auto;
 }
 
 .turno__fotokume{width: 300px;
-    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .turno__fotocasa{width: 300px;
-    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .turno__datoscontacto{width: 300px;
     background-color: $amarillo;
     padding: 10px;
-    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     .turno__datosromi{text-align: center; 
         @extend %texto;
         font-size: 16px;
@@ -443,7 +436,7 @@ margin: auto;
         @extend %texto;
         font-size: 16px;
         line-height: 1.5;
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     }
 }
 
@@ -455,7 +448,7 @@ margin: auto;
     @extend %texto;
     font-size: 16px;
     line-height: 1.5;
-    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     
 }
 
@@ -467,7 +460,7 @@ margin: auto;
         margin-left: auto;
         margin-right: auto;
         background-color: $amarillo;
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     }
 
     .card-header {@extend %texto;
@@ -539,42 +532,42 @@ margin: auto;
 .video {
     grid-area: cuadro1;
     position: center;
-    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img2 {
     grid-area: cuadro2;
     position: center;
     margin: 10px;
-    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img3 {
     grid-area: cuadro3;
     position: center;
     margin: 10px;
-    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img4 {
     grid-area: cuadro4;
     position: center;
     margin: 10px;
-    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img5 {
     grid-area: cuadro5;
     position: center;
     margin: 10px;
-    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img6 {
     grid-area: cuadro6;
     position: center;
     margin: 10px;
-    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .nutri {
@@ -582,7 +575,7 @@ margin: auto;
     text-align: center;
     align-content: center;
     background-color: rgba(254,252,230,0.9);
-    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     position: center;
     padding: 10px;
     margin: 10px;
@@ -597,49 +590,49 @@ margin: auto;
     grid-area: cuadro7;
     position: center;
     margin: 10px;
-    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img8 {
     grid-area: cuadro8;
     position: center;
     margin: 10px;
-    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img9 {
     grid-area: cuadro9;
     position: center;
     margin: 10px;
-    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img10 {
     grid-area: cuadro10;
     position: center;
     margin: 10px;
-    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img11 {
     grid-area: cuadro11;
     position: center;
     margin: 10px;
-    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img12 {
     grid-area: cuadro12;
     position: center;
     margin: 10px;
-    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img13 {
     grid-area: cuadro13;
     position: center;
     margin: 10px;
-    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);        
+    box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);        
 }
 
 .bbtn {@extend %texto;
@@ -676,14 +669,14 @@ margin: auto;
     grid-area: cuadro14;
     position: center;
     margin: 10px;
-    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img15 {
     grid-area: cuadro15;
     position: center;
     margin: 10px;
-    box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 /* aplicando media queries para celular*/
@@ -948,42 +941,42 @@ margin: auto;
         grid-area: cuadro1;
         position: center;
         margin-top: 7px;
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     }
 
     .img2 {
         grid-area: cuadro2;
         position: center;
         margin: 5px;
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     }
     
     .img3 {
         grid-area: cuadro3;
         position: center;
         margin: 5px;
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     }
 
     .img4 {
         grid-area: cuadro4;
         position: center;
         margin: 5px;
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     }
 
     .img5 {
         grid-area: cuadro5;
         position: center;
         margin: 5px;
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     }
 
     .img6 {
         grid-area: cuadro6;
         position: center;
         margin: 5px;
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     }
 
     .nutri {
@@ -991,7 +984,7 @@ margin: auto;
         text-align: center;
         align-content: center;
         background-color: rgba(254,252,230,0.9);
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
         position: center;
         padding: 5px;
         margin: 5px;
@@ -1005,49 +998,49 @@ margin: auto;
         grid-area: cuadro7;
         position: center;
         margin: 5px;
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     }
 
     .img8 {
         grid-area: cuadro8;
         position: center;
         margin: 5px;
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     }
 
     .img9 {
         grid-area: cuadro9;
         position: center;
         margin: 5px;
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     }
 
     .img10 {
         grid-area: cuadro10;
         position: center;
         margin: 5px;
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     }
 
     .img11 {
         grid-area: cuadro11;
         position: center;
         margin: 5px;
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     }
 
     .img12 {
         grid-area: cuadro12;
         position: center;
         margin: 5px;
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     }
 
     .img13 {
         grid-area: cuadro13;
         position: center;
         margin: 5px;
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);        
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);        
     }
 
     .bbtn {font-size: 12px;
@@ -1082,14 +1075,14 @@ margin: auto;
         grid-area: cuadro14;
         position: center;
         margin: 5px;
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     }
 
     .img15 {
         grid-area: cuadro15;
         position: center;
         margin: 5px;
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     }
 
     /* adaptando main de contacto */
@@ -1398,42 +1391,42 @@ margin: auto;
         grid-area: cuadro1;
         position: center;
         margin-top: 7px;
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     }
 
     .img2 {
         grid-area: cuadro2;
         position: center;
         margin: 5px;
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     }
     
     .img3 {
         grid-area: cuadro3;
         position: center;
         margin: 5px;
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     }
 
     .img4 {
         grid-area: cuadro4;
         position: center;
         margin: 5px;
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     }
 
     .img5 {
         grid-area: cuadro5;
         position: center;
         margin: 5px;
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     }
 
     .img6 {
         grid-area: cuadro6;
         position: center;
         margin: 5px;
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     }
 
     .nutri {
@@ -1441,7 +1434,7 @@ margin: auto;
         text-align: center;
         align-content: center;
         background-color: rgba(254,252,230,0.9);
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
         position: center;
         padding: 5px;
         margin: 5px;
@@ -1455,49 +1448,49 @@ margin: auto;
         grid-area: cuadro7;
         position: center;
         margin: 5px;
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     }
 
     .img8 {
         grid-area: cuadro8;
         position: center;
         margin: 5px;
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     }
 
     .img9 {
         grid-area: cuadro9;
         position: center;
         margin: 5px;
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     }
 
     .img10 {
         grid-area: cuadro10;
         position: center;
         margin: 5px;
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     }
 
     .img11 {
         grid-area: cuadro11;
         position: center;
         margin: 5px;
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     }
 
     .img12 {
         grid-area: cuadro12;
         position: center;
         margin: 5px;
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     }
 
     .img13 {
         grid-area: cuadro13;
         position: center;
         margin: 5px;
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);        
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);        
     }
 
     .bbtn {font-size: 12px;
@@ -1532,14 +1525,14 @@ margin: auto;
         grid-area: cuadro14;
         position: center;
         margin: 5px;
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     }
 
     .img15 {
         grid-area: cuadro15;
         position: center;
         margin: 5px;
-        box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+        box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     }
 
     /* adaptando main de contacto */

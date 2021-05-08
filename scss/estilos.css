@@ -5,12 +5,6 @@
   padding: 0;
 }
 
-/* GRADIENT lo voy a usar????
-
-#encabezado {
-    background-image: linear-gradient(to right, $amarillo, $naranja);
-}
-*/
 /*paleta colores*/
 /*estilos textos*/
 h2 {
@@ -290,8 +284,8 @@ footer {
       justify-self: center;
   -ms-flex-line-pack: center;
       align-content: center;
-  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+  -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .presentacion__audio {
@@ -325,8 +319,8 @@ footer {
       justify-content: space-around;
   font-size: 16px;
   line-height: 1.5;
-  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+  -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .presentacion__parrafo {
@@ -339,8 +333,8 @@ footer {
       justify-content: space-around;
   font-size: 16px;
   line-height: 1.5;
-  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+  -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 /* main contacto: aplicando bem y formulario */
@@ -356,8 +350,8 @@ footer {
   text-align: center;
   font-size: 16px;
   line-height: 1.5;
-  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+  -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .turno__covid {
@@ -368,8 +362,8 @@ footer {
   text-align: center;
   font-size: 16px;
   line-height: 1.5;
-  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+  -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .turno__subtitulo {
@@ -380,8 +374,8 @@ footer {
   text-align: center;
   font-size: 16px;
   line-height: 1.5;
-  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+  -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .turno__formulario {
@@ -389,8 +383,8 @@ footer {
   height: 600px;
   margin: auto;
   background-color: rgba(254, 252, 230, 0.9);
-  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+  -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
   font-size: 16px;
   line-height: 1.5;
   padding: 10px;
@@ -472,22 +466,22 @@ footer {
 
 .turno__fotokume {
   width: 300px;
-  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+  -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .turno__fotocasa {
   width: 300px;
-  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+  -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .turno__datoscontacto {
   width: 300px;
   background-color: #fefce6;
   padding: 10px;
-  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+  -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .turno__datoscontacto .turno__datosromi {
@@ -527,8 +521,8 @@ footer {
   text-align: center;
   font-size: 16px;
   line-height: 1.5;
-  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+  -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .recetarios__contenido {
@@ -538,8 +532,8 @@ footer {
   text-align: center;
   font-size: 16px;
   line-height: 1.5;
-  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+  -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 #accordion {
@@ -552,8 +546,8 @@ footer {
   margin-left: auto;
   margin-right: auto;
   background-color: #fefce6;
-  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+  -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 #accordion .card-header {
@@ -636,8 +630,8 @@ footer {
   -ms-grid-column: 1;
   grid-area: cuadro1;
   position: center;
-  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+  -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img2 {
@@ -646,8 +640,8 @@ footer {
   grid-area: cuadro2;
   position: center;
   margin: 10px;
-  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+  -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img3 {
@@ -656,8 +650,8 @@ footer {
   grid-area: cuadro3;
   position: center;
   margin: 10px;
-  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+  -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img4 {
@@ -666,8 +660,8 @@ footer {
   grid-area: cuadro4;
   position: center;
   margin: 10px;
-  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+  -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img5 {
@@ -676,8 +670,8 @@ footer {
   grid-area: cuadro5;
   position: center;
   margin: 10px;
-  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+  -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img6 {
@@ -686,8 +680,8 @@ footer {
   grid-area: cuadro6;
   position: center;
   margin: 10px;
-  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+  -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .nutri {
@@ -699,8 +693,8 @@ footer {
   -ms-flex-line-pack: center;
       align-content: center;
   background-color: rgba(254, 252, 230, 0.9);
-  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+  -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
   position: center;
   padding: 10px;
   margin: 10px;
@@ -718,8 +712,8 @@ footer {
   grid-area: cuadro7;
   position: center;
   margin: 10px;
-  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+  -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img8 {
@@ -729,8 +723,8 @@ footer {
   grid-area: cuadro8;
   position: center;
   margin: 10px;
-  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+  -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img9 {
@@ -739,8 +733,8 @@ footer {
   grid-area: cuadro9;
   position: center;
   margin: 10px;
-  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+  -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img10 {
@@ -749,8 +743,8 @@ footer {
   grid-area: cuadro10;
   position: center;
   margin: 10px;
-  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+  -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img11 {
@@ -759,8 +753,8 @@ footer {
   grid-area: cuadro11;
   position: center;
   margin: 10px;
-  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+  -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img12 {
@@ -769,8 +763,8 @@ footer {
   grid-area: cuadro12;
   position: center;
   margin: 10px;
-  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+  -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img13 {
@@ -780,8 +774,8 @@ footer {
   grid-area: cuadro13;
   position: center;
   margin: 10px;
-  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+  -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .bbtn {
@@ -828,8 +822,8 @@ footer {
   grid-area: cuadro14;
   position: center;
   margin: 10px;
-  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+  -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 .img15 {
@@ -838,8 +832,8 @@ footer {
   grid-area: cuadro15;
   position: center;
   margin: 10px;
-  -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-          box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+  -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+          box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
 }
 
 /* aplicando media queries para celular*/
@@ -1137,8 +1131,8 @@ footer {
     grid-area: cuadro1;
     position: center;
     margin-top: 7px;
-    -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-            box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+            box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
   }
   .img2 {
     -ms-grid-row: 4;
@@ -1146,8 +1140,8 @@ footer {
     grid-area: cuadro2;
     position: center;
     margin: 5px;
-    -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-            box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+            box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
   }
   .img3 {
     -ms-grid-row: 1;
@@ -1155,8 +1149,8 @@ footer {
     grid-area: cuadro3;
     position: center;
     margin: 5px;
-    -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-            box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+            box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
   }
   .img4 {
     -ms-grid-row: 3;
@@ -1164,8 +1158,8 @@ footer {
     grid-area: cuadro4;
     position: center;
     margin: 5px;
-    -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-            box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+            box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
   }
   .img5 {
     -ms-grid-row: 9;
@@ -1173,8 +1167,8 @@ footer {
     grid-area: cuadro5;
     position: center;
     margin: 5px;
-    -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-            box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+            box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
   }
   .img6 {
     -ms-grid-row: 10;
@@ -1182,8 +1176,8 @@ footer {
     grid-area: cuadro6;
     position: center;
     margin: 5px;
-    -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-            box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+            box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
   }
   .nutri {
     -ms-grid-row: 2;
@@ -1194,8 +1188,8 @@ footer {
     -ms-flex-line-pack: center;
         align-content: center;
     background-color: rgba(254, 252, 230, 0.9);
-    -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-            box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+            box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     position: center;
     padding: 5px;
     margin: 5px;
@@ -1211,8 +1205,8 @@ footer {
     grid-area: cuadro7;
     position: center;
     margin: 5px;
-    -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-            box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+            box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
   }
   .img8 {
     -ms-grid-row: 6;
@@ -1221,8 +1215,8 @@ footer {
     grid-area: cuadro8;
     position: center;
     margin: 5px;
-    -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-            box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+            box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
   }
   .img9 {
     -ms-grid-row: 10;
@@ -1230,8 +1224,8 @@ footer {
     grid-area: cuadro9;
     position: center;
     margin: 5px;
-    -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-            box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+            box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
   }
   .img10 {
     -ms-grid-row: 3;
@@ -1239,8 +1233,8 @@ footer {
     grid-area: cuadro10;
     position: center;
     margin: 5px;
-    -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-            box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+            box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
   }
   .img11 {
     -ms-grid-row: 1;
@@ -1248,8 +1242,8 @@ footer {
     grid-area: cuadro11;
     position: center;
     margin: 5px;
-    -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-            box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+            box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
   }
   .img12 {
     -ms-grid-row: 8;
@@ -1257,8 +1251,8 @@ footer {
     grid-area: cuadro12;
     position: center;
     margin: 5px;
-    -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-            box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+            box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
   }
   .img13 {
     -ms-grid-row: 6;
@@ -1267,8 +1261,8 @@ footer {
     grid-area: cuadro13;
     position: center;
     margin: 5px;
-    -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-            box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+            box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
   }
   .bbtn {
     font-size: 12px;
@@ -1308,8 +1302,8 @@ footer {
     grid-area: cuadro14;
     position: center;
     margin: 5px;
-    -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-            box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+            box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
   }
   .img15 {
     -ms-grid-row: 9;
@@ -1317,8 +1311,8 @@ footer {
     grid-area: cuadro15;
     position: center;
     margin: 5px;
-    -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-            box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+            box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
   }
   /* adaptando main de contacto */
   .contacto {
@@ -1665,8 +1659,8 @@ footer {
     grid-area: cuadro1;
     position: center;
     margin-top: 7px;
-    -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-            box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+            box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
   }
   .img2 {
     -ms-grid-row: 3;
@@ -1674,8 +1668,8 @@ footer {
     grid-area: cuadro2;
     position: center;
     margin: 5px;
-    -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-            box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+            box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
   }
   .img3 {
     -ms-grid-row: 1;
@@ -1683,8 +1677,8 @@ footer {
     grid-area: cuadro3;
     position: center;
     margin: 5px;
-    -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-            box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+            box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
   }
   .img4 {
     -ms-grid-row: 1;
@@ -1692,8 +1686,8 @@ footer {
     grid-area: cuadro4;
     position: center;
     margin: 5px;
-    -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-            box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+            box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
   }
   .img5 {
     -ms-grid-row: 6;
@@ -1701,8 +1695,8 @@ footer {
     grid-area: cuadro5;
     position: center;
     margin: 5px;
-    -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-            box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+            box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
   }
   .img6 {
     -ms-grid-row: 7;
@@ -1710,8 +1704,8 @@ footer {
     grid-area: cuadro6;
     position: center;
     margin: 5px;
-    -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-            box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+            box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
   }
   .nutri {
     -ms-grid-row: 2;
@@ -1722,8 +1716,8 @@ footer {
     -ms-flex-line-pack: center;
         align-content: center;
     background-color: rgba(254, 252, 230, 0.9);
-    -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-            box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+            box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
     position: center;
     padding: 5px;
     margin: 5px;
@@ -1739,8 +1733,8 @@ footer {
     grid-area: cuadro7;
     position: center;
     margin: 5px;
-    -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-            box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+            box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
   }
   .img8 {
     -ms-grid-row: 4;
@@ -1749,8 +1743,8 @@ footer {
     grid-area: cuadro8;
     position: center;
     margin: 5px;
-    -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-            box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+            box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
   }
   .img9 {
     -ms-grid-row: 7;
@@ -1758,8 +1752,8 @@ footer {
     grid-area: cuadro9;
     position: center;
     margin: 5px;
-    -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-            box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+            box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
   }
   .img10 {
     -ms-grid-row: 3;
@@ -1767,8 +1761,8 @@ footer {
     grid-area: cuadro10;
     position: center;
     margin: 5px;
-    -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-            box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+            box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
   }
   .img11 {
     -ms-grid-row: 1;
@@ -1776,8 +1770,8 @@ footer {
     grid-area: cuadro11;
     position: center;
     margin: 5px;
-    -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-            box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+            box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
   }
   .img12 {
     -ms-grid-row: 6;
@@ -1785,8 +1779,8 @@ footer {
     grid-area: cuadro12;
     position: center;
     margin: 5px;
-    -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-            box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+            box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
   }
   .img13 {
     -ms-grid-row: 4;
@@ -1795,8 +1789,8 @@ footer {
     grid-area: cuadro13;
     position: center;
     margin: 5px;
-    -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-            box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+            box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
   }
   .bbtn {
     font-size: 12px;
@@ -1836,8 +1830,8 @@ footer {
     grid-area: cuadro14;
     position: center;
     margin: 5px;
-    -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-            box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+            box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
   }
   .img15 {
     -ms-grid-row: 7;
@@ -1845,8 +1839,8 @@ footer {
     grid-area: cuadro15;
     position: center;
     margin: 5px;
-    -webkit-box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
-            box-shadow: 6px 10px 10px rgba(26, 24, 24, 0.623);
+    -webkit-box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
+            box-shadow: 3px 5px 10px rgba(26, 24, 24, 0.623);
   }
   /* adaptando main de contacto */
   .contacto {
