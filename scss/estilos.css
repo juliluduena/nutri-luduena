@@ -600,6 +600,11 @@ footer {
 
 #accordion .descarga {
   font-size: 14px;
+  color: #d76249;
+}
+
+#accordion .descarga:hover {
+  color: #f8bb55;
 }
 
 /* sección tips.html: agregando grid  con 4 columnas, con 5 filas y con 16 items*/

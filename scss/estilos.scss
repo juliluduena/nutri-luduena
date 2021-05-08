@@ -509,6 +509,10 @@ margin: auto;
     }
 
     .descarga { font-size: 14px;
+    color: $oscuro;
+    }
+    .descarga:hover {color: $naranja;
+
     }
 }
 
